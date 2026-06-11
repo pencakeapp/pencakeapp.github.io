@@ -19,10 +19,13 @@ temp/
 # Data files (uploaded documents)
 # data/
 
-# Claude Code
-.claude/*
-# .claude/skills
-# .claude/commands
+# Claude Code & dev-only files (local only — not committed to this public repo)
+# This repo is public via GitHub Pages, so dev artifacts are kept untracked here.
+# Later, move these into a private source repo (B-1 deploy plan) for versioning.
+.claude/
+CLAUDE.md
+_dev/
+_docs/
 
 # Editor directories and files
 .vscode/*
