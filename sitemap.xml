@@ -17,6 +17,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -31,6 +32,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -45,6 +47,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -59,6 +62,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -73,6 +77,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -87,6 +92,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -106,6 +112,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -120,6 +127,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -134,6 +142,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -148,6 +157,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -162,6 +172,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -176,6 +187,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -195,6 +207,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -209,6 +222,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -223,6 +237,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -237,6 +252,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -251,6 +267,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -265,6 +282,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -284,6 +302,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -298,6 +317,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -312,6 +332,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -326,6 +347,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -340,6 +362,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -354,6 +377,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -373,6 +397,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -387,6 +412,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -401,6 +427,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -415,6 +442,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -429,6 +457,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -443,6 +472,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -462,6 +492,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -476,6 +507,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -490,6 +522,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -504,6 +537,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -518,6 +552,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -532,6 +567,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -551,6 +587,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -565,6 +602,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -579,6 +617,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -593,6 +632,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -607,6 +647,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -621,6 +662,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
@@ -640,6 +682,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
   </url>
 
@@ -654,6 +697,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
   </url>
 
@@ -668,6 +712,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
   </url>
 
@@ -682,6 +727,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
   </url>
 
@@ -696,6 +742,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
   </url>
 
@@ -710,6 +757,88 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
+  </url>
+
+
+  <!-- ===== French (fr) ===== -->
+  <url>
+    <loc>https://pencake.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pencake.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pencake.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pencake.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pencake.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://pencake.app/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/"/>
+  </url>
+  <url>
+    <loc>https://pencake.app/fr/download/mobile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pencake.app/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pencake.app/de/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pencake.app/es/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pencake.app/pt/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://pencake.app/zh-cn/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/mobile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/mobile/"/>
+  </url>
+  <url>
+    <loc>https://pencake.app/fr/download/desktop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pencake.app/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pencake.app/de/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pencake.app/es/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pencake.app/pt/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://pencake.app/zh-cn/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/download/desktop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/download/desktop/"/>
+  </url>
+  <url>
+    <loc>https://pencake.app/fr/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pencake.app/faq/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pencake.app/de/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pencake.app/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pencake.app/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://pencake.app/zh-cn/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/faq/"/>
+  </url>
+  <url>
+    <loc>https://pencake.app/fr/guide/markdown/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pencake.app/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pencake.app/de/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pencake.app/es/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pencake.app/pt/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://pencake.app/zh-cn/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/guide/markdown/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/guide/markdown/"/>
+  </url>
+  <url>
+    <loc>https://pencake.app/fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pencake.app/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pencake.app/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pencake.app/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pencake.app/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://pencake.app/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://pencake.app/zh-tw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pencake.app/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pencake.app/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pencake.app/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pencake.app/privacy/"/>
   </url>
 
