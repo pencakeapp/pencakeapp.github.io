@@ -1,0 +1,24 @@
+{
+  "name": "pencake-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "extract": "node scripts/extract.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "html-react-parser": "^5.2.2",
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

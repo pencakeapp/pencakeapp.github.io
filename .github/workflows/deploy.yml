@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: site/.nvmrc
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      # content/ is the page source (committed), not a build artifact — the
+      # build reads it directly and does NOT regenerate it. Fail loudly if it
+      # was dropped from the commit rather than producing a broken deploy.
+      - name: Ensure page content is present
+        working-directory: site
+        run: |
+          count=$(find content -name '*.json' 2>/dev/null | wc -l | tr -d ' ')
+          if [ "$count" -lt 54 ]; then
+            echo "::error::site/content/ has only $count JSON files (expected >=54). It must be committed — see site/README.md. Do NOT gitignore it."
+            exit 1
+          fi
+          echo "content check OK: $count JSON files"
+
+      - name: Build static site
+        working-directory: site
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
