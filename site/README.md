@@ -22,11 +22,17 @@ npm run extract    # 레거시 HTML → content/ JSON 재추출 (초기 이관�
 
 ```
 app/
-  (en)/           영어(루트) 페이지: /, /faq/, /privacy/, /guide/markdown/,
+  (home)/         리디자인된 영어 홈(/) — 자체 레이아웃 + home.css,
+                  본문은 components/home/HomeEn.js (Notion CSS 미사용)
+  (en)/           영어(루트) 페이지: /faq/, /privacy/, /guide/markdown/,
                   /download/desktop/, /download/mobile/
   (i18n)/[lang]/  8개 언어(ko·ja·zh-cn·zh-tw·de·es·pt·fr) 동일 6페이지
+                  (홈 포함 — 다른 언어 홈은 아직 레거시 디자인)
   (changelog)/    /changelog/desktop/ (?lang= 쿼리로 언어 선택)
 components/       페이지 렌더러(SitePage)와 클라이언트 동작들
+  home/HomeEn.js  리디자인 홈 본문(히어로·스크린샷·특징·리뷰·CTA·문서 목차).
+                  스크린샷: public/assets/images/appstore/ (앱스토어 원본 828px).
+                  리뷰는 임시(placeholder) 문구 — 실제 사용자 후기로 교체 예정.
   NotionBehaviors.js       토글·#해시 스크롤+하이라이트·이미지 패딩 픽스
   DownloadHandlers.js      PC 다운로드 링크(data-download) 클릭 처리
   MobileDownloadRedirect.js 홈의 모바일 다운로드 버튼 UA 분기
@@ -38,7 +44,8 @@ lib/
   changelog-data.js ★ PC 버전 업데이트 기록 데이터
   blocks.js       새 콘텐츠 블록 빌더 (callout·heading·text·bullet·image…)
   metadata.js     추출된 메타 → Next Metadata 매핑
-scripts/          extract.mjs(이관), verify.mjs(충실도 검증)
+scripts/          extract.mjs(이관), verify.mjs(충실도 검증 —
+                  리디자인된 페이지는 REDESIGNED 목록으로 스킵: 현재 영어 홈)
 public/           assets(css/images)·favicon·robots·sitemap·CNAME·검색엔진 인증 파일
 ```
 

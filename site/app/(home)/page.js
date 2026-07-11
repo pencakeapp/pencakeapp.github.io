@@ -1,11 +1,13 @@
-import SitePage from "@/components/SitePage";
+import HomeEn from "@/components/home/HomeEn";
 import { buildMetadata } from "@/lib/metadata";
 import { loadContent } from "@/lib/content";
 
+// Head metadata still comes from the extracted legacy page (title,
+// description, OG/twitter, canonical, hreflang) — only the body is new.
 export function generateMetadata() {
   return buildMetadata(loadContent("en", "home").meta);
 }
 
 export default function Page() {
-  return <SitePage lang="en" pageKey="home" />;
+  return <HomeEn />;
 }

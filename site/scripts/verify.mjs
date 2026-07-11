@@ -21,6 +21,9 @@ const SRC_ROOT = path.resolve(__dirname, "../..");
 const OUT_ROOT = path.resolve(__dirname, "../out");
 
 const LANGS = ALL_LANGS;
+// Pages intentionally redesigned in the Next app; they no longer mirror
+// the legacy export, so fidelity checks are skipped for them.
+const REDESIGNED = new Set(["index.html"]);
 const PAGES = [
   "index.html",
   "faq/index.html",
@@ -202,6 +205,10 @@ for (const lang of LANGS) {
     const origFile = path.join(SRC_ROOT, prefix + rel);
     const newFile = path.join(OUT_ROOT, prefix + rel);
     const label = prefix + rel;
+    if (REDESIGNED.has(label)) {
+      console.log(`~ skipped (redesigned): ${label}`);
+      continue;
+    }
     const problems = [];
     if (!fs.existsSync(newFile)) {
       console.error(`MISSING OUTPUT: ${newFile}`);
