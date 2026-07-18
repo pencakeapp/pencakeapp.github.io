@@ -1,6 +1,6 @@
 import "../(home)/home.css";
 
-import { KO_SERIF_FONT_CSS } from "@/lib/fonts";
+import { EN_SERIF_FONT_CSS, KO_SERIF_FONT_CSS } from "@/lib/fonts";
 
 export const viewport = {
   width: "device-width",
@@ -8,9 +8,10 @@ export const viewport = {
 };
 
 // Root layout for the redesigned Korean pages (/ko/...). Same design
-// system as the (home) group — home.css — with the document language
-// set to Korean, and Noto Serif KR loaded from the Google Fonts CDN
-// (--pc-serif prefers it for Hangul; Latin never reaches it).
+// system as the (home) group — home.css — with the document language set
+// to Korean. Loads both webfonts: Source Serif Pro for Latin glyphs (the
+// wordmark and any Latin runs) and Noto Serif KR for Hangul. --pc-serif
+// tries Source Serif Pro first (Latin only), then Noto Serif KR (Hangul).
 export default function KoLayout({ children }) {
   return (
     <html lang="ko">
@@ -21,6 +22,7 @@ export default function KoLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        <link rel="stylesheet" href={EN_SERIF_FONT_CSS} />
         <link rel="stylesheet" href={KO_SERIF_FONT_CSS} />
       </head>
       <body className="pc-body">{children}</body>

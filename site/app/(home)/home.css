@@ -15,13 +15,20 @@
   --pc-teal-ink: #2f97a3;
   --pc-band: #fcfdff;
   --pc-cream: #faf8f4;
-  /* Hangul never resolves in the Latin serifs, so the Korean names after
-     them only affect Korean pages. Noto Serif KR is the webfont the (ko)
-     layout loads (Google Fonts CDN); the rest are local fallbacks while
-     it loads or where it isn't loaded (e.g. changelog in other languages). */
-  --pc-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-    "Times New Roman", "Noto Serif KR", "Nanum Myeongjo", NanumMyeongjo,
-    AppleMyungjo, Batang, "Noto Serif CJK KR", serif;
+  /* Serif stack. "Source Serif Pro" (Latin) is a webfont loaded by the
+     (home)/(ko) layouts; the Latin system serifs after it are fallbacks
+     while it loads or where it isn't loaded. Hangul never resolves in the
+     Latin faces, so it falls through to "Noto Serif KR" (webfont on the
+     Korean pages) and then the local Korean fallbacks.
+
+     To revert to the original system-font serif (no webfont), remove
+     "Source Serif Pro" here and stop loading EN_SERIF_FONT_CSS in the
+     layouts. Original Latin-only stack was:
+       "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+       "Times New Roman", serif                                        */
+  --pc-serif: "Source Serif Pro", "Iowan Old Style", "Palatino Linotype",
+    Palatino, Georgia, "Times New Roman", "Noto Serif KR", "Nanum Myeongjo",
+    NanumMyeongjo, AppleMyungjo, Batang, "Noto Serif CJK KR", serif;
   --pc-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
     "Segoe UI Symbol";
