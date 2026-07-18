@@ -544,6 +544,126 @@ a {
   margin: 20px auto 0;
 }
 
+/* ——— Shared subpage primitives ———
+   Used by the redesigned subpages (guide, privacy, download, changelog).
+   The FAQ predates these and keeps its own scoped equivalents.          */
+
+/* Part divider: hairline + letterspaced small-caps title, optional numeral */
+.pc-part {
+  padding: 84px 24px 0;
+}
+
+.pc-part-head {
+  text-align: center;
+  scroll-margin-top: 28px;
+}
+
+.pc-part-head .pc-kicker-rule {
+  margin-bottom: 16px;
+}
+
+.pc-part-head h2 {
+  margin: 0 0 0 0.3em; /* optically re-center the tracked-out text */
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--pc-ink-60);
+}
+
+.pc-part-num {
+  color: var(--pc-teal-ink);
+}
+
+/* Reading column for document-like pages */
+.pc-prose {
+  max-width: 640px;
+  margin: 26px auto 0;
+}
+
+.pc-prose p,
+.pc-prose li {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--pc-ink-72);
+}
+
+.pc-prose p {
+  margin: 0 0 14px;
+}
+
+.pc-prose ul,
+.pc-prose ol {
+  margin: 0 0 14px;
+  padding-left: 1.4em;
+}
+
+.pc-prose li {
+  margin: 5px 0;
+}
+
+.pc-prose li::marker {
+  color: var(--pc-ink-45);
+}
+
+.pc-prose h3 {
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 17.5px;
+  letter-spacing: 0.01em;
+  margin: 34px 0 10px;
+  color: var(--pc-ink);
+  scroll-margin-top: 28px;
+}
+
+.pc-prose a {
+  color: var(--pc-teal-ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(64, 177, 190, 0.45);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.18s;
+  word-break: break-word;
+}
+
+.pc-prose a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Note (callout) — cream card with a leading emoji or icon */
+.pc-note {
+  display: flex;
+  gap: 10px;
+  margin: 14px auto 0;
+  padding: 13px 16px;
+  background: var(--pc-cream);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.pc-note-emoji {
+  flex: none;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pc-note-emoji img {
+  display: block;
+  margin-top: 2px;
+  border-radius: 4px;
+}
+
+.pc-note p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--pc-ink-72);
+}
+
+.pc-note a {
+  color: var(--pc-teal-ink);
+}
+
 /* ——— Entrance ——— */
 
 @media (prefers-reduced-motion: no-preference) {

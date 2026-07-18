@@ -23,7 +23,13 @@ const OUT_ROOT = path.resolve(__dirname, "../out");
 const LANGS = ALL_LANGS;
 // Pages intentionally redesigned in the Next app; they no longer mirror
 // the legacy export, so fidelity checks are skipped for them.
-const REDESIGNED = new Set(["index.html", "faq/index.html"]);
+const REDESIGNED = new Set([
+  "index.html",
+  "faq/index.html",
+  "privacy/index.html",
+  "guide/markdown/index.html",
+  "download/desktop/index.html",
+]);
 const PAGES = [
   "index.html",
   "faq/index.html",
@@ -230,13 +236,16 @@ for (const lang of LANGS) {
   }
 }
 
-// download links present?
+// download links present? (the redesigned page may repeat the buttons,
+// so require that every platform target is covered rather than an exact count)
 {
   const $ = cheerio.load(fs.readFileSync(path.join(OUT_ROOT, "download/desktop/index.html"), "utf8"));
-  const n = $("a[data-download]").length;
-  if (n !== 3) {
-    console.log(`\n=== download/desktop: expected 3 data-download links, got ${n}`);
-    totalProblems++;
+  const targets = new Set($("a[data-download]").map((_, el) => $(el).attr("data-download")).get());
+  for (const t of ["macos-x64", "macos-arm64", "windows-x64"]) {
+    if (!targets.has(t)) {
+      console.log(`\n=== download/desktop: missing data-download link for "${t}"`);
+      totalProblems++;
+    }
   }
 }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Kicker from "@/components/pc/Kicker";
 import {
   logs,
   updateHistoryTitle,
@@ -14,8 +15,60 @@ const DEFAULT_LANG = "en";
 // only the zh variants need an explicit region/script tag.
 const HTML_LANG = { "zh-hans": "zh-CN", "zh-hant": "zh-TW" };
 
-// Ported 1:1 from the legacy /changelog/desktop/ in-browser React app.
-// The language comes from the ?lang= query parameter (e.g. ?lang=zh-hans).
+// Language switcher entries. The changelog localizes via ?lang= on a
+// single URL (matching the page's hreflang alternates), not per-language
+// paths like the rest of the site.
+const LANGUAGES = [
+  { label: "English", code: null },
+  { label: "Français", code: "fr" },
+  { label: "Deutsch", code: "de" },
+  { label: "Español", code: "es" },
+  { label: "Português", code: "pt" },
+  { label: "Bahasa Indonesia", code: "id" },
+  { label: "简体中文", code: "zh-hans" },
+  { label: "繁體中文", code: "zh-hant" },
+  { label: "日本語", code: "ja" },
+  { label: "한국어", code: "ko" },
+];
+
+// Log entries are plain strings: "▪ " starts an item, "- " a sub-item.
+function parseItems(text) {
+  const items = [];
+  for (const line of text.split("\n")) {
+    if (line.startsWith("▪ ")) {
+      items.push({ text: line.slice(2), subs: [] });
+    } else if (line.startsWith("- ") && items.length) {
+      items[items.length - 1].subs.push(line.slice(2));
+    } else if (line.trim()) {
+      items.push({ text: line, subs: [] });
+    }
+  }
+  return items;
+}
+
+function ItemList({ text }) {
+  return (
+    <ul className="pc-cl-items">
+      {parseItems(text).map((item, i) => (
+        <li key={i}>
+          {item.text}
+          {item.subs.length > 0 && (
+            <ul>
+              {item.subs.map((sub, j) => (
+                <li key={j}>{sub}</li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+// Redesigned changelog in the home design language: releases as a quiet
+// timeline — a teal dot for the latest build, hairline rail down the page.
+// The language still comes from the ?lang= query parameter (e.g.
+// ?lang=zh-hans), exactly like the legacy in-browser React app.
 export default function ChangelogApp() {
   const [lang, setLang] = useState(null);
 
@@ -47,65 +100,95 @@ export default function ChangelogApp() {
   // Same as the legacy page: nothing is shown until the script runs.
   if (!lang) return null;
 
-  function renderItem(p) {
-    const features = p.features && (p.features[lang] || p.features[DEFAULT_LANG]);
-    const others = p.others && (p.others[lang] || p.others[DEFAULT_LANG]);
-
-    return (
-      <div key={p.version} style={{}}>
-        <div style={{ fontSize: 25, fontWeight: "bold" }}>{"v" + p.version}</div>
-        <div style={{ paddingTop: 20 }} />
-        <div style={{ fontSize: 15, color: "#999999" }}>
-          {new Intl.DateTimeFormat(lang).format(new Date(p.releasedAt))}
-        </div>
-        {features && (
-          <>
-            <div style={{ paddingTop: 22 }} />
-            <div style={{ fontSize: 17, fontWeight: "bold" }}>{`${
-              newFeaturesTitle[lang] || newFeaturesTitle[DEFAULT_LANG]
-            }`}</div>
-            <div style={{ paddingTop: 10 }} />
-            <div style={{ fontSize: 15 }}>{features.replaceAll("- ", "     - ")}</div>
-          </>
-        )}
-        {others && (
-          <>
-            <div style={{ paddingTop: 22 }} />
-            <div style={{ fontSize: 17, fontWeight: "bold" }}>{`${
-              othersTitle[lang] || othersTitle[DEFAULT_LANG]
-            }`}</div>
-            <div style={{ paddingTop: 10 }} />
-            <div style={{ fontSize: 15 }}>{others.replaceAll("- ", "     - ")}</div>
-          </>
-        )}
-        <div style={{ paddingTop: 50 }} />
-      </div>
-    );
-  }
+  const t = (map) => map[lang] || map[DEFAULT_LANG];
+  // releasedAt is a bare calendar date ("2024-12-21", parsed as UTC midnight);
+  // format it in UTC so it doesn't shift a day back in negative-offset zones.
+  const dateFormat = new Intl.DateTimeFormat(HTML_LANG[lang] || lang, {
+    dateStyle: "long",
+    timeZone: "UTC",
+  });
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        marginTop: 120,
-        color: "#323232",
-        backgroundColor: "white",
-        lineHeight: 1.8,
-        fontFamily:
-          'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
-        WebkitFontSmoothing: "auto",
-        whiteSpace: "pre-wrap",
-      }}
-    >
-      <div style={{ flex: 1, maxWidth: 720, paddingLeft: 40, paddingRight: 40 }}>
-        <div style={{ fontSize: 60, fontWeight: "bold", marginBottom: -15 }}>{"🚀"}</div>
-        <div style={{ fontSize: 45, fontWeight: "bold" }}>
-          {updateHistoryTitle[lang] || updateHistoryTitle[DEFAULT_LANG]}
+    <>
+      <main>
+        {/* ——— Title ——— */}
+        <header className="pc-page-hero pc-rise">
+          <div className="pc-cl-rocket" aria-hidden="true">
+            🚀
+          </div>
+          <Kicker>PenCake Desktop</Kicker>
+          <h1>{t(updateHistoryTitle)}</h1>
+        </header>
+
+        {/* ——— Timeline ——— */}
+        <section className="pc-cl-timeline">
+          <ol className="pc-cl-list">
+            {logs.map((p, i) => (
+              <li className="pc-cl-log" key={p.version}>
+                <div className="pc-cl-rail" aria-hidden="true">
+                  <span
+                    className={
+                      "pc-cl-dot" + (i === 0 ? " pc-cl-dot-latest" : "")
+                    }
+                  />
+                </div>
+                <article>
+                  <h2 className="pc-cl-ver">{"v" + p.version}</h2>
+                  <div className="pc-cl-date">
+                    {dateFormat.format(new Date(p.releasedAt))}
+                  </div>
+                  {p.features && (
+                    <>
+                      <h3 className="pc-cl-label">{t(newFeaturesTitle)}</h3>
+                      <ItemList text={t(p.features)} />
+                    </>
+                  )}
+                  {p.others && (
+                    <>
+                      <h3 className="pc-cl-label">{t(othersTitle)}</h3>
+                      <ItemList text={t(p.others)} />
+                    </>
+                  )}
+                </article>
+              </li>
+            ))}
+          </ol>
+        </section>
+      </main>
+
+      {/* ——— Footer (?lang= switcher) ——— */}
+      <footer className="pc-footer">
+        <div className="pc-footer-brand">
+          <img
+            src="/assets/images/pencake_icon_40x40.png"
+            alt=""
+            width="22"
+            height="22"
+          />
+          PenCake
         </div>
-        <div style={{ paddingTop: 40 }} />
-        {logs.map((p) => renderItem(p))}
-      </div>
-    </div>
+        <p className="pc-footer-langs">
+          {LANGUAGES.map((l, i) => (
+            <span key={l.label}>
+              {i > 0 && <span className="pc-footer-sep"> · </span>}
+              {(l.code || DEFAULT_LANG) === lang ? (
+                <span className="pc-current">{l.label}</span>
+              ) : (
+                <a
+                  href={
+                    l.code
+                      ? `/changelog/desktop/?lang=${l.code}`
+                      : "/changelog/desktop/"
+                  }
+                >
+                  {l.label}
+                </a>
+              )}
+            </span>
+          ))}
+        </p>
+        <p className="pc-footer-copy">© 2026 PenCake. All rights reserved.</p>
+      </footer>
+    </>
   );
 }

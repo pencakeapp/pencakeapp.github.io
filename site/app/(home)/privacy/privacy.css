@@ -1,0 +1,33 @@
+/* ============ PenCake privacy policy (redesigned) ============
+   Extends the home design language. The policy reads like a short
+   book: numbered articles, quiet part dividers, and a comfortable
+   reading column. All shared primitives come from home.css.        */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.pc-prv-updated {
+  margin: 16px 0 0;
+  font-family: var(--pc-serif);
+  font-size: 13px;
+  color: var(--pc-ink-45);
+}
+
+.pc-prv-contents {
+  padding: 0 24px;
+}
+
+.pc-prv-contents .pc-toc {
+  margin-top: 44px;
+}
+
+.pc-prv-toc-num {
+  flex: none;
+  min-width: 2em;
+  font-family: var(--pc-serif);
+  font-size: 14px;
+  color: var(--pc-teal-ink);
+}

@@ -1,4 +1,7 @@
+import "./changelog.css";
+
 import ChangelogApp from "@/components/ChangelogApp";
+import TopNav from "@/components/pc/TopNav";
 
 const BASE = "https://pencake.app/changelog/desktop/";
 
@@ -22,6 +25,14 @@ export const metadata = {
   },
 };
 
+// The shell (running head) renders statically; the localized content
+// appears once ChangelogApp resolves ?lang= on the client, exactly like
+// the legacy in-browser React app.
 export default function Page() {
-  return <ChangelogApp />;
+  return (
+    <>
+      <TopNav />
+      <ChangelogApp />
+    </>
+  );
 }

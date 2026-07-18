@@ -1,0 +1,220 @@
+/* ============ PenCake Markdown guide (redesigned) ============
+   Extends the home design language. Every rule is a small
+   "you write → you get" pair: monospace source with the markers
+   picked out in teal, and the result rendered in the book serif —
+   like a line from the app itself.                               */
+
+:root {
+  --pc-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ——— Hero ——— */
+
+.pc-page-hero .pc-hero-sub a {
+  color: var(--pc-teal-ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(64, 177, 190, 0.45);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.18s;
+}
+
+.pc-page-hero .pc-hero-sub a:hover {
+  text-decoration-color: currentColor;
+}
+
+.pc-md-hint {
+  margin: 26px 0 0;
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: var(--pc-ink-30);
+}
+
+.pc-md-intro-note {
+  max-width: 540px;
+  margin: 26px auto 0;
+}
+
+/* ——— Contents ——— */
+
+.pc-md-contents {
+  padding: 0 24px;
+}
+
+.pc-md-contents .pc-toc {
+  margin-top: 44px;
+}
+
+.pc-md-toc-num {
+  flex: none;
+  min-width: 2em;
+  font-family: var(--pc-serif);
+  font-size: 14px;
+  color: var(--pc-teal-ink);
+}
+
+.pc-md-toc-hint {
+  font-family: var(--pc-mono);
+  font-size: 12px;
+  color: var(--pc-ink-45);
+  white-space: nowrap;
+  transition: color 0.18s;
+}
+
+.pc-toc a:hover .pc-md-toc-hint {
+  color: var(--pc-teal-ink);
+}
+
+/* ——— Sections ——— */
+
+.pc-md-list {
+  max-width: 680px;
+  margin: 10px auto 0;
+}
+
+.pc-md-sub {
+  margin: 46px 0 0;
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  scroll-margin-top: 28px;
+}
+
+.pc-md-p {
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--pc-ink-72);
+}
+
+/* ——— Demo pairs ——— */
+
+.pc-md-demo {
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr;
+  gap: 12px;
+  align-items: stretch;
+  margin: 16px 0 0;
+}
+
+.pc-md-demo-solo {
+  grid-template-columns: 1fr;
+}
+
+.pc-md-side {
+  min-width: 0;
+  border: 1px solid var(--pc-hairline);
+  border-radius: 12px;
+  padding: 14px 16px 15px;
+}
+
+.pc-md-src {
+  background: var(--pc-band);
+}
+
+.pc-md-side-label {
+  margin-bottom: 8px;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pc-ink-45);
+}
+
+.pc-md-src pre {
+  margin: 0;
+  font-family: var(--pc-mono);
+  font-size: 13px;
+  line-height: 2.05;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--pc-ink-72);
+}
+
+.pc-md-sym {
+  font-weight: 600;
+  color: var(--pc-teal-ink);
+}
+
+.pc-md-arrow {
+  align-self: center;
+  justify-self: center;
+  color: var(--pc-teal);
+  font-size: 17px;
+}
+
+@media (max-width: 640px) {
+  .pc-md-demo {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .pc-md-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* ——— Rendered side, like a line from the app ——— */
+
+.pc-md-render {
+  font-family: var(--pc-serif);
+  font-size: 15px;
+  line-height: 2.05;
+}
+
+.pc-md-render p {
+  margin: 0;
+}
+
+.pc-md-render u {
+  text-decoration: none;
+  border-bottom: 0.05em solid;
+}
+
+.pc-md-render mark {
+  background: rgba(64, 177, 190, 0.16);
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+.pc-md-hl1 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.pc-md-hl2 {
+  font-weight: 600;
+  font-size: 18.5px;
+}
+
+.pc-md-hl3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pc-md-hr {
+  border: 0;
+  border-top: 1px solid var(--pc-ink-30);
+  margin: 19px 0;
+}
+
+/* ——— Colophon ——— */
+
+.pc-md-colophon {
+  padding: 0 24px;
+}
+
+.pc-md-colophon .pc-finenote {
+  margin-top: 46px;
+}
+
+.pc-finenote a {
+  color: var(--pc-teal-ink);
+}

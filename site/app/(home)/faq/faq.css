@@ -218,7 +218,7 @@
 
 .pc-faq-item.pc-target {
   border-radius: 8px;
-  animation: pc-target-wash 1.6s ease-out 0.25s both;
+  animation: pc-target-wash 2.5s ease-out 0.25s both;
 }
 
 @keyframes pc-target-wash {

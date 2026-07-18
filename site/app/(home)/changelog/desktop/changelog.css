@@ -1,0 +1,126 @@
+/* ============ PenCake desktop changelog (redesigned) ============
+   Extends the home design language, varied for release notes: each
+   version hangs on a quiet timeline — a teal dot for the latest
+   build, a hairline rail running down the page.                    */
+
+.pc-cl-rocket {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+
+.pc-cl-timeline {
+  padding: 0 24px;
+}
+
+.pc-cl-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 56px auto 0;
+  padding: 0;
+}
+
+.pc-cl-log {
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 16px;
+  padding-bottom: 58px;
+}
+
+.pc-cl-log:last-child {
+  padding-bottom: 0;
+}
+
+.pc-cl-rail {
+  position: relative;
+}
+
+/* The rail runs through the li's padding into the next entry; the dots
+   have solid backgrounds and paint over it. */
+.pc-cl-rail::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: -58px;
+  width: 1px;
+  background: var(--pc-hairline);
+}
+
+.pc-cl-log:first-child .pc-cl-rail::before {
+  top: 14px; /* start at the first dot, not above it */
+}
+
+.pc-cl-log:last-child .pc-cl-rail::before {
+  bottom: auto;
+  height: 10px; /* end at the last dot */
+}
+
+.pc-cl-dot {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 9px;
+  height: 9px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--pc-ink-30);
+}
+
+.pc-cl-dot-latest {
+  background: var(--pc-teal);
+  border-color: var(--pc-teal);
+  box-shadow: 0 0 0 4px rgba(64, 177, 190, 0.14);
+}
+
+.pc-cl-ver {
+  margin: 0;
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 0.01em;
+}
+
+.pc-cl-date {
+  margin-top: 5px;
+  font-family: var(--pc-serif);
+  font-size: 13px;
+  color: var(--pc-ink-45);
+}
+
+.pc-cl-label {
+  margin: 24px 0 0;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pc-ink-45);
+}
+
+.pc-cl-items {
+  margin: 8px 0 0;
+  padding-left: 1.35em;
+}
+
+.pc-cl-items li {
+  margin: 6px 0;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--pc-ink-72);
+}
+
+.pc-cl-items li::marker {
+  color: var(--pc-ink-30);
+}
+
+.pc-cl-items ul {
+  margin: 4px 0 0;
+  padding-left: 1.3em;
+  list-style: circle;
+}
+
+.pc-cl-items ul li {
+  margin: 4px 0;
+  font-size: 13.5px;
+}
