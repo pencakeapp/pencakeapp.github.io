@@ -8,6 +8,7 @@ import {
   newFeaturesTitle,
   othersTitle,
 } from "@/lib/changelog-data";
+import { KO_SERIF_FONT_CSS } from "@/lib/fonts";
 
 const DEFAULT_LANG = "en";
 
@@ -110,6 +111,12 @@ export default function ChangelogApp() {
 
   return (
     <>
+      {/* This page is shared by every language (?lang=), so the Korean
+          serif webfont is only pulled in when Korean is selected.
+          `precedence` lets React hoist the client-rendered link to <head>. */}
+      {lang === "ko" && (
+        <link rel="stylesheet" precedence="pc-fonts" href={KO_SERIF_FONT_CSS} />
+      )}
       <main>
         {/* ——— Title ——— */}
         <header className="pc-page-hero pc-rise">

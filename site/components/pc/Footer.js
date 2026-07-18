@@ -1,21 +1,22 @@
 // Shared footer for the redesigned pages: brand mark, language switcher,
 // copyright. `path` is the page's path within a language ("/", "/faq/") so
-// each language link points at that language's copy of the current page.
+// each language link points at that language's copy of the current page;
+// `lang` marks the current page's language (shown as plain text).
 // Language order matches the legacy language callout.
 const LANGUAGES = [
-  { label: "English", prefix: null },
-  { label: "Français", prefix: "/fr" },
-  { label: "Deutsch", prefix: "/de" },
-  { label: "Español", prefix: "/es" },
-  { label: "Português", prefix: "/pt" },
-  { label: "Bahasa Indonesia", prefix: "/id" },
-  { label: "简体中文", prefix: "/zh-cn" },
-  { label: "繁體中文", prefix: "/zh-tw" },
-  { label: "日本語", prefix: "/ja" },
-  { label: "한국어", prefix: "/ko" },
+  { key: "en", label: "English", prefix: "" },
+  { key: "fr", label: "Français", prefix: "/fr" },
+  { key: "de", label: "Deutsch", prefix: "/de" },
+  { key: "es", label: "Español", prefix: "/es" },
+  { key: "pt", label: "Português", prefix: "/pt" },
+  { key: "id", label: "Bahasa Indonesia", prefix: "/id" },
+  { key: "zh-cn", label: "简体中文", prefix: "/zh-cn" },
+  { key: "zh-tw", label: "繁體中文", prefix: "/zh-tw" },
+  { key: "ja", label: "日本語", prefix: "/ja" },
+  { key: "ko", label: "한국어", prefix: "/ko" },
 ];
 
-export default function Footer({ path = "/" }) {
+export default function Footer({ path = "/", lang = "en" }) {
   return (
     <footer className="pc-footer">
       <div className="pc-footer-brand">
@@ -24,12 +25,12 @@ export default function Footer({ path = "/" }) {
       </div>
       <p className="pc-footer-langs">
         {LANGUAGES.map((l, i) => (
-          <span key={l.label}>
+          <span key={l.key}>
             {i > 0 && <span className="pc-footer-sep"> · </span>}
-            {l.prefix ? (
-              <a href={l.prefix + path}>{l.label}</a>
-            ) : (
+            {l.key === lang ? (
               <span className="pc-current">{l.label}</span>
+            ) : (
+              <a href={l.prefix + path}>{l.label}</a>
             )}
           </span>
         ))}

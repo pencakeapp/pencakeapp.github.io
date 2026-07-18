@@ -29,6 +29,11 @@ const REDESIGNED = new Set([
   "privacy/index.html",
   "guide/markdown/index.html",
   "download/desktop/index.html",
+  "ko/index.html",
+  "ko/faq/index.html",
+  "ko/privacy/index.html",
+  "ko/guide/markdown/index.html",
+  "ko/download/desktop/index.html",
 ]);
 const PAGES = [
   "index.html",

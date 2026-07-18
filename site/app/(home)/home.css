@@ -15,8 +15,13 @@
   --pc-teal-ink: #2f97a3;
   --pc-band: #fcfdff;
   --pc-cream: #faf8f4;
+  /* Hangul never resolves in the Latin serifs, so the Korean names after
+     them only affect Korean pages. Noto Serif KR is the webfont the (ko)
+     layout loads (Google Fonts CDN); the rest are local fallbacks while
+     it loads or where it isn't loaded (e.g. changelog in other languages). */
   --pc-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
-    "Times New Roman", serif;
+    "Times New Roman", "Noto Serif KR", "Nanum Myeongjo", NanumMyeongjo,
+    AppleMyungjo, Batang, "Noto Serif CJK KR", serif;
   --pc-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -35,6 +40,11 @@
 /* low specificity on purpose — component rules (e.g. .pc-btn-primary) win */
 a {
   color: inherit;
+}
+
+/* Korean lines break between words, not inside them */
+.pc-body:lang(ko) {
+  word-break: keep-all;
 }
 
 /* ——— Hero ——— */
