@@ -5,8 +5,9 @@ export const viewport = {
   initialScale: 1,
 };
 
-// Root layout for the redesigned home page only. Unlike the (en) group,
-// it does not load the legacy Notion stylesheets — home has its own CSS.
+// Root layout for the redesigned English pages (home, FAQ). Unlike the
+// (en) group, it does not load the legacy Notion stylesheets — these
+// pages share home.css as their design system.
 export default function HomeLayout({ children }) {
   return (
     <html lang="en">

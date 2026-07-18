@@ -1,5 +1,7 @@
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import MobileDownloadRedirect from "@/components/MobileDownloadRedirect";
+import Footer from "@/components/pc/Footer";
+import Kicker from "@/components/pc/Kicker";
 
 // Redesigned English landing page. The visual language borrows from the
 // app itself: white paper, book serif, quiet gray ink, PenCake's teal cursor.
@@ -103,34 +105,12 @@ const RESOURCES = [
   { emoji: "📩", label: "Contact us", href: "mailto:pencake.app@gmail.com", hint: "pencake.app@gmail.com" },
 ];
 
-// Same order as the legacy language callout.
-const LANGUAGES = [
-  { label: "English", href: null },
-  { label: "Français", href: "/fr/" },
-  { label: "Deutsch", href: "/de/" },
-  { label: "Español", href: "/es/" },
-  { label: "Português", href: "/pt/" },
-  { label: "简体中文", href: "/zh-cn/" },
-  { label: "繁體中文", href: "/zh-tw/" },
-  { label: "日本語", href: "/ja/" },
-  { label: "한국어", href: "/ko/" },
-];
-
 function Stars({ n }) {
   return (
     <span className="pc-stars" aria-label={`${n} out of 5 stars`}>
       {"★".repeat(n)}
       {"☆".repeat(5 - n)}
     </span>
-  );
-}
-
-function Kicker({ children }) {
-  return (
-    <div className="pc-kicker">
-      <div className="pc-kicker-rule" />
-      <div className="pc-kicker-label">{children}</div>
-    </div>
   );
 }
 
@@ -271,21 +251,7 @@ export default function HomeEn() {
       </main>
 
       {/* ——— Footer ——— */}
-      <footer className="pc-footer">
-        <div className="pc-footer-brand">
-          <img src="/assets/images/pencake_icon_40x40.png" alt="" width="22" height="22" />
-          PenCake
-        </div>
-        <p className="pc-footer-langs">
-          {LANGUAGES.map((l, i) => (
-            <span key={l.label}>
-              {i > 0 && <span className="pc-footer-sep"> · </span>}
-              {l.href ? <a href={l.href}>{l.label}</a> : <span className="pc-current">{l.label}</span>}
-            </span>
-          ))}
-        </p>
-        <p className="pc-footer-copy">© 2026 PenCake. All rights reserved.</p>
-      </footer>
+      <Footer path="/" />
 
       <GoogleAnalytics />
       <MobileDownloadRedirect lang="en" />

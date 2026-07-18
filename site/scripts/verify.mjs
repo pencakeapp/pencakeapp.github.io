@@ -23,7 +23,7 @@ const OUT_ROOT = path.resolve(__dirname, "../out");
 const LANGS = ALL_LANGS;
 // Pages intentionally redesigned in the Next app; they no longer mirror
 // the legacy export, so fidelity checks are skipped for them.
-const REDESIGNED = new Set(["index.html"]);
+const REDESIGNED = new Set(["index.html", "faq/index.html"]);
 const PAGES = [
   "index.html",
   "faq/index.html",

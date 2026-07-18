@@ -1,0 +1,231 @@
+/* ============ PenCake FAQ (redesigned) ============
+   Extends the home design language. The FAQ reads like a book's
+   Q&A appendix: a table of contents with roman numerals, quiet
+   part dividers, and questions that open like the app's toggles
+   (the teal ‣ is the same marker the legacy page pointed at).    */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ——— Hero hint ——— */
+
+.pc-faq-hint {
+  margin: 26px 0 0;
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: var(--pc-ink-30);
+}
+
+.pc-faq-hint-tri {
+  color: var(--pc-teal);
+}
+
+/* ——— Contents ——— */
+
+.pc-faq-contents {
+  padding: 0 24px;
+}
+
+.pc-faq-contents .pc-toc {
+  margin-top: 44px;
+}
+
+.pc-faq-toc-num {
+  flex: none;
+  min-width: 2em;
+  font-family: var(--pc-serif);
+  font-size: 14px;
+  color: var(--pc-teal-ink);
+}
+
+/* ——— Part dividers ——— */
+
+.pc-faq-part {
+  padding: 84px 24px 0;
+}
+
+.pc-faq-part-head {
+  text-align: center;
+  scroll-margin-top: 28px;
+}
+
+.pc-faq-part-head .pc-kicker-rule {
+  margin-bottom: 16px;
+}
+
+.pc-faq-part-head h2 {
+  margin: 0 0 0 0.3em; /* optically re-center the tracked-out text */
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--pc-ink-60);
+}
+
+.pc-faq-part-num {
+  color: var(--pc-teal-ink);
+}
+
+/* ——— Q&A items ——— */
+
+.pc-faq-list {
+  max-width: 680px;
+  margin: 26px auto 0;
+}
+
+.pc-faq-item {
+  border-bottom: 1px solid rgba(55, 53, 47, 0.1);
+  scroll-margin-top: 28px;
+}
+
+.pc-faq-item summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 19px 2px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.pc-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pc-faq-tri {
+  flex: none;
+  width: 14px;
+  color: var(--pc-teal);
+  font-size: 15px;
+  line-height: 1.45; /* match the question so the marker sits on its first line */
+  transition: transform 0.22s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.pc-faq-item[open] > summary .pc-faq-tri {
+  transform: rotate(90deg);
+}
+
+.pc-faq-item summary h3 {
+  margin: 0;
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  transition: color 0.18s;
+}
+
+.pc-faq-item summary:hover h3 {
+  color: var(--pc-teal-ink);
+}
+
+.pc-faq-a {
+  padding: 3px 2px 26px 29px; /* left = marker width + gap, aligns with the question */
+}
+
+.pc-faq-a p,
+.pc-faq-a li {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--pc-ink-72);
+}
+
+.pc-faq-a p:last-child {
+  margin-bottom: 0;
+}
+
+.pc-faq-a ol {
+  margin: 0 0 12px;
+  padding-left: 1.5em;
+}
+
+.pc-faq-a li {
+  margin: 5px 0;
+}
+
+.pc-faq-a li::marker {
+  color: var(--pc-ink-45);
+}
+
+.pc-faq-a a {
+  color: var(--pc-teal-ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(64, 177, 190, 0.45);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.18s;
+}
+
+.pc-faq-a a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* UI names (`main menu`, `Sync Now`) as quiet keycap-like chips */
+.pc-faq-list code {
+  font-family: var(--pc-sans);
+  font-size: 0.84em;
+  padding: 1px 6px 2px;
+  background: rgba(55, 53, 47, 0.04);
+  border: 1px solid rgba(55, 53, 47, 0.1);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pc-faq-item[open] .pc-faq-a {
+    animation: pc-faq-reveal 0.3s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+}
+
+@keyframes pc-faq-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ——— Notes (⚠️ callouts) ——— */
+
+.pc-faq-note {
+  display: flex;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 13px 16px;
+  background: var(--pc-cream);
+  border-radius: 12px;
+}
+
+.pc-faq-note-emoji {
+  flex: none;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pc-faq-a .pc-faq-note p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+/* ——— Deep-link highlight ——— */
+
+.pc-faq-item.pc-target {
+  border-radius: 8px;
+  animation: pc-target-wash 1.6s ease-out 0.25s both;
+}
+
+@keyframes pc-target-wash {
+  from {
+    background-color: rgba(64, 177, 190, 0.09);
+  }
+  to {
+    background-color: transparent;
+  }
+}

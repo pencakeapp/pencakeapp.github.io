@@ -511,6 +511,39 @@ a {
   color: var(--pc-ink-30);
 }
 
+/* ——— Running head + page hero (redesigned subpages) ——— */
+
+.pc-topnav {
+  padding: 30px 24px 0;
+  text-align: center;
+}
+
+.pc-topnav .pc-wordmark {
+  display: inline-block;
+  font-size: 12.5px;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+
+.pc-topnav .pc-wordmark:hover {
+  color: var(--pc-ink);
+}
+
+.pc-page-hero {
+  padding: 64px 24px 0;
+  text-align: center;
+}
+
+.pc-page-hero h1 {
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: clamp(30px, 5.4vw, 40px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  max-width: 18em;
+  margin: 20px auto 0;
+}
+
 /* ——— Entrance ——— */
 
 @media (prefers-reduced-motion: no-preference) {
