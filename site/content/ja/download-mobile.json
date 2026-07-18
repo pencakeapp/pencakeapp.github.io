@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "htmlLang": "ja",
+    "htmlClass": "notion-html",
+    "title": "モバイルアプリ",
+    "description": "PenCakeモバイルアプリをダウンロード。ミニマルなデザインであなたの物語に集中しよう。インスピレーションを得て、創造性を高めよう。— iOS・Android両方に対応 · 同期可能",
+    "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+    "og": {
+      "title": "PenCakeモバイルアプリ",
+      "description": "PenCakeモバイルアプリをダウンロード。ミニマルなデザインであなたの物語に集中しよう。インスピレーションを得て、創造性を高めよう。— iOS・Android両方に対応 · 同期可能",
+      "image": "https://pencake.app/assets/images/pencake_marketing_ja.jpg",
+      "url": "https://pencake.app/ja/download/mobile/",
+      "type": "website",
+      "locale": "ja_JP",
+      "localeAlternates": []
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "PenCakeモバイルアプリ",
+      "description": "PenCakeモバイルアプリをダウンロード。ミニマルなデザインであなたの物語に集中しよう。インスピレーションを得て、創造性を高めよう。— iOS・Android両方に対応 · 同期可能",
+      "image": "https://pencake.app/assets/images/pencake_marketing_ja.jpg",
+      "url": "https://pencake.app/ja/download/mobile/"
+    },
+    "appleMobileWebAppCapable": "yes",
+    "formatDetection": "telephone=no",
+    "msapplicationTapHighlight": "no",
+    "hreflang": [
+      {
+        "hreflang": "ja",
+        "href": "https://pencake.app/ja/download/mobile/"
+      },
+      {
+        "hreflang": "en",
+        "href": "https://pencake.app/download/mobile/"
+      },
+      {
+        "hreflang": "ko",
+        "href": "https://pencake.app/ko/download/mobile/"
+      },
+      {
+        "hreflang": "zh-CN",
+        "href": "https://pencake.app/zh-cn/download/mobile/"
+      },
+      {
+        "hreflang": "zh-TW",
+        "href": "https://pencake.app/zh-tw/download/mobile/"
+      },
+      {
+        "hreflang": "de",
+        "href": "https://pencake.app/de/download/mobile/"
+      },
+      {
+        "hreflang": "es",
+        "href": "https://pencake.app/es/download/mobile/"
+      },
+      {
+        "hreflang": "pt",
+        "href": "https://pencake.app/pt/download/mobile/"
+      },
+      {
+        "hreflang": "fr",
+        "href": "https://pencake.app/fr/download/mobile/"
+      },
+      {
+        "hreflang": "id",
+        "href": "https://pencake.app/id/download/mobile/"
+      },
+      {
+        "hreflang": "x-default",
+        "href": "https://pencake.app/download/mobile/"
+      }
+    ],
+    "canonical": "https://pencake.app/ja/download/mobile/",
+    "cssLinks": [
+      {
+        "href": "/assets/css/4c758603f1604611142662f0ddecadcb583394b5.css",
+        "media": "print"
+      },
+      {
+        "href": "/assets/css/297219396aff5ddde37925b1b7f2b23c7c44e8e2.css",
+        "media": null
+      },
+      {
+        "href": "/assets/css/e1d809d762eeca23edf0cb31bb17bf3c703085f5.css",
+        "media": null
+      }
+    ],
+    "favicon": "/favicon.ico"
+  },
+  "bodyClass": "notion-body",
+  "bodyTemplate": "<style>body{background:#fff}body.dark{background:#191919}.initial-loading-spinner{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:center center;transform-origin:center center;width:1em;height:1em;opacity:.5;display:block;pointer-events:none}@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0) translateZ(0);transform:rotate(0) translateZ(0)}100%{-webkit-transform:rotate(360deg) translateZ(0);transform:rotate(360deg) translateZ(0)}}@keyframes rotate{0%{-webkit-transform:rotate(0) translateZ(0);transform:rotate(0) translateZ(0)}100%{-webkit-transform:rotate(360deg) translateZ(0);transform:rotate(360deg) translateZ(0)}}</style>\n<style id=\"scroll-properties\"></style>\n<div id=\"notion-app\"><div class=\"notion-app-inner notion-light-theme\" style=\"color: rgb(55, 53, 47); fill: currentcolor; line-height: 1.5; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; -webkit-font-smoothing: auto;\"><div class=\"notion-cursor-listener\" style=\"width: 100vw; height: 100%; position: relative; display: flex; flex: 1 1 0%; background: white; cursor: text;\"><div class=\"\" style=\"display: flex; flex-direction: column; width: 100%; overflow: hidden;\">\n\n<!-- Navigation -->\n<div style=\"max-width: 100vw; z-index: 100; background: white; user-select: none;\"><div class=\"notion-topbar\" style=\"width: 100%; max-width: 100vw; height: 45px; opacity: 1; transition: opacity 700ms ease 0s, color 700ms ease 0s; position: relative;\"><div style=\"app-region: drag; display: flex; justify-content: space-between; align-items: center; overflow: hidden; height: 45px; padding-left: 12px; padding-right: 10px;\"><div class=\"notranslate\" style=\"display: flex; align-items: center; line-height: 1.2; font-size: 14px; app-region: no-drag; height: 100%; flex-grow: 0; margin-right: 8px; min-width: 0px;\"><div class=\"notion-selectable notion-page-block\" data-block-id=\"6a65e719-f1cb-4f11-9fc6-422103b5cab1\" style=\"display: flex; align-items: center; min-width: 0px;\"><a href=\"/ja/\" rel=\"noopener noreferrer\" style=\"display: flex; text-decoration: none; user-select: none; cursor: pointer; color: inherit; min-width: 0px;\"><div class=\"notion-focusable\" role=\"button\" style=\"user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 1; white-space: nowrap; height: 24px; border-radius: 3px; font-size: inherit; line-height: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: rgb(55, 53, 47);\" tabindex=\"0\"><div style=\"display: flex; align-items: center; min-width: 0px;\"><div class=\"notranslate\" style=\"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px;\">PenCake</div></div></div></a></div><span style=\"margin-left: 2px; margin-right: 2px; color: rgba(55, 53, 47, 0.5);\">/</span><div class=\"notion-focusable\" role=\"button\" style=\"user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; display: inline-flex; align-items: center; flex-shrink: 1; white-space: nowrap; height: 24px; border-radius: 3px; font-size: 14px; line-height: 1.2; min-width: 0px; padding-left: 6px; padding-right: 6px; color: rgb(55, 53, 47);\" tabindex=\"0\"><div aria-disabled=\"true\" class=\"notion-record-icon notranslate notion-focusable\" role=\"button\" style=\"user-select: none; transition: background 20ms ease-in 0s; display: flex; align-items: center; justify-content: center; height: 20px; width: 20px; border-radius: 0.25em; flex-shrink: 0; margin-right: 6px;\" tabindex=\"-1\"><div style=\"display: flex; align-items: center; justify-content: center; height: 20px; width: 20px;\"><div style=\"height: 18px; width: 18px; font-size: 18px; line-height: 1; margin-left: 0px; color: black;\"><span aria-label=\"📲\" role=\"image\" style=\"font-family: &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, NotoColorEmoji, &quot;Noto Color Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Android Emoji&quot;, EmojiSymbols; line-height: 1em; white-space: nowrap;\">📲</span></div></div></div><div class=\"notranslate\" style=\"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px;\">モバイルアプリ</div></div></div></div></div><div style=\"width: calc(100% - 0px); user-select: none;\"></div></div>\n\n<!-- Title -->\n<div class=\"notion-frame\" style=\"flex-grow: 0; flex-shrink: 1; display: flex; flex-direction: column; background: white; z-index: 1; height: calc(100vh - 45px); max-height: 100%; position: relative; width: 1920px;\"><div class=\"notion-scroller vertical\" style=\"display: flex; flex-direction: column; z-index: 1; flex-grow: 1; position: relative; align-items: center; margin-right: 0px; margin-bottom: 0px; overflow: hidden auto;\"><div style=\"position: absolute; top: 0px; left: 0px;\"><div></div></div><div class=\"whenContentEditable\" data-content-editable-root=\"true\" style=\"caret-color: rgb(55, 53, 47); width: 100%; display: flex; flex-direction: column; position: relative; align-items: center; flex-grow: 1; --whenContentEditable--WebkitUserModify:read-write-plaintext-only;\"><span style=\"height: 1px; width: 1px;\"></span><div class=\"pseudoSelection\" contenteditable=\"false\" data-content-editable-void=\"true\" style=\"user-select: none; --pseudoSelection--background:transparent; width: 100%; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow: 0; z-index: 2;\"></div><div style=\"width: 100%; display: flex; justify-content: center; z-index: 3; flex-shrink: 0;\"><div style=\"max-width: 100%; min-width: 0px; width: 900px;\"><div style=\"width: 100%; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow: 0;\"><div style=\"max-width: 100%; padding-left: calc(96px + env(safe-area-inset-left)); width: 100%;\"><div class=\"pseudoSelection\" contenteditable=\"false\" data-content-editable-void=\"true\" style=\"user-select: none; --pseudoSelection--background:transparent; pointer-events: none;\"><div aria-disabled=\"true\" class=\"notion-record-icon notranslate notion-focusable\" role=\"button\" style=\"user-select: none; transition: background 20ms ease-in 0s; display: flex; align-items: center; justify-content: center; height: 78px; width: 78px; border-radius: 0.25em; flex-shrink: 0; position: relative; z-index: 1; margin-left: 3px; margin-bottom: 0px; margin-top: 96px; pointer-events: auto;\" tabindex=\"-1\"><div style=\"display: flex; align-items: center; justify-content: center; height: 78px; width: 78px;\">\n<div style=\"height: 78px; width: 78px; font-size: 78px; line-height: 1; margin-left: 0px; color: black;\"><span aria-label=\"📲\" role=\"image\" style=\"font-family: &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, NotoColorEmoji, &quot;Noto Color Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Android Emoji&quot;, EmojiSymbols; line-height: 1em; white-space: nowrap;\">📲</span></div></div></div><div class=\"notion-page-controls\" style=\"display: flex; justify-content: flex-start; flex-wrap: wrap; margin-top: 8px; margin-bottom: 4px; margin-left: -1px; color: rgba(55, 53, 47, 0.5); font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; height: 24px; pointer-events: auto;\"></div></div><div style=\"padding-right: calc(96px + env(safe-area-inset-right));\"><div><div class=\"notion-selectable notion-page-block\" data-block-id=\"8cc41c5d-f1aa-45c9-8437-3b4631d30e31\" style=\"color: rgb(55, 53, 47); font-weight: 700; line-height: 1.2; font-size: 40px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; cursor: text; display: flex; align-items: center;\"><div contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\"Untitled\" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">モバイルアプリ</div></div><div style=\"margin-left: 4px;\"></div></div></div></div></div><div style=\"width: 100%; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow: 0;\"><div contenteditable=\"false\" data-content-editable-void=\"true\" style=\"padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right)); max-width: 100%; width: 100%;\"></div></div></div></div><div style=\"display: flex; width: 100%; justify-content: center; padding-top: 5px;\"><div style=\"max-width: 100%; min-width: 0px; width: 900px;\">\n\n<!-- Content -->\n<div class=\"notion-page-content\" style=\"flex-shrink: 0; flex-grow: 1; max-width: 100%; display: flex; align-items: flex-start; flex-direction: column; font-size: 16px; line-height: 1.5; width: 100%; z-index: 4; padding-bottom: 30vh; padding-left: calc(96px + env(safe-area-inset-left)); padding-right: calc(96px + env(safe-area-inset-right));\"><!--__PAGE_CONTENT__--></div>\n\n<!-- End -->\n</div><div contenteditable=\"false\" data-content-editable-void=\"true\" style=\"width: 0px;\"><div style=\"display: none; flex-shrink: 0; pointer-events: none; width: 0px; position: absolute; right: 192px; opacity: 0;\"><div style=\"display: flex; flex-direction: column; padding: 5px 16px; width: 340px; flex-shrink: 0; height: 100%; position: relative; pointer-events: none; z-index: 1;\"><div style=\"position: absolute; pointer-events: none; width: 100%; height: 100%; top: -5px; background: linear-gradient(white 0px, rgba(255, 255, 255, 0) 15px);\"></div></div></div></div></div><span style=\"height: 1px; width: 1px;\"></span></div><div class=\"notion-presence-container\" style=\"position: absolute; top: 0px; left: 0px; z-index: 89;\"><div></div></div></div></div>\n\n</div><div class=\"notion-peek-renderer\" style=\"position: fixed; top: 0px; right: 0px; bottom: 0px; width: 960px; z-index: 109; transform: translateX(960px) translateZ(0px);\"></div></div></div></div>\n\n<textarea style=\"opacity: 0; pointer-events: none; position: fixed; left: 0px; top: 0px;\"></textarea><textarea style=\"opacity: 0; pointer-events: none; position: fixed; left: 0px; top: 0px;\"></textarea><div style=\"width: env(safe-area-inset-bottom);\"></div>",
+  "blocks": [
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "comment",
+      "html": "<!-- Hero image -->"
+    },
+    {
+      "type": "text",
+      "html": "\n  "
+    },
+    {
+      "type": "image",
+      "html": "<div class=\"notion-selectable notion-image-block\" style=\"width: 100%; max-width: 1920px; align-self: center; margin-top: 4px; margin-bottom: 4px;\"><div contenteditable=\"false\" data-content-editable-void=\"true\"><div style=\"display: flex;\"><div class=\"notion-cursor-default\" style=\"position: relative; overflow: hidden; flex-grow: 1;\"><div style=\"position: relative;\"><div><div style=\"height: 100%; width: 100%;\"><img referrerpolicy=\"same-origin\" src=\"/assets/images/pencake_marketing_ja.jpg\" style=\"display: block; object-fit: cover; border-radius: 1px; pointer-events: auto; width: 100%;\"></div></div></div></div></div></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "br",
+      "html": "<br>"
+    },
+    {
+      "type": "text",
+      "html": "\n  "
+    },
+    {
+      "type": "br",
+      "html": "<br>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "comment",
+      "html": "<!-- Download -->"
+    },
+    {
+      "type": "text",
+      "html": "\n  "
+    },
+    {
+      "type": "header",
+      "html": "<div class=\"notion-selectable notion-header-block\" style=\"width: 100%; max-width: 1728px; margin-top: 2em; margin-bottom: 4px;\"><div style=\"display: flex; width: 100%; color: inherit; fill: inherit;\"><h2 style=\"margin: 0 0 0 0; font-size: inherit;\"><div contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\"Heading 1\" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.65em; line-height: 1.3;\">ダウンロード</div></h2></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "divider",
+      "html": "<div class=\"notion-selectable notion-divider-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div class=\"notion-cursor-default\" style=\"display: flex; align-items: center; justify-content: center; pointer-events: auto; width: 100%; height: 13px; flex: 0 0 auto; color: rgba(55, 53, 47, 0.16);\"><div style=\"width: 100%; height: 1px; visibility: visible; border-bottom: 1px solid rgba(55, 53, 47, 0.16);\"></div></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "comment",
+      "html": "<!-- App Store -->"
+    },
+    {
+      "type": "text",
+      "html": "\n  "
+    },
+    {
+      "type": "page",
+      "html": "<div class=\"notion-selectable notion-page-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div class=\"pseudoSelection\" contenteditable=\"false\" data-content-editable-void=\"true\" style=\"user-select: none; --pseudoSelection--background:transparent;\"><a href=\"https://apps.apple.com/jp/app/id1382218014?utm_source=pencakewebsite&amp;utm_medium=button\" rel=\"noopener noreferrer\" style=\"display: block; color: inherit; text-decoration: none; fill: inherit;\"><div class=\"notion-focusable\" role=\"button\" style=\"user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; width: 100%;\" tabindex=\"0\"><div style=\"display: flex; align-items: center; width: 100%;\"><div style=\"flex: 1 1 0px; min-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;\"><div style=\"display: flex; align-items: center;\"><div style=\"position: relative; width: 24px; height: 24px; margin-right: 4px;\"><div class=\"notion-record-icon notranslate\" style=\"display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-radius: 0.25em; flex-shrink: 0;\"><div style=\"display: flex; align-items: center; justify-content: center; height: 22px; width: 22px;\"><div style=\"height: 19.8px; width: 19.8px; font-size: 19.8px; line-height: 1; margin-left: 0px; color: black;\"><span role=\"img\" style=\"font-family: &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, NotoColorEmoji, &quot;Noto Color Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Android Emoji&quot;, EmojiSymbols; line-height: 1em; white-space: nowrap;\"> • </span></div></div></div></div><h3 style=\"margin: inherit; font-size: inherit;\"><div class=\"notranslate\" style=\"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; line-height: 1.3; border-bottom: 1px solid rgba(55, 53, 47, 0.16);\"><span style=\"color:rgba(68, 131, 130, 0.7)\">App Store</span>からダウンロードする</div></h3></div></div><div class=\"pseudoSelection\" contenteditable=\"false\" data-content-editable-void=\"true\" data-text-edit-side=\"end\" style=\"user-select: none; --pseudoSelection--background:transparent; margin-left: 4px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);\"><div style=\"width: 28px;\"></div></div></div></div></a></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "divider",
+      "html": "<div class=\"notion-selectable notion-divider-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div class=\"notion-cursor-default\" style=\"display: flex; align-items: center; justify-content: center; pointer-events: auto; width: 100%; height: 13px; flex: 0 0 auto; color: rgba(55, 53, 47, 0.16);\"><div style=\"width: 100%; height: 1px; visibility: visible; border-bottom: 1px solid rgba(55, 53, 47, 0.16);\"></div></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "comment",
+      "html": "<!-- Google Play -->"
+    },
+    {
+      "type": "text",
+      "html": "\n  "
+    },
+    {
+      "type": "page",
+      "html": "<div class=\"notion-selectable notion-page-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div class=\"pseudoSelection\" contenteditable=\"false\" data-content-editable-void=\"true\" style=\"user-select: none; --pseudoSelection--background:transparent;\"><a href=\"https://play.google.com/store/apps/details?id=com.diffathy.bbapp&amp;referrer=utm_source%3Dpencakewebsite%26utm_medium%3Dbutton\" rel=\"noopener noreferrer\" style=\"display: block; color: inherit; text-decoration: none; fill: inherit;\"><div class=\"notion-focusable\" role=\"button\" style=\"user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; width: 100%;\" tabindex=\"0\"><div style=\"display: flex; align-items: center; width: 100%;\"><div style=\"flex: 1 1 0px; min-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;\"><div style=\"display: flex; align-items: center;\"><div style=\"position: relative; width: 24px; height: 24px; margin-right: 4px;\"><div class=\"notion-record-icon notranslate\" style=\"display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-radius: 0.25em; flex-shrink: 0;\"><div style=\"display: flex; align-items: center; justify-content: center; height: 22px; width: 22px;\"><div style=\"height: 19.8px; width: 19.8px; font-size: 19.8px; line-height: 1; margin-left: 0px; color: black;\"><span role=\"img\" style=\"font-family: &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, NotoColorEmoji, &quot;Noto Color Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Android Emoji&quot;, EmojiSymbols; line-height: 1em; white-space: nowrap;\"> • </span></div></div></div></div><h3 style=\"margin: inherit; font-size: inherit;\"><div class=\"notranslate\" style=\"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; line-height: 1.3; border-bottom: 1px solid rgba(55, 53, 47, 0.16);\"><span style=\"color:rgba(68, 131, 130, 0.7)\">Google Play</span>からダウンロードする</div></h3></div></div><div class=\"pseudoSelection\" contenteditable=\"false\" data-content-editable-void=\"true\" data-text-edit-side=\"end\" style=\"user-select: none; --pseudoSelection--background:transparent; margin-left: 4px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc(1.5em + 3px + 3px);\"><div style=\"width: 28px;\"></div></div></div></div></a></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n  "
+    },
+    {
+      "type": "divider",
+      "html": "<div class=\"notion-selectable notion-divider-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div class=\"notion-cursor-default\" style=\"display: flex; align-items: center; justify-content: center; pointer-events: auto; width: 100%; height: 13px; flex: 0 0 auto; color: rgba(55, 53, 47, 0.16);\"><div style=\"width: 100%; height: 1px; visibility: visible; border-bottom: 1px solid rgba(55, 53, 47, 0.16);\"></div></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n\n\n  "
+    },
+    {
+      "type": "comment",
+      "html": "<!-- Empty block -->"
+    },
+    {
+      "type": "text",
+      "html": "\n  "
+    },
+    {
+      "type": "text",
+      "html": "<div class=\"notion-selectable notion-text-block\" data-block-id=\"c0a455fa-5580-4a66-8939-e049f8d71ff6\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 0px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\" \" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.5);\"></div></div></div></div>"
+    },
+    {
+      "type": "text",
+      "html": "\n"
+    }
+  ],
+  "audit": {
+    "inlineScripts": [],
+    "scriptSrcs": [
+      "/assets/js/1172e9111a5fb396bcb8a05870b5eabf8abf221c.js"
+    ]
+  }
+}
