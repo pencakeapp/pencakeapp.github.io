@@ -3,7 +3,7 @@
 // Node scripts (scripts/extract.mjs, scripts/verify.mjs) import ALL_LANGS
 // from here too, so a language is added in exactly one place.
 export const DEFAULT_LANG = "en";
-export const OTHER_LANGS = ["ko", "ja", "zh-cn", "zh-tw", "de", "es", "pt", "fr"];
+export const OTHER_LANGS = ["ko", "ja", "zh-cn", "zh-tw", "de", "es", "pt", "fr", "id"];
 export const ALL_LANGS = [DEFAULT_LANG, ...OTHER_LANGS];
 
 // <html lang> attribute value per language, as on the legacy pages.
@@ -18,6 +18,7 @@ export const HTML_LANG = {
   es: "es",
   pt: "pt",
   fr: "fr",
+  id: "id",
 };
 
 export function langPrefix(lang) {

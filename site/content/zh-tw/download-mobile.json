@@ -62,6 +62,10 @@
         "href": "https://pencake.app/fr/download/mobile/"
       },
       {
+        "hreflang": "id",
+        "href": "https://pencake.app/id/download/mobile/"
+      },
+      {
         "hreflang": "x-default",
         "href": "https://pencake.app/download/mobile/"
       }

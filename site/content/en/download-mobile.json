@@ -20,7 +20,8 @@
         "de_DE",
         "es_ES",
         "pt_BR",
-        "fr_FR"
+        "fr_FR",
+        "id_ID"
       ]
     },
     "twitter": {
@@ -69,6 +70,10 @@
       {
         "hreflang": "fr",
         "href": "https://pencake.app/fr/download/mobile/"
+      },
+      {
+        "hreflang": "id",
+        "href": "https://pencake.app/id/download/mobile/"
       },
       {
         "hreflang": "x-default",

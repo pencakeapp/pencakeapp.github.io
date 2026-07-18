@@ -20,7 +20,8 @@
         "zh_TW",
         "de_DE",
         "es_ES",
-        "pt_BR"
+        "pt_BR",
+        "id_ID"
       ]
     },
     "twitter": {
@@ -71,6 +72,10 @@
         "href": "https://pencake.app/fr/guide/markdown/"
       },
       {
+        "hreflang": "id",
+        "href": "https://pencake.app/id/guide/markdown/"
+      },
+      {
         "hreflang": "x-default",
         "href": "https://pencake.app/guide/markdown/"
       }
@@ -109,7 +114,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" data-block-id=\"63faf8db-d9e7-4e44-9935-4c7977438823\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\" \" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">PenCake utilise le <a class=\"notion-link-token notion-enable-hover\" data-token-index=\"1\" href=\"https://en.wikipedia.org/wiki/Markdown\" rel=\"noopener noreferrer\" style=\"cursor:pointer;color:inherit;word-wrap:break-word;text-decoration:inherit\" target=\"_blank\"><span class=\"link-annotation-63faf8db-d9e7-4e44-9935-4c7977438823--1156468234\" style=\"border-bottom:0.05em solid;border-color:rgba(55,53,47,0.4);opacity:0.7\">Markdown</span></a> pour mettre en forme le texte. Le Markdown est un langage qui te permet d'ajouter des éléments de mise en forme à du texte brut à l'aide de symboles. Le Markdown rend la mise en forme rapide et facile.</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" data-block-id=\"63faf8db-d9e7-4e44-9935-4c7977438823\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\" \" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">PenCake utilise le <a class=\"notion-link-token notion-enable-hover\" data-token-index=\"1\" href=\"https://fr.wikipedia.org/wiki/Markdown\" rel=\"noopener noreferrer\" style=\"cursor:pointer;color:inherit;word-wrap:break-word;text-decoration:inherit\" target=\"_blank\"><span class=\"link-annotation-63faf8db-d9e7-4e44-9935-4c7977438823--1156468234\" style=\"border-bottom:0.05em solid;border-color:rgba(55,53,47,0.4);opacity:0.7\">Markdown</span></a> pour mettre en forme le texte. Le Markdown est un langage qui te permet d'ajouter des éléments de mise en forme à du texte brut à l'aide de symboles. Le Markdown rend la mise en forme rapide et facile.</div></div></div></div>"
     },
     {
       "type": "text",

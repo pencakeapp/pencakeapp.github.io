@@ -16,6 +16,7 @@ export const metadata = {
       es: `${BASE}?lang=es`,
       pt: `${BASE}?lang=pt`,
       fr: `${BASE}?lang=fr`,
+      id: `${BASE}?lang=id`,
       "x-default": BASE,
     },
   },
