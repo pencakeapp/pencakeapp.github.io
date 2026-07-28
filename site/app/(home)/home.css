@@ -89,7 +89,7 @@ a {
   font-family: var(--pc-serif);
   font-weight: 400;
   font-size: clamp(34px, 6vw, 46px);
-  line-height: 1.22;
+  line-height: 1.35;
   letter-spacing: -0.01em;
   max-width: 16em;
   margin: 37px auto 0;
@@ -176,7 +176,7 @@ a {
   /* The shots carry ~29px of their own whitespace, so the visible gap between
      two phones is 30 + 29×2 ≈ 89px. Matching that at the edge means the inline
      padding has to make up the difference — 89 − 29, not 30. */
-  padding: 31px max(60px, calc(50vw - 660px)) 27px;
+  padding: 26px max(60px, calc(50vw - 660px)) 27px;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
