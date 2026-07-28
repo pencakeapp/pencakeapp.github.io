@@ -157,7 +157,7 @@ a {
 }
 
 .pc-platforms {
-  margin: 26px 0 0;
+  margin: 32px 0 0;
   font-size: 13px;
   letter-spacing: 0.02em;
   color: var(--pc-ink-45);
@@ -173,7 +173,10 @@ a {
   display: flex;
   gap: 30px;
   overflow-x: auto;
-  padding: 41px max(24px, calc(50vw - 660px)) 40px;
+  /* The shots carry ~29px of their own whitespace, so the visible gap between
+     two phones is 30 + 29×2 ≈ 89px. Matching that at the edge means the inline
+     padding has to make up the difference — 89 − 29, not 30. */
+  padding: 31px max(60px, calc(50vw - 660px)) 27px;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -208,6 +211,8 @@ a {
 @media (max-width: 560px) {
   .pc-shots {
     gap: 22px;
+    /* 60px would eat the peek on a narrow screen — keep the edge tight here */
+    padding-inline: 24px;
     -webkit-mask-image: linear-gradient(
       to right,
       transparent,
@@ -223,6 +228,11 @@ a {
       transparent
     );
   }
+}
+
+/* <picture> is inline by default; block keeps it from adding a baseline gap */
+.pc-shot picture {
+  display: block;
 }
 
 .pc-shot img {

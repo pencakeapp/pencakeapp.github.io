@@ -6,15 +6,18 @@ import Kicker from "@/components/pc/Kicker";
 // Redesigned English landing page. The visual language borrows from the
 // app itself: white paper, book serif, quiet gray ink, PenCake's teal cursor.
 
+// Each entry has a .webp and a .jpg sibling — both are produced by
+// `npm run screenshots` (scripts/make-screenshots.sh). The extension is left
+// off here so the two stay in step.
 const SCREENSHOTS = [
-  { src: "/assets/images/appstore/screenshot_1.jpg", alt: "PenCake app — a beautifully minimal diary list" },
-  { src: "/assets/images/appstore/screenshot_2.jpg", alt: "PenCake app — writing a poem with elegant serif typography" },
-  { src: "/assets/images/appstore/screenshot_3.jpg", alt: "PenCake app — a journal entry with an inserted photo" },
-  { src: "/assets/images/appstore/screenshot_4.jpg", alt: "PenCake app — the distraction-free editor" },
-  { src: "/assets/images/appstore/screenshot_5.jpg", alt: "PenCake app — stories that organize your thoughts" },
-  { src: "/assets/images/appstore/screenshot_6.jpg", alt: "PenCake app — syncing across devices" },
-  { src: "/assets/images/appstore/screenshot_7.jpg", alt: "PenCake app — themes for your mood" },
-  { src: "/assets/images/appstore/screenshot_8.jpg", alt: "PenCake app — handwriting-style fonts" },
+  { base: "/assets/images/appstore/screenshot_1", alt: "PenCake app — a beautifully minimal diary list" },
+  { base: "/assets/images/appstore/screenshot_2", alt: "PenCake app — a long journal entry in elegant serif typography" },
+  { base: "/assets/images/appstore/screenshot_3", alt: "PenCake app — a journal entry with an inserted photo" },
+  { base: "/assets/images/appstore/screenshot_4", alt: "PenCake app — the distraction-free editor" },
+  { base: "/assets/images/appstore/screenshot_5", alt: "PenCake app — stories that organize your thoughts" },
+  { base: "/assets/images/appstore/screenshot_6", alt: "PenCake app — syncing across devices" },
+  { base: "/assets/images/appstore/screenshot_7", alt: "PenCake app — themes for your mood" },
+  { base: "/assets/images/appstore/screenshot_8", alt: "PenCake app — handwriting-style fonts" },
 ];
 
 const FEATURES = [
@@ -154,19 +157,22 @@ export default function HomeEn() {
         <section className="pc-shots-band" aria-label="Screenshots of the PenCake app">
           <div className="pc-shots">
             {SCREENSHOTS.map((shot, i) => (
-              <figure className="pc-shot" key={shot.src}>
-                <img
-                  src={shot.src}
-                  alt={shot.alt}
-                  width="828"
-                  height="1472"
-                  loading={i < 2 ? "eager" : "lazy"}
-                  decoding="async"
-                />
+              <figure className="pc-shot" key={shot.base}>
+                <picture>
+                  <source srcSet={`${shot.base}.webp`} type="image/webp" />
+                  <img
+                    src={`${shot.base}.jpg`}
+                    alt={shot.alt}
+                    width="828"
+                    height="1534"
+                    loading={i < 2 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
+                </picture>
               </figure>
             ))}
           </div>
-          <p className="pc-shots-hint">Drag to browse →</p>
+          <p className="pc-shots-hint">Scroll to browse →</p>
         </section>
 
         {/* ——— Why PenCake ——— */}
