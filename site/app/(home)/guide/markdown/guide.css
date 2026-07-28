@@ -20,7 +20,7 @@
 .pc-page-hero .pc-hero-sub a {
   color: var(--pc-teal-ink);
   text-decoration: underline;
-  text-decoration-color: rgba(64, 177, 190, 0.45);
+  text-decoration-color: rgba(53, 182, 197, 0.45);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.18s;
 }
@@ -178,7 +178,7 @@
 }
 
 .pc-md-render mark {
-  background: rgba(64, 177, 190, 0.16);
+  background: rgba(53, 182, 197, 0.16);
   color: inherit;
   padding: 0 2px;
   border-radius: 3px;

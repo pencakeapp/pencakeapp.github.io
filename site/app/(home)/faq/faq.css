@@ -154,7 +154,7 @@
 .pc-faq-a a {
   color: var(--pc-teal-ink);
   text-decoration: underline;
-  text-decoration-color: rgba(64, 177, 190, 0.45);
+  text-decoration-color: rgba(53, 182, 197, 0.45);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.18s;
 }
@@ -223,7 +223,7 @@
 
 @keyframes pc-target-wash {
   from {
-    background-color: rgba(64, 177, 190, 0.09);
+    background-color: rgba(53, 182, 197, 0.09);
   }
   to {
     background-color: transparent;
