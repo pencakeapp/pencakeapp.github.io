@@ -76,6 +76,10 @@ a {
 
 .pc-cursor {
   color: var(--pc-teal);
+  /* the serif's "|" spans -0.25em..0.75em while the caps sit on 0..0.669em,
+     leaving the bar's center 0.085em low — lift it back onto the letters */
+  position: relative;
+  top: -0.085em;
   animation: pc-blink 1.15s steps(1) infinite;
 }
 
