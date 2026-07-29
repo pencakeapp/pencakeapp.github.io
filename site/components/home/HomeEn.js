@@ -144,9 +144,9 @@ export default function HomeEn() {
           </div>
           <h1 className="pc-rise pc-rise-2">A beautifully minimal space for your thoughts.</h1>
           <p className="pc-hero-sub pc-rise pc-rise-3">
-            Journal entries, passing notes, or the novel you’ve been meaning to
-            write — since 2018, 2.3 million writers have made PenCake their
-            quiet place to write.
+            Journal entries, notes in passing, or the novel you’ve been meaning
+            to write — since 2018, people around the world have chosen PenCake
+            as their quiet place to write. 2.3 million times so far.
           </p>
           <div className="pc-rise pc-rise-4">
             <DownloadButtons />
@@ -211,7 +211,7 @@ export default function HomeEn() {
             <Kicker>From our writers</Kicker>
             <h2>Dear PenCake,</h2>
             <p className="pc-rating">
-              <Stars n={5} /> Loved by 2.3 million writers around the world
+              <Stars n={5} /> Five-star reviews from around the world
             </p>
             <div className="pc-reviews">
               {REVIEWS.map((r) => (

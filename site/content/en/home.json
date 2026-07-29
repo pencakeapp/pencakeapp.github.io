@@ -3,11 +3,11 @@
     "htmlLang": "en",
     "htmlClass": "notion-html",
     "title": "PenCake: Minimal Writing App — From Journals to Novels",
-    "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple, and loved by 2.3M+ writers. Syncs across all platforms.",
+    "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple — 2.3M+ downloads worldwide. Syncs across all platforms.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: Minimal Writing App — From Journals to Novels",
-      "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple, and loved by 2.3M+ writers. Syncs across all platforms.",
+      "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple — 2.3M+ downloads worldwide. Syncs across all platforms.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/",
       "type": "website",
@@ -27,7 +27,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: Minimal Writing App — From Journals to Novels",
-      "description": "Minimalist, distraction-free writing for journals, notes, novels, and fanfiction. Loved by 2.3M+ writers. Syncs everywhere.",
+      "description": "Minimalist, distraction-free writing for journals, notes, novels, and fanfiction. 2.3M+ downloads worldwide. Syncs everywhere.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/"
     },
