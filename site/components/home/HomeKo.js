@@ -119,7 +119,7 @@ function DownloadButtons() {
     <>
       <div className="pc-actions">
         <a className="pc-btn pc-btn-primary" id="downloadMobile" href="/ko/download/mobile/">
-          앱 다운로드
+          모바일 앱 다운로드
         </a>
         <a className="pc-btn pc-btn-ghost" href="/ko/download/desktop/">
           PC 버전 다운로드

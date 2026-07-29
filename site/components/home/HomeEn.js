@@ -122,7 +122,7 @@ function DownloadButtons() {
     <>
       <div className="pc-actions">
         <a className="pc-btn pc-btn-primary" id="downloadMobile" href="/download/mobile/">
-          Get the app
+          Get the mobile app
         </a>
         <a className="pc-btn pc-btn-ghost" href="/download/desktop/">
           Download for desktop
