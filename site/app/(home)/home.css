@@ -110,7 +110,7 @@ a {
 /* ——— Buttons ——— */
 
 .pc-actions {
-  margin-top: 54px;
+  margin-top: 58px;
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -180,7 +180,7 @@ a {
   /* The shots carry ~29px of their own whitespace, so the visible gap between
      two phones is 30 + 29×2 ≈ 89px. Matching that at the edge means the inline
      padding has to make up the difference — 89 − 29, not 30. */
-  padding: 26px max(60px, calc(50vw - 660px)) 27px;
+  padding: 24px max(60px, calc(50vw - 660px)) 27px;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
