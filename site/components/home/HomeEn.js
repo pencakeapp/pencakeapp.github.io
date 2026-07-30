@@ -55,48 +55,48 @@ const FEATURES = [
 
 // Real App Store reviews — verbatim or excerpted at sentence boundaries; non-English
 // ones translated by us. Reviewer nicknames are deliberately left out: these are quoted
-// without the writers' consent, so cards carry storefront, date, and stars instead.
+// without the writers' consent, so cards carry the storefront country, date, and stars instead.
 const REVIEWS = [
   {
     title: "Beautiful, minimal, and focused",
     date: "Thu, Jan 18, 2024",
     body: "I browsed, downloaded, and tried a handful of writing apps before finding this one. Many of the other apps available become bloated in both features and aesthetics, whereas PenCake focuses on the innate beauty of text and writing. This allows you the space to simply focus on writing. It’s a wonderful and welcomed break from the attention-grabbing methods in most apps these days. 100% recommended.",
-    source: "App Store (US)",
+    source: "United States",
     stars: 5,
   },
   {
     title: "My longtime favorite",
     date: "Fri, Jul 10, 2026",
     body: "I’ve been using this app for nearly seven years — for the last few, on the premium version, synced with my PC. I’ve tried so many apps, but this one is my favorite by far. The simple, beautiful design makes me truly want to write. Of course, it works great as a memo app too. I’d be happy if a future update let me freely reorder the articles within a story.",
-    source: "App Store (JP)",
+    source: "Japan",
     stars: 5,
   },
   {
     title: "Such a great experience!",
     date: "Mon, Mar 23, 2026",
     body: "The interface is clean and lovely, and everything is simple to use, so I built a writing habit in no time — I keep wanting to open the app. I’d wanted to write for a long time but was always too lazy; writing here comes with a real sense of accomplishment.",
-    source: "App Store (TW)",
+    source: "Taiwan",
     stars: 5,
   },
   {
     title: "Excellent",
     date: "Thu, Feb 6, 2025",
     body: "I love apps with a clean look. This one is beautiful — and while it seems so simple, it has plenty of features. The menus are well thought out, and the way you browse through notes and the swipe gestures that speed things up are very good. Beautiful fonts, real style, and it’s practical. Another advantage is the option of a lifetime purchase. Well worth the price.",
-    source: "App Store (BR)",
+    source: "Brazil",
     stars: 5,
   },
   {
     title: "Wunderbar!",
     date: "Sat, Oct 15, 2022",
     body: "Searching for a clean, restrained design with sensible but not overloaded features, I found what I was looking for here. This app is wonderfully focused — and in its simplicity, simply beautiful. Brilliant!",
-    source: "App Store (DE)",
+    source: "Germany",
     stars: 5,
   },
   {
     title: "The best app",
     date: "Sat, Jul 25, 2026",
     body: "Honestly… I’ve been using this since the very first release. It was also the first app I ever spent money on, back when I was still a teenager. I have never regretted it. Writing saved me, and it’s still my hobby today. Thank you so much for making an app like this.",
-    source: "App Store (KR)",
+    source: "South Korea",
     stars: 5,
   },
 ];
