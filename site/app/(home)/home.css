@@ -320,7 +320,7 @@ a {
 @media (min-width: 900px) {
   .pc-features {
     grid-template-columns: repeat(3, 1fr);
-    gap: 56px 48px;
+    gap: 57px 48px;
   }
 }
 
