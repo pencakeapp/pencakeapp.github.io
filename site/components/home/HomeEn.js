@@ -122,7 +122,10 @@ function DownloadButtons() {
   return (
     <>
       <div className="pc-actions">
-        <a className="pc-btn pc-btn-primary" id="downloadMobile" href="/download/mobile/">
+        {/* data attribute, not an id: this block is rendered twice
+            (hero + closing CTA), and MobileDownloadRedirect has to reach
+            both of them. */}
+        <a className="pc-btn pc-btn-primary" data-download-mobile href="/download/mobile/">
           Get the mobile app
         </a>
         <a className="pc-btn pc-btn-ghost" href="/download/desktop/">
