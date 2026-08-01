@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "extract": "node scripts/extract.mjs",
-    "verify": "node scripts/verify.mjs"
+    "verify": "node scripts/verify.mjs",
+    "screenshots": "bash scripts/make-screenshots.sh",
+    "qr": "node scripts/make-qr.mjs"
   },
   "dependencies": {
     "html-react-parser": "^5.2.2",
@@ -16,7 +18,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "cheerio": "^1.0.0"
+    "cheerio": "^1.0.0",
+    "qrcode": "^1.5.4"
   },
   "engines": {
     "node": ">=20"

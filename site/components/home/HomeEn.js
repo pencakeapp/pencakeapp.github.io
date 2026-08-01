@@ -6,15 +6,18 @@ import Kicker from "@/components/pc/Kicker";
 // Redesigned English landing page. The visual language borrows from the
 // app itself: white paper, book serif, quiet gray ink, PenCake's teal cursor.
 
+// Each entry has a .webp and a .jpg sibling — both are produced by
+// `npm run screenshots` (scripts/make-screenshots.sh). The extension is left
+// off here so the two stay in step.
 const SCREENSHOTS = [
-  { src: "/assets/images/appstore/screenshot_1.jpg", alt: "PenCake app — a beautifully minimal diary list" },
-  { src: "/assets/images/appstore/screenshot_2.jpg", alt: "PenCake app — writing a poem with elegant serif typography" },
-  { src: "/assets/images/appstore/screenshot_3.jpg", alt: "PenCake app — a journal entry with an inserted photo" },
-  { src: "/assets/images/appstore/screenshot_4.jpg", alt: "PenCake app — the distraction-free editor" },
-  { src: "/assets/images/appstore/screenshot_5.jpg", alt: "PenCake app — stories that organize your thoughts" },
-  { src: "/assets/images/appstore/screenshot_6.jpg", alt: "PenCake app — syncing across devices" },
-  { src: "/assets/images/appstore/screenshot_7.jpg", alt: "PenCake app — themes for your mood" },
-  { src: "/assets/images/appstore/screenshot_8.jpg", alt: "PenCake app — handwriting-style fonts" },
+  { base: "/assets/images/appstore/screenshot_1", alt: "PenCake app — a beautifully minimal diary list" },
+  { base: "/assets/images/appstore/screenshot_2", alt: "PenCake app — a long journal entry in elegant serif typography" },
+  { base: "/assets/images/appstore/screenshot_3", alt: "PenCake app — a journal entry with an inserted photo" },
+  { base: "/assets/images/appstore/screenshot_4", alt: "PenCake app — the distraction-free editor" },
+  { base: "/assets/images/appstore/screenshot_5", alt: "PenCake app — stories that organize your thoughts" },
+  { base: "/assets/images/appstore/screenshot_6", alt: "PenCake app — syncing across devices" },
+  { base: "/assets/images/appstore/screenshot_7", alt: "PenCake app — themes for your mood" },
+  { base: "/assets/images/appstore/screenshot_8", alt: "PenCake app — handwriting-style fonts" },
 ];
 
 const FEATURES = [
@@ -50,49 +53,50 @@ const FEATURES = [
   },
 ];
 
-// NOTE: placeholder reviews (temporary marketing copy) —
-// replace with real user quotes before treating this section as final.
+// Real App Store reviews — verbatim or excerpted at sentence boundaries; non-English
+// ones translated by us. Reviewer nicknames are deliberately left out: these are quoted
+// without the writers' consent, so cards carry the storefront country, date, and stars instead.
 const REVIEWS = [
   {
-    title: "It gets out of the way",
-    date: "Tue, Mar 3, 2026 9:41 PM",
-    body: "I’ve tried every writing app out there. PenCake is the first one that never makes me think about the app itself. I open it, and I’m already writing.",
-    author: "Sarah K. — journaling daily since 2021",
+    title: "Beautiful, minimal, and focused",
+    date: "Thu, Jan 18, 2024",
+    body: "I browsed, downloaded, and tried a handful of writing apps before finding this one. Many of the other apps available become bloated in both features and aesthetics, whereas PenCake focuses on the innate beauty of text and writing. This allows you the space to simply focus on writing. It’s a wonderful and welcomed break from the attention-grabbing methods in most apps these days. 100% recommended.",
+    source: "United States",
     stars: 5,
   },
   {
-    title: "My novel lives here",
-    date: "Sun, Feb 15, 2026 11:02 PM",
-    body: "Eighty thousand words, most of them written on the train. Stories keep my chapters in order, and sync means my desktop always has the latest draft waiting.",
-    author: "Daniel M. — first-time novelist",
+    title: "My longtime favorite",
+    date: "Fri, Jul 10, 2026",
+    body: "I’ve been using this app for nearly seven years — for the last few, on the premium version, synced with my PC. I’ve tried so many apps, but this one is my favorite by far. The simple, beautiful design makes me truly want to write. Of course, it works great as a memo app too. I’d be happy if a future update let me freely reorder the articles within a story.",
+    source: "Japan",
     stars: 5,
   },
   {
-    title: "It feels like paper",
-    date: "Wed, Jan 28, 2026 7:15 AM",
-    body: "The typography is quietly gorgeous. Writing here feels like writing in a beautiful notebook that happens to back itself up.",
-    author: "Yuki — keeps three diaries",
+    title: "Such a great experience!",
+    date: "Mon, Mar 23, 2026",
+    body: "The interface is clean and lovely, and everything is simple to use, so I built a writing habit in no time — I keep wanting to open the app. I’d wanted to write for a long time but was always too lazy; writing here comes with a real sense of accomplishment.",
+    source: "Taiwan",
     stars: 5,
   },
   {
-    title: "A bedtime ritual",
-    date: "Fri, Dec 19, 2025 11:58 PM",
-    body: "I write before sleep, and the True Black theme with a serif font turned it into a ritual I look forward to. Premium was worth it for the fonts alone.",
-    author: "Amara O. — night writer",
-    stars: 4,
-  },
-  {
-    title: "Five years, safely kept",
-    date: "Mon, Nov 24, 2025 8:20 PM",
-    body: "Version history once saved a whole entry I’d ruined while editing. I trust PenCake with memories I couldn’t replace.",
-    author: "Tom H. — writing a diary for his daughter",
+    title: "Excellent",
+    date: "Thu, Feb 6, 2025",
+    body: "I love apps with a clean look. This one is beautiful — and while it seems so simple, it has plenty of features. The menus are well thought out, and the way you browse through notes and the swipe gestures that speed things up are very good. Beautiful fonts, real style, and it’s practical. Another advantage is the option of a lifetime purchase. Well worth the price.",
+    source: "Brazil",
     stars: 5,
   },
   {
-    title: "Simple for her, powerful for me",
-    date: "Sat, Apr 4, 2026 4:44 PM",
-    body: "My daughter and I both journal now. She writes about school; I write about her.",
-    author: "Elena R. — family journaler",
+    title: "Wunderbar!",
+    date: "Sat, Oct 15, 2022",
+    body: "Searching for a clean, restrained design with sensible but not overloaded features, I found what I was looking for here. This app is wonderfully focused — and in its simplicity, simply beautiful. Brilliant!",
+    source: "Germany",
+    stars: 5,
+  },
+  {
+    title: "The best app",
+    date: "Sat, Jul 25, 2026",
+    body: "Honestly… I’ve been using this since the very first release. It was also the first app I ever spent money on, back when I was still a teenager. I have never regretted it. Writing saved me, and it’s still my hobby today. Thank you so much for making an app like this.",
+    source: "South Korea",
     stars: 5,
   },
 ];
@@ -118,8 +122,11 @@ function DownloadButtons() {
   return (
     <>
       <div className="pc-actions">
-        <a className="pc-btn pc-btn-primary" id="downloadMobile" href="/download/mobile/">
-          Get the app
+        {/* data attribute, not an id: this block is rendered twice
+            (hero + closing CTA), and MobileDownloadRedirect has to reach
+            both of them. */}
+        <a className="pc-btn pc-btn-primary" data-download-mobile href="/download/mobile/">
+          Get the mobile app
         </a>
         <a className="pc-btn pc-btn-ghost" href="/download/desktop/">
           Download for desktop
@@ -141,9 +148,9 @@ export default function HomeEn() {
           </div>
           <h1 className="pc-rise pc-rise-2">A beautifully minimal space for your thoughts.</h1>
           <p className="pc-hero-sub pc-rise pc-rise-3">
-            Journal entries, passing notes, or the novel you’ve been meaning to
-            write — since 2018, 2.3 million writers have made PenCake their
-            quiet place to write.
+            Journal entries, notes in passing, or the novel you’ve been meaning
+            to write — since 2018, people around the world have chosen PenCake
+            as their quiet place to write. 2.3 million times so far.
           </p>
           <div className="pc-rise pc-rise-4">
             <DownloadButtons />
@@ -154,19 +161,22 @@ export default function HomeEn() {
         <section className="pc-shots-band" aria-label="Screenshots of the PenCake app">
           <div className="pc-shots">
             {SCREENSHOTS.map((shot, i) => (
-              <figure className="pc-shot" key={shot.src}>
-                <img
-                  src={shot.src}
-                  alt={shot.alt}
-                  width="828"
-                  height="1472"
-                  loading={i < 2 ? "eager" : "lazy"}
-                  decoding="async"
-                />
+              <figure className="pc-shot" key={shot.base}>
+                <picture>
+                  <source srcSet={`${shot.base}.webp`} type="image/webp" />
+                  <img
+                    src={`${shot.base}.jpg`}
+                    alt={shot.alt}
+                    width="828"
+                    height="1534"
+                    loading={i < 2 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
+                </picture>
               </figure>
             ))}
           </div>
-          <p className="pc-shots-hint">Drag to browse →</p>
+          <p className="pc-shots-hint">Scroll to browse →</p>
         </section>
 
         {/* ——— Why PenCake ——— */}
@@ -205,7 +215,7 @@ export default function HomeEn() {
             <Kicker>From our writers</Kicker>
             <h2>Dear PenCake,</h2>
             <p className="pc-rating">
-              <Stars n={5} /> Loved by 2.3 million writers around the world
+              <Stars n={5} /> Five-star reviews from around the world
             </p>
             <div className="pc-reviews">
               {REVIEWS.map((r) => (
@@ -214,7 +224,7 @@ export default function HomeEn() {
                   <div className="pc-review-date">{r.date}</div>
                   <p>{r.body}</p>
                   <div className="pc-review-meta">
-                    <span className="pc-review-author">{r.author}</span>
+                    <span className="pc-review-author">{r.source}</span>
                     <Stars n={r.stars} />
                   </div>
                 </article>

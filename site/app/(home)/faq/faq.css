@@ -2,25 +2,12 @@
    Extends the home design language. The FAQ reads like a book's
    Q&A appendix: a table of contents with roman numerals, quiet
    part dividers, and questions that open like the app's toggles
-   (the teal ‣ is the same marker the legacy page pointed at).    */
+   (the teal triangle echoes the marker the legacy page used).    */
 
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
   }
-}
-
-/* ——— Hero hint ——— */
-
-.pc-faq-hint {
-  margin: 26px 0 0;
-  font-size: 12.5px;
-  letter-spacing: 0.06em;
-  color: var(--pc-ink-30);
-}
-
-.pc-faq-hint-tri {
-  color: var(--pc-teal);
 }
 
 /* ——— Contents ——— */
@@ -30,7 +17,7 @@
 }
 
 .pc-faq-contents .pc-toc {
-  margin-top: 44px;
+  margin-top: 49px;
 }
 
 .pc-faq-toc-num {
@@ -44,7 +31,7 @@
 /* ——— Part dividers ——— */
 
 .pc-faq-part {
-  padding: 84px 24px 0;
+  padding: 101px 24px 0;
 }
 
 .pc-faq-part-head {
@@ -74,7 +61,7 @@
 
 .pc-faq-list {
   max-width: 680px;
-  margin: 26px auto 0;
+  margin: 46px auto 0;
 }
 
 .pc-faq-item {
@@ -86,7 +73,7 @@
   display: flex;
   align-items: flex-start;
   gap: 13px;
-  padding: 19px 2px;
+  padding: 24px 2px;
   cursor: pointer;
   list-style: none;
 }
@@ -97,11 +84,27 @@
 
 .pc-faq-tri {
   flex: none;
+  position: relative;
   width: 14px;
-  color: var(--pc-teal);
-  font-size: 15px;
-  line-height: 1.45; /* match the question so the marker sits on its first line */
+  height: calc(17px * 1.45); /* the question's first line box, so the marker sits on it */
   transition: transform 0.22s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+/* Drawn rather than typed. The ‣ glyph's ink sits off-centre inside its own
+   box, so rotating the span swung the marker up and to the side; a shape
+   centred on the pivot turns in place. Drawing it also means the size no
+   longer depends on which fallback font happens to supply the glyph.       */
+.pc-faq-tri::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 7px;
+  border-color: transparent transparent transparent var(--pc-teal);
+  transform: translate(-50%, -50%);
 }
 
 .pc-faq-item[open] > summary .pc-faq-tri {
@@ -123,7 +126,7 @@
 }
 
 .pc-faq-a {
-  padding: 3px 2px 26px 29px; /* left = marker width + gap, aligns with the question */
+  padding: 3px 2px 31px 29px; /* left = marker width + gap, aligns with the question */
 }
 
 .pc-faq-a p,
@@ -154,7 +157,7 @@
 .pc-faq-a a {
   color: var(--pc-teal-ink);
   text-decoration: underline;
-  text-decoration-color: rgba(64, 177, 190, 0.45);
+  text-decoration-color: rgba(53, 182, 197, 0.45);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.18s;
 }
@@ -223,7 +226,7 @@
 
 @keyframes pc-target-wash {
   from {
-    background-color: rgba(64, 177, 190, 0.09);
+    background-color: rgba(53, 182, 197, 0.09);
   }
   to {
     background-color: transparent;

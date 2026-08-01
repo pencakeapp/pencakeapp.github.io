@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+# ?qr=1 is the QR handoff, which bounces mobile visitors to an app store —
+# nothing to index, and the clean URL is already canonical.
+Disallow: /*?qr=
 
 Sitemap: https://pencake.app/sitemap.xml

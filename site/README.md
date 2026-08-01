@@ -16,24 +16,31 @@ npm run dev        # 개발 서버 (http://localhost:3000)
 npm run build      # 정적 빌드 → out/
 npm run verify     # out/ 을 레거시 HTML(레포 루트)과 대조 검증
 npm run extract    # 레거시 HTML → content/ JSON 재추출 (초기 이관용, 일반적으로 불필요)
+npm run qr         # 모바일 다운로드 페이지의 QR SVG 재생성 (URL 변경 시에만)
 ```
 
 ## 구조
 
 ```
 app/
-  (home)/         리디자인된 영어 페이지(/, /faq/) — 자체 레이아웃,
-                  home.css 를 공용 디자인 시스템으로 사용 (Notion CSS 미사용).
-                  FAQ 전용 스타일은 faq/faq.css
-  (en)/           영어(루트) 레거시 렌더 페이지: /privacy/, /guide/markdown/,
-                  /download/desktop/, /download/mobile/
-  (i18n)/[lang]/  8개 언어(ko·ja·zh-cn·zh-tw·de·es·pt·fr) 동일 6페이지
-                  (홈 포함 — 다른 언어 홈은 아직 레거시 디자인)
-  (changelog)/    /changelog/desktop/ (?lang= 쿼리로 언어 선택)
+  (home)/         리디자인된 영어 페이지 전체(/, /faq/, /privacy/,
+                  /guide/markdown/, /download/desktop/, /download/mobile/)와
+                  /changelog/desktop/(?lang= 쿼리로 언어 선택 — 전 언어 공용).
+                  자체 레이아웃, home.css 를 공용 디자인 시스템으로 사용
+                  (Notion CSS 미사용). 페이지별 스타일은 faq/faq.css 처럼
+                  라우트 폴더에 둡니다
+  (ko)/ko/        리디자인된 한국어 5페이지 (모바일 다운로드는 아직 레거시)
+  (i18n)/[lang]/  나머지 언어의 레거시 렌더 페이지 6종.
+                  대부분 NOTION_LANGS(ko 제외 8개)를 쓰지만,
+                  download/mobile 만 아직 ko 를 포함한 OTHER_LANGS 를 사용
 components/       페이지 렌더러(SitePage)와 클라이언트 동작들
   home/HomeEn.js  리디자인 홈 본문(히어로·스크린샷·특징·리뷰·CTA·문서 목차).
                   스크린샷: public/assets/images/appstore/ (앱스토어 원본 828px).
-                  리뷰는 임시(placeholder) 문구 — 실제 사용자 후기로 교체 예정.
+                  리뷰는 실제 App Store 후기 — 국가·날짜·별점만 표기(닉네임 제외).
+  download/DownloadMobileEn.js
+                  QR 우선 모바일 다운로드 페이지. QR 은 ?qr=1 을 실어
+                  lib/stores.js 의 인라인 스크립트가 스캔한 기기를 스토어로
+                  넘깁니다. QR 자산 재생성은 `npm run qr`
   faq/FaqEn.js    리디자인 영어 FAQ 본문 — 콘텐츠를 JSX 데이터로 보유.
                   섹션·질문 id 는 레거시 Notion 블록 id 를 유지(딥링크 호환),
                   faq/FaqDeepLinks.js 가 #해시 → <details> 열기+스크롤 처리
@@ -42,16 +49,20 @@ components/       페이지 렌더러(SitePage)와 클라이언트 동작들
   NotionBehaviors.js       토글·#해시 스크롤+하이라이트·이미지 패딩 픽스
   DownloadHandlers.js      PC 다운로드 링크(data-download) 클릭 처리
   MobileDownloadRedirect.js 홈의 모바일 다운로드 버튼 UA 분기
+                           (`#downloadMobile` = 레거시 홈,
+                            `[data-download-mobile]` = 리디자인 홈. 리디자인
+                            홈은 히어로·CTA 두 곳에 버튼이 있어 위임 처리)
   GoogleAnalytics.js       gtag 로더 (G-ZZNDMTFTKD)
   ChangelogApp.js          PC 버전 업데이트 기록 페이지
 content/<lang>/<page>.json  페이지별 콘텐츠 (메타 + 본문 블록)
 lib/
   download.js     ★ PC 앱 버전 상수(MAC_VERSION/WIN_VERSION)와 다운로드 URL
+  stores.js       ★ 모바일 스토어 URL·기기 판별·QR 리다이렉트 스크립트
   changelog-data.js ★ PC 버전 업데이트 기록 데이터
   blocks.js       새 콘텐츠 블록 빌더 (callout·heading·text·bullet·image…)
   metadata.js     추출된 메타 → Next Metadata 매핑
-scripts/          extract.mjs(이관), verify.mjs(충실도 검증 —
-                  리디자인된 페이지는 REDESIGNED 목록으로 스킵: 영어 홈·FAQ)
+scripts/          extract.mjs(이관), verify.mjs(충실도 검증 — 리디자인된
+                  페이지는 REDESIGNED 목록으로 스킵), make-qr.mjs(QR SVG 생성)
 public/           assets(css/images)·favicon·robots·sitemap·CNAME·검색엔진 인증 파일
 ```
 
@@ -84,8 +95,10 @@ public/           assets(css/images)·favicon·robots·sitemap·CNAME·검색엔
 ### 새 페이지 추가
 1. `content/<lang>/<새페이지>.json` 생성 — 기존 페이지 JSON을 복사해 `meta`(title,
    description, og, hreflang, canonical)와 `blocks` 수정이 가장 쉬움
-2. `app/(en)/<경로>/page.js` + `app/(i18n)/[lang]/<경로>/page.js` 를 기존 라우트 파일
-   복사로 생성 (pageKey만 변경)
+2. 영어는 `app/(home)/<경로>/page.js`, 나머지 언어는
+   `app/(i18n)/[lang]/<경로>/page.js` 를 기존 라우트 파일 복사로 생성
+   (pageKey만 변경). `(home)` 은 리디자인 디자인 시스템이므로 레거시 마크업을
+   그대로 쓰려면 `SitePage` 를 렌더하지 말고 `(i18n)` 쪽 패턴을 따르세요
 3. `public/sitemap.xml` 에 URL 추가, 관련 페이지 hreflang/언어 스위처 링크 갱신
 
 ### FAQ 앵커 ID (중요)

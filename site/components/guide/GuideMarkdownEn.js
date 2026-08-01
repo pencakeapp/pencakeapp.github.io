@@ -86,9 +86,6 @@ export default function GuideMarkdownEn() {
             elements to plain text using symbols. Markdown makes formatting
             quick and easy.
           </p>
-          <p className="pc-md-hint">
-            Text formatting is supported since PenCake 3.10.
-          </p>
           <div className="pc-note pc-md-intro-note">
             <span className="pc-note-emoji" aria-hidden="true">
               💡

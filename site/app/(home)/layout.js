@@ -8,7 +8,7 @@ export const viewport = {
 };
 
 // Root layout for the redesigned pages (home, FAQ, guide, privacy,
-// download, changelog). Unlike the (en) group, it does not load the legacy
+// download, changelog). Unlike the (i18n) group, it does not load the legacy
 // Notion stylesheets — these pages share home.css as their design system.
 // Source Serif Pro is loaded here for the Latin serif (--pc-serif); the
 // changelog lives in this group too, so every language's changelog gets it.

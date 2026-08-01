@@ -29,6 +29,7 @@ const REDESIGNED = new Set([
   "privacy/index.html",
   "guide/markdown/index.html",
   "download/desktop/index.html",
+  "download/mobile/index.html",
   "ko/index.html",
   "ko/faq/index.html",
   "ko/privacy/index.html",

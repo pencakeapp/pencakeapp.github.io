@@ -9,7 +9,7 @@
 }
 
 .pc-cl-timeline {
-  padding: 0 24px;
+  padding: 17px 24px 0;
 }
 
 .pc-cl-list {
@@ -71,7 +71,7 @@
 .pc-cl-dot-latest {
   background: var(--pc-teal);
   border-color: var(--pc-teal);
-  box-shadow: 0 0 0 4px rgba(64, 177, 190, 0.14);
+  box-shadow: 0 0 0 4px rgba(53, 182, 197, 0.14);
 }
 
 .pc-cl-ver {

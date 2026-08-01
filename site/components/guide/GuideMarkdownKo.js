@@ -85,9 +85,6 @@ export default function GuideMarkdownKo() {
             일반 텍스트에 서식을 지정할 수 있는 언어입니다. 마크다운을
             사용하면 빠르고 쉽게 서식을 지정할 수 있습니다.
           </p>
-          <p className="pc-md-hint">
-            텍스트 서식은 PenCake 3.10 이상에서 지원됩니다.
-          </p>
           <div className="pc-note pc-md-intro-note">
             <span className="pc-note-emoji" aria-hidden="true">
               💡
