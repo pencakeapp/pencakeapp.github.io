@@ -514,10 +514,6 @@ export default function FaqEn() {
             Everything about privacy, everyday use, Premium, and sync —
             answered by the people who make PenCake.
           </p>
-          <p className="pc-faq-hint">
-            Tap <span className="pc-faq-hint-tri">‣</span> next to a question
-            to view the answer.
-          </p>
         </header>
 
         {/* ——— Contents ——— */}
@@ -547,9 +543,7 @@ export default function FaqEn() {
               {s.items.map((item) => (
                 <details className="pc-faq-item" id={item.id} key={item.id}>
                   <summary>
-                    <span className="pc-faq-tri" aria-hidden="true">
-                      ‣
-                    </span>
+                    <span className="pc-faq-tri" aria-hidden="true" />
                     <h3>{item.q}</h3>
                   </summary>
                   <div className="pc-faq-a">{item.a}</div>

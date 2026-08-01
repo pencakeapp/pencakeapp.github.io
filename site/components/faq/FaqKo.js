@@ -496,10 +496,6 @@ export default function FaqKo() {
             글의 안전, 사용 방법, 프리미엄, 동기화까지 — PenCake를 만드는
             사람들이 직접 답해 드립니다.
           </p>
-          <p className="pc-faq-hint">
-            질문에 대한 답변을 보시려면 질문 앞의{" "}
-            <span className="pc-faq-hint-tri">‣</span> 를 누르세요.
-          </p>
         </header>
 
         {/* ——— Contents ——— */}
@@ -529,9 +525,7 @@ export default function FaqKo() {
               {s.items.map((item) => (
                 <details className="pc-faq-item" id={item.id} key={item.id}>
                   <summary>
-                    <span className="pc-faq-tri" aria-hidden="true">
-                      ‣
-                    </span>
+                    <span className="pc-faq-tri" aria-hidden="true" />
                     <h3>{item.q}</h3>
                   </summary>
                   <div className="pc-faq-a">{item.a}</div>

@@ -22,6 +22,7 @@
 
 .pc-prv-contents .pc-toc {
   margin-top: 44px;
+  margin-bottom: 5px;
 }
 
 .pc-prv-toc-num {
@@ -30,4 +31,8 @@
   font-family: var(--pc-serif);
   font-size: 14px;
   color: var(--pc-teal-ink);
+}
+
+.pc-prose {
+  margin-top: 40px;
 }
