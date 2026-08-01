@@ -14,7 +14,7 @@
 
 .pc-dl-actions {
   scroll-margin-top: 28px;
-  margin-top: 46px;
+  margin-top: 49px;
 }
 
 .pc-dl-glyph {
@@ -158,7 +158,7 @@
 
 .pc-dl-toc {
   max-width: 480px;
-  margin-top: 41px;
+  margin-top: 43px;
 }
 
 .pc-prose {
@@ -167,4 +167,8 @@
 
 .pc-part {
   padding-top: 125px;
+}
+
+.pc-note {
+  margin-top: 24px; 
 }
