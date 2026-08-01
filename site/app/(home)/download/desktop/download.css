@@ -14,6 +14,7 @@
 
 .pc-dl-actions {
   scroll-margin-top: 28px;
+  margin-top: 46px;
 }
 
 .pc-dl-glyph {
@@ -24,14 +25,14 @@
 
 .pc-dl-notes {
   max-width: 560px;
-  margin: 30px auto 0;
+  margin: 51px auto 0;
 }
 
 /* ——— Screenshot band ——— */
 
 .pc-dl-shot {
   margin-top: 56px;
-  padding: 48px 24px 40px;
+  padding: 48px 24px 18px;
   text-align: center;
 }
 
@@ -58,7 +59,7 @@
 }
 
 .pc-kbd-title {
-  margin: 46px 0 0;
+  margin: 51px 0 0;
   font-family: var(--pc-serif);
   font-weight: 600;
   font-size: 18px;
@@ -128,6 +129,10 @@
   font-size: 13.5px;
 }
 
+.pc-kbd-block + .pc-kbd-block .pc-kbd-title {
+  margin-top: 73px;
+}
+
 .pc-visually-hidden {
   position: absolute;
   width: 1px;
@@ -153,5 +158,13 @@
 
 .pc-dl-toc {
   max-width: 480px;
-  margin-top: 18px;
+  margin-top: 41px;
+}
+
+.pc-prose {
+  margin-top: 50px;
+}
+
+.pc-part {
+  padding-top: 125px;
 }
