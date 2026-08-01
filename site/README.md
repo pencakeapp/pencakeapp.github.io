@@ -29,18 +29,23 @@ app/
                   자체 레이아웃, home.css 를 공용 디자인 시스템으로 사용
                   (Notion CSS 미사용). 페이지별 스타일은 faq/faq.css 처럼
                   라우트 폴더에 둡니다
-  (ko)/ko/        리디자인된 한국어 5페이지 (모바일 다운로드는 아직 레거시)
+  (ko)/ko/        리디자인된 한국어 페이지 6종 — (home) 의 영어 페이지와 같은
+                  구성(체인지로그는 전 언어 공용이라 제외). 자체 루트 레이아웃이
+                  <html lang="ko"> 와 한글 세리프 웹폰트를 얹고, 스타일은
+                  (home) 의 css 를 상대 경로로 그대로 재사용합니다
   (i18n)/[lang]/  나머지 언어의 레거시 렌더 페이지 6종.
-                  대부분 NOTION_LANGS(ko 제외 8개)를 쓰지만,
-                  download/mobile 만 아직 ko 를 포함한 OTHER_LANGS 를 사용
-components/       페이지 렌더러(SitePage)와 클라이언트 동작들
+                  전부 NOTION_LANGS(ko 제외 8개)를 사용 — 언어가 리디자인되면
+                  이 목록에서 빠지면서 레거시 라우트 생성이 멈춥니다
+components/       페이지 렌더러(SitePage)와 클라이언트 동작들.
+                  리디자인 본문은 언어별로 <이름>En.js / <이름>Ko.js 쌍을
+                  이룹니다(레이아웃은 공유, 카피·자산만 언어별)
   home/HomeEn.js  리디자인 홈 본문(히어로·스크린샷·특징·리뷰·CTA·문서 목차).
                   스크린샷: public/assets/images/appstore/ (앱스토어 원본 828px).
                   리뷰는 실제 App Store 후기 — 국가·날짜·별점만 표기(닉네임 제외).
   download/DownloadMobileEn.js
                   QR 우선 모바일 다운로드 페이지. QR 은 ?qr=1 을 실어
                   lib/stores.js 의 인라인 스크립트가 스캔한 기기를 스토어로
-                  넘깁니다. QR 자산 재생성은 `npm run qr`
+                  넘깁니다. QR 은 언어별 자산이며 재생성은 `npm run qr`
   faq/FaqEn.js    리디자인 영어 FAQ 본문 — 콘텐츠를 JSX 데이터로 보유.
                   섹션·질문 id 는 레거시 Notion 블록 id 를 유지(딥링크 호환),
                   faq/FaqDeepLinks.js 가 #해시 → <details> 열기+스크롤 처리
@@ -62,7 +67,8 @@ lib/
   blocks.js       새 콘텐츠 블록 빌더 (callout·heading·text·bullet·image…)
   metadata.js     추출된 메타 → Next Metadata 매핑
 scripts/          extract.mjs(이관), verify.mjs(충실도 검증 — 리디자인된
-                  페이지는 REDESIGNED 목록으로 스킵), make-qr.mjs(QR SVG 생성)
+                  페이지는 REDESIGNED 목록으로 레거시 대조를 스킵하되 출력
+                  존재 여부는 계속 검사), make-qr.mjs(QR SVG 생성)
 public/           assets(css/images)·favicon·robots·sitemap·CNAME·검색엔진 인증 파일
 ```
 

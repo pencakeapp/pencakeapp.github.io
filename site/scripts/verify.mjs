@@ -22,7 +22,8 @@ const OUT_ROOT = path.resolve(__dirname, "../out");
 
 const LANGS = ALL_LANGS;
 // Pages intentionally redesigned in the Next app; they no longer mirror
-// the legacy export, so fidelity checks are skipped for them.
+// the legacy export, so the fidelity comparison is skipped for them —
+// they are still required to exist in out/.
 const REDESIGNED = new Set([
   "index.html",
   "faq/index.html",
@@ -35,6 +36,7 @@ const REDESIGNED = new Set([
   "ko/privacy/index.html",
   "ko/guide/markdown/index.html",
   "ko/download/desktop/index.html",
+  "ko/download/mobile/index.html",
 ]);
 const PAGES = [
   "index.html",
@@ -217,16 +219,20 @@ for (const lang of LANGS) {
     const origFile = path.join(SRC_ROOT, prefix + rel);
     const newFile = path.join(OUT_ROOT, prefix + rel);
     const label = prefix + rel;
-    if (REDESIGNED.has(label)) {
-      console.log(`~ skipped (redesigned): ${label}`);
-      continue;
-    }
-    const problems = [];
+    // Existence is checked ahead of the REDESIGNED skip: a redesigned page
+    // is exempt from the comparison below, not from having to ship at all.
+    // These URLs are in sitemap.xml and in every page's hreflang, so a route
+    // that quietly stops building has to fail here.
     if (!fs.existsSync(newFile)) {
       console.error(`MISSING OUTPUT: ${newFile}`);
       totalProblems++;
       continue;
     }
+    if (REDESIGNED.has(label)) {
+      console.log(`~ skipped (redesigned): ${label}`);
+      continue;
+    }
+    const problems = [];
     const origHtml = fs.readFileSync(origFile, "utf8");
     const newHtml = fs.readFileSync(newFile, "utf8");
     compareIds(origHtml, newHtml, label, problems);
