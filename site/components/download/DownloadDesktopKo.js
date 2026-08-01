@@ -302,7 +302,7 @@ export default function DownloadDesktopKo() {
 
         {/* ——— CTA ——— */}
         <section className="pc-cta">
-          <h2>이제 책상 앞에서도 써보세요.</h2>
+          <h2>이제 PC에서도 이어서 써보세요.</h2>
           <p className="pc-cta-sub">
             macOS와 Windows용 PenCake PC 버전 v{MAC_VERSION}.
           </p>
