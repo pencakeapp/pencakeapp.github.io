@@ -144,9 +144,9 @@ export default function HomeKo() {
           </div>
           <h1 className="pc-rise pc-rise-2">글쓰기에 온전히 집중할 수 있는 미니멀 공간</h1>
           <p className="pc-hero-sub pc-rise pc-rise-3">
-            일기를 쓰든, 소설을 쓰든, 마음 속 얘기를 풀어쓰든 — 2018년부터
-            지금까지 전세계 230만 명이 넘는 사용자가 글쓰기를 위해 PenCake를
-            선택했습니다.
+            일기도 좋고, 소설도 좋고, 마음속에 담아둔 이야기도 좋습니다 —
+            2018년부터 지금까지 전 세계에서 230만 번 선택받은 글쓰기 앱,
+            PenCake.
           </p>
           <div className="pc-rise pc-rise-4">
             <DownloadButtons />
@@ -207,7 +207,7 @@ export default function HomeKo() {
             <Kicker>사용자들의 편지</Kicker>
             <h2>PenCake에게,</h2>
             <p className="pc-rating">
-              <Stars n={5} /> 전세계 230만 명이 넘는 사용자의 글쓰기 공간
+              <Stars n={5} /> 세계 곳곳에서 남겨주신 정성스러운 리뷰
             </p>
             <div className="pc-reviews">
               {REVIEWS.map((r) => (

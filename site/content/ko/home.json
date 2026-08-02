@@ -3,11 +3,11 @@
     "htmlLang": "ko",
     "htmlClass": "notion-html",
     "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-    "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 디자인으로 230만 명에게 사랑받은 글쓰기 노트. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+    "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 디자인으로 230만 명에게 사랑받은 글쓰기 노트. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
       "image": "https://pencake.app/assets/images/pencake_marketing_ko.jpg",
       "url": "https://pencake.app/ko/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 디자인으로 230만 명에게 사랑받은 글쓰기 노트. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
       "image": "https://pencake.app/assets/images/pencake_marketing_ko.jpg",
       "url": "https://pencake.app/ko/"
     },

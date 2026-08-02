@@ -493,8 +493,7 @@ export default function FaqKo() {
           <Kicker>도움말</Kicker>
           <h1>자주 묻는 질문</h1>
           <p className="pc-hero-sub">
-            글의 안전, 사용 방법, 프리미엄, 동기화까지 — PenCake를 만드는
-            사람들이 직접 답해 드립니다.
+            내 글의 보안부터 사용법, 프리미엄, 동기화까지 — PenCake를 만든 사람들이 직접 답한 질문들.
           </p>
         </header>
 
