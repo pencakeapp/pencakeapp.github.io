@@ -49,50 +49,54 @@ const FEATURES = [
   },
 ];
 
-// NOTE: placeholder reviews (temporary marketing copy) —
-// replace with real user quotes before treating this section as final.
-// Date lines follow the app's Korean entry format ("2018.12.25 수 오후 7:35").
+// Real App Store reviews — the same six-card master set as HomeEn (identical
+// excerpt boundaries). The South Korean one runs verbatim; the others are
+// translated into Korean from the store originals. Reviewer nicknames are
+// deliberately left out: these are quoted without the writers' consent, so
+// cards carry the storefront country, date, and stars instead. Date lines
+// follow the app's Korean entry format without a time of day (reviews carry
+// no time data — no fake timestamps).
 const REVIEWS = [
   {
-    title: "앱이 없는 것처럼 느껴져요",
-    date: "2026.03.03 화 오후 9:41",
-    body: "글쓰기 앱이란 앱은 다 써봤는데, 앱 자체를 의식하지 않게 되는 건 PenCake가 처음이에요. 열면 이미 쓰고 있어요.",
-    author: "서연 — 2021년부터 매일 일기",
+    title: "아름답고, 미니멀하고, 집중이 잘돼요",
+    date: "2024.01.18 목",
+    body: "이 앱을 만나기 전까지 글쓰기 앱이란 앱은 여러 개 받아서 써봤습니다. 다른 앱들은 기능이며 꾸밈이며 자꾸만 비대해지는데, PenCake는 글과 글쓰기 본연의 아름다움에 집중합니다. 덕분에 오롯이 쓰는 일에만 마음을 쏟을 수 있어요. 어떻게든 시선을 붙잡으려 드는 요즘 앱들 사이에서 만난, 참 반가운 휴식 같은 앱입니다. 100% 추천합니다.",
+    source: "미국",
     stars: 5,
   },
   {
-    title: "제 소설은 여기 살아요",
-    date: "2026.02.15 일 오후 11:02",
-    body: "8만 자 대부분을 지하철에서 썼어요. ‘이야기’ 덕분에 챕터가 순서대로 정리되고, 동기화 덕분에 집에 오면 컴퓨터에 최신 원고가 기다리고 있어요.",
-    author: "민준 — 첫 장편을 쓰는 중",
+    title: "오랫동안 애용하고 있습니다",
+    date: "2026.07.10 금",
+    body: "7년 가까이 쭉 애용해 왔고, 최근 몇 년은 프리미엄을 구입해 PC와 동기화하면서 쓰고 있습니다. 여러 앱을 써봤지만 이 앱이 단연 제일 좋아요. 심플하고 아름다운 디자인이 ‘글을 쓰고 싶다’는 마음을 강하게 불러일으켜 줍니다. 물론 메모 앱으로도 아주 요긴하게 쓰고 있고요. 이야기 안의 글 순서를 자유롭게 바꾸는 기능이 다음 업데이트에 더해지면 기쁘겠습니다.",
+    source: "일본",
     stars: 5,
   },
   {
-    title: "종이에 쓰는 것 같아요",
-    date: "2026.01.28 수 오전 7:15",
-    body: "서체가 조용히 아름다워요. 알아서 백업까지 해주는 예쁜 공책에 쓰는 기분이에요.",
-    author: "하은 — 일기 세 권을 쓰는 중",
+    title: "정말 좋은 경험이에요!",
+    date: "2026.03.23 월",
+    body: "화면이 깔끔하고 예쁜 데다 조작도 간단해서 금방 글 쓰는 습관이 생겼고, 자꾸만 이 앱을 열어 보고 싶어져요. 글을 쓰고 싶다고 생각한 지는 한참 됐는데 매번 너무 게을렀거든요. 이 앱으로 쓰면 확실한 성취감이 있어요.",
+    source: "대만",
     stars: 5,
   },
   {
-    title: "잠들기 전의 의식",
-    date: "2025.12.19 금 오후 11:58",
-    body: "자기 전에 글을 쓰는데, 트루 블랙 테마에 세리프 폰트를 켜니 하루를 마치는 의식이 됐어요. 폰트만으로도 프리미엄 값을 해요.",
-    author: "지아 — 밤에 쓰는 사람",
-    stars: 4,
-  },
-  {
-    title: "5년의 기록, 안전하게",
-    date: "2025.11.24 월 오후 8:20",
-    body: "수정하다 통째로 망친 글을 버전 기록이 살려준 적이 있어요. 무엇과도 바꿀 수 없는 기억이라 PenCake에 믿고 맡겨요.",
-    author: "도윤 — 딸에게 줄 일기를 쓰는 중",
+    title: "훌륭해요",
+    date: "2025.02.06 목",
+    body: "깔끔한 앱을 좋아하는데, 이 앱은 참 아름다워요. 이렇게 단순해 보이는데도 기능은 많습니다. 메뉴가 잘 짜여 있고, 글 사이를 오가는 방식이나 동작을 빠르게 해 주는 스와이프 제스처도 아주 좋아요. 서체가 아름답고, 스타일이 있고, 실용적입니다. 한 번 결제로 평생 소장할 수 있다는 것도 장점이에요. 가격이 아깝지 않습니다.",
+    source: "브라질",
     stars: 5,
   },
   {
-    title: "아이도 나도 쓰는 앱",
-    date: "2026.04.04 토 오후 4:44",
-    body: "딸과 저 둘 다 일기를 써요. 아이는 학교 이야기를 쓰고, 저는 아이 이야기를 써요.",
-    author: "수민 — 가족 일기 중",
+    title: "Wunderbar!",
+    date: "2022.10.15 토",
+    body: "절제된 디자인에 쓸모 있으면서도 과하지 않은 기능, 그런 앱을 찾아 헤매다 여기서 바라던 것을 찾았습니다. 놀랍도록 초점이 또렷한 앱이고, 그 단순함 속에서 그저 아름다워요. 정말 멋집니다!",
+    source: "독일",
+    stars: 5,
+  },
+  {
+    title: "최고의 어플",
+    date: "2026.07.25 토",
+    body: "진짜.. 처음 출시 될 때부터 지금까지 써온 사람입니다. 미성년자였을 때 처음으로 어플에 돈 써본 것이기도 했어요. 절대 후회 안 합니다. 글이 절 살렸고 지금도 글쓰기가 취미예요. 이런 어플 만들어주셔서 정말 감사합니다.",
+    source: "대한민국",
     stars: 5,
   },
 ];
@@ -216,7 +220,7 @@ export default function HomeKo() {
                   <div className="pc-review-date">{r.date}</div>
                   <p>{r.body}</p>
                   <div className="pc-review-meta">
-                    <span className="pc-review-author">{r.author}</span>
+                    <span className="pc-review-author">{r.source}</span>
                     <Stars n={r.stars} />
                   </div>
                 </article>
