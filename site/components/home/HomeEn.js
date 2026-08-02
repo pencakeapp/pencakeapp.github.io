@@ -48,7 +48,7 @@ const FEATURES = [
   },
   {
     emoji: "📖",
-    title: "For real writers",
+    title: "For the love of writing",
     body: "Markdown, word and character counts, images, and preview — for journals, blogs, novels, and fanfiction.",
   },
 ];
