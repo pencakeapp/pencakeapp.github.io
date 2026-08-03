@@ -6,14 +6,18 @@ import Kicker from "@/components/pc/Kicker";
 // Redesigned Korean landing page — HomeEn's layout with the legacy Korean
 // copy (content/ko/home.json) and the Korean App Store screenshots.
 
+// 항목마다 .webp 와 .jpg 가 짝으로 존재한다 — 둘 다 `npm run screenshots`
+// (scripts/make-screenshots.sh) 가 만든다. 짝이 어긋나지 않도록 확장자는
+// 여기에 적지 않는다.
 const SCREENSHOTS = [
-  { src: "/assets/images/appstore/screenshot_1_ko.jpg", alt: "PenCake 앱 — 미니멀한 일기 목록" },
-  { src: "/assets/images/appstore/screenshot_2_ko.jpg", alt: "PenCake 앱 — 미려한 세리프 서체로 쓴 시" },
-  { src: "/assets/images/appstore/screenshot_3_ko.jpg", alt: "PenCake 앱 — 사진을 넣은 여행 일기" },
-  { src: "/assets/images/appstore/screenshot_4_ko.jpg", alt: "PenCake 앱 — 방해 없는 글쓰기 화면" },
-  { src: "/assets/images/appstore/screenshot_5_ko.jpg", alt: "PenCake 앱 — 생각을 정리해 주는 이야기 목록" },
-  { src: "/assets/images/appstore/screenshot_6_ko.jpg", alt: "PenCake 앱 — 야간 모드" },
-  { src: "/assets/images/appstore/screenshot_7_ko.jpg", alt: "PenCake 앱 — 다양한 설정 기능" },
+  { base: "/assets/images/appstore/screenshot_1_ko", alt: "PenCake 앱 — 미니멀한 일기 목록" },
+  { base: "/assets/images/appstore/screenshot_2_ko", alt: "PenCake 앱 — 미려한 세리프 서체로 쓴 일기" },
+  { base: "/assets/images/appstore/screenshot_3_ko", alt: "PenCake 앱 — 사진을 넣은 여행 일기" },
+  { base: "/assets/images/appstore/screenshot_4_ko", alt: "PenCake 앱 — 방해 없는 글쓰기 화면" },
+  { base: "/assets/images/appstore/screenshot_5_ko", alt: "PenCake 앱 — 생각을 정리해 주는 이야기 목록" },
+  { base: "/assets/images/appstore/screenshot_6_ko", alt: "PenCake 앱 — 기기 사이를 오가는 동기화" },
+  { base: "/assets/images/appstore/screenshot_7_ko", alt: "PenCake 앱 — 기분 따라 고르는 테마" },
+  { base: "/assets/images/appstore/screenshot_8_ko", alt: "PenCake 앱 — 손글씨 서체" },
 ];
 
 const FEATURES = [
@@ -161,15 +165,18 @@ export default function HomeKo() {
         <section className="pc-shots-band" aria-label="PenCake 앱 스크린샷">
           <div className="pc-shots">
             {SCREENSHOTS.map((shot, i) => (
-              <figure className="pc-shot" key={shot.src}>
-                <img
-                  src={shot.src}
-                  alt={shot.alt}
-                  width="828"
-                  height="1472"
-                  loading={i < 2 ? "eager" : "lazy"}
-                  decoding="async"
-                />
+              <figure className="pc-shot" key={shot.base}>
+                <picture>
+                  <source srcSet={`${shot.base}.webp`} type="image/webp" />
+                  <img
+                    src={`${shot.base}.jpg`}
+                    alt={shot.alt}
+                    width="828"
+                    height="1534"
+                    loading={i < 2 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
+                </picture>
               </figure>
             ))}
           </div>
