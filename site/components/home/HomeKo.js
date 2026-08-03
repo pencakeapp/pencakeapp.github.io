@@ -108,7 +108,6 @@ const REVIEWS = [
 const RESOURCES = [
   { emoji: "❓", label: "자주 묻는 질문", href: "/ko/faq/", hint: "→" },
   { emoji: "👩🏻‍💻", label: "서식 지정하기 — 마크다운 가이드", href: "/ko/guide/markdown/", hint: "→" },
-  { emoji: "🕐", label: "새로운 소식 — PC 버전 업데이트 기록", href: "/changelog/desktop/?lang=ko", hint: "→" },
   { emoji: "🛡️", label: "개인정보 처리방침", href: "/ko/privacy/", hint: "→" },
   { emoji: "📩", label: "문의하기", href: "mailto:pencake.app@gmail.com", hint: "pencake.app@gmail.com" },
 ];

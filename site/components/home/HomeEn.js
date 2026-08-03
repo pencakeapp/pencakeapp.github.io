@@ -104,7 +104,6 @@ const REVIEWS = [
 const RESOURCES = [
   { emoji: "❓", label: "FAQs", href: "/faq/", hint: "→" },
   { emoji: "👩🏻‍💻", label: "Format Text — Markdown guide", href: "/guide/markdown/", hint: "→" },
-  { emoji: "🕐", label: "What’s new — desktop changelog", href: "/changelog/desktop/", hint: "→" },
   { emoji: "🛡️", label: "Privacy Policy", href: "/privacy/", hint: "→" },
   { emoji: "📩", label: "Contact us", href: "mailto:pencake.app@gmail.com", hint: "pencake.app@gmail.com" },
 ];
