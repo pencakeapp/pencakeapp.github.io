@@ -1,0 +1,75 @@
+/* ============ PenCake mobile download (redesigned) ============
+   Extends the home design language: the two store links as quiet
+   pills, and — for visitors on a computer — a QR handoff card whose
+   code sends the scanning phone straight to its own store.          */
+
+.pc-mdl-glyph {
+  margin-right: 8px;
+  color: var(--pc-teal-ink);
+  font-size: 14px;
+}
+
+/* ——— QR handoff card ——— */
+
+.pc-qr-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: fit-content;
+  margin: 54px auto 0;
+  padding: 18px 24px 18px 18px;
+  border: 1px solid var(--pc-hairline);
+  border-radius: 16px;
+  text-align: left;
+}
+
+.pc-qr-card img {
+  display: block;
+  flex: none;
+  width: 128px;
+  height: 128px;
+}
+
+.pc-qr-text {
+  max-width: 20em;
+}
+
+.pc-qr-title {
+  margin: 0;
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pc-qr-hint {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--pc-ink-60);
+}
+
+/* The card only serves the desktop → phone handoff, so it is hidden
+   wherever the visitor already has the store buttons in hand: any touch
+   device (a phone or tablet told to "scan with your phone" reads as
+   nonsense), and any window too narrow to hold the card. */
+@media (pointer: coarse), (max-width: 700px) {
+  .pc-qr-card {
+    display: none;
+  }
+}
+
+/* ——— Marketing image band ——— */
+
+/* The poster's phones bleed off its own bottom edge, so the band ends
+   exactly where the image does — no padding below the cut. */
+.pc-mdl-shot {
+  margin-top: 56px;
+  padding: 5px 24px 0;
+}
+
+.pc-mdl-shot img {
+  display: block;
+  margin: 0 auto;
+  width: min(820px, 100%);
+  height: auto;
+}

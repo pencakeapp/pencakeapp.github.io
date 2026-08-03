@@ -1,0 +1,736 @@
+/* ============ PenCake home (redesigned) ============
+   The page reads like a page from the app itself: white paper,
+   book serif, quiet gray ink, and PenCake's teal cursor accent.
+   --pc-band matches the exact background of the App Store shots
+   so the screenshot strip blends seamlessly into the page.       */
+
+:root {
+  --pc-ink: rgb(55, 53, 47);
+  --pc-ink-72: rgba(55, 53, 47, 0.72);
+  --pc-ink-60: rgba(55, 53, 47, 0.6);
+  --pc-ink-45: rgba(55, 53, 47, 0.45);
+  --pc-ink-30: rgba(55, 53, 47, 0.3);
+  --pc-hairline: rgba(55, 53, 47, 0.14);
+  --pc-teal: #35b6c5; /* PenCake brand teal — the app's identity color */
+  --pc-teal-ink: #2f97a3; /* darker same-hue teal, safe for text on white */
+  --pc-teal-wash: #eff9fa; /* ~12% brand teal over white, for tinted bands */
+  --pc-teal-btn: #2d9ba8; /* deeper, calmer teal for buttons (rgb 39,125,138) */
+  --pc-teal-btn-hover: #278691; /* one step darker for button hover */
+  --pc-band: #fcfdff;
+  --pc-cream: #faf8f4;
+  /* Serif stack. "Source Serif Pro" (Latin) is a webfont loaded by the
+     (home)/(ko) layouts; the Latin system serifs after it are fallbacks
+     while it loads or where it isn't loaded. Hangul never resolves in the
+     Latin faces, so it falls through to "Noto Serif KR" (webfont on the
+     Korean pages) and then the local Korean fallbacks.
+
+     To revert to the original system-font serif (no webfont), remove
+     "Source Serif Pro" here and stop loading EN_SERIF_FONT_CSS in the
+     layouts. Original Latin-only stack was:
+       "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+       "Times New Roman", serif                                        */
+  --pc-serif:
+    "Source Serif Pro", "Iowan Old Style", "Palatino Linotype", Palatino,
+    Georgia, "Times New Roman", "Noto Serif KR", "Nanum Myeongjo",
+    NanumMyeongjo, AppleMyungjo, Batang, "Noto Serif CJK KR", serif;
+  --pc-sans:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.pc-body {
+  margin: 0;
+  background: #fff;
+  color: var(--pc-ink);
+  font-family: var(--pc-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* low specificity on purpose — component rules (e.g. .pc-btn-primary) win */
+a {
+  color: inherit;
+}
+
+/* Korean lines break between words, not inside them */
+.pc-body:lang(ko) {
+  word-break: keep-all;
+}
+
+/* ——— Hero ——— */
+
+.pc-hero {
+  padding: 108px 24px 68px;
+  text-align: center;
+}
+
+.pc-wordmark {
+  font-family: var(--pc-serif);
+  font-size: 15px;
+  letter-spacing: 0.42em;
+  margin-left: 0.42em; /* optically re-center the tracked-out text */
+  text-transform: uppercase;
+  color: var(--pc-ink-60);
+}
+
+.pc-cursor {
+  color: var(--pc-teal);
+  /* the serif's "|" spans -0.25em..0.75em while the caps sit on 0..0.669em,
+     leaving the bar's center 0.085em low — lift it back onto the letters */
+  position: relative;
+  top: -0.085em;
+  animation: pc-blink 1.15s steps(1) infinite;
+}
+
+@keyframes pc-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.pc-hero h1 {
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: clamp(34px, 6vw, 46px);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  max-width: 16em;
+  margin: 40px auto 0;
+}
+
+.pc-hero-sub {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--pc-ink-60);
+  max-width: 37em;
+  margin: 42px auto 0;
+}
+
+/* ——— Buttons ——— */
+
+.pc-actions {
+  margin-top: 58px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 13px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition:
+    transform 0.18s cubic-bezier(0.2, 0.6, 0.2, 1),
+    opacity 0.18s,
+    background 0.18s,
+    border-color 0.18s;
+}
+
+.pc-btn:active {
+  transform: scale(0.98);
+}
+
+.pc-btn-primary {
+  background: var(--pc-teal-btn);
+  color: #fff;
+  font-weight: 600;
+}
+
+.pc-btn-primary:hover {
+  background: var(--pc-teal-btn-hover);
+  transform: translateY(-1px);
+}
+
+.pc-btn-ghost {
+  border: 1px solid rgba(39, 125, 138, 0.55);
+  color: var(--pc-teal-btn);
+}
+
+.pc-btn-ghost:hover {
+  border-color: var(--pc-teal-btn);
+  background: rgba(39, 125, 138, 0.05);
+  transform: translateY(-1px);
+}
+
+.pc-platforms {
+  margin: 32px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--pc-ink-45);
+}
+
+/* ——— Screenshot band ——— */
+
+.pc-shots-band {
+  background: var(--pc-band);
+}
+
+.pc-shots {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  /* The shots carry ~29px of their own whitespace, so the visible gap between
+     two phones is 30 + 29×2 ≈ 89px. Matching that at the edge means the inline
+     padding has to make up the difference — 89 − 29, not 30. */
+  padding: 22px max(60px, calc(50vw - 660px)) 27px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 40px,
+    #000 calc(100% - 40px),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 40px,
+    #000 calc(100% - 40px),
+    transparent
+  );
+}
+
+.pc-shots::-webkit-scrollbar {
+  display: none;
+}
+
+.pc-shot {
+  flex: 0 0 auto;
+  width: min(300px, 70vw);
+  margin: 0;
+  scroll-snap-align: center;
+}
+
+/* tighter rhythm on phones so the next card clearly peeks in */
+@media (max-width: 560px) {
+  .pc-shots {
+    gap: 22px;
+    /* 60px would eat the peek on a narrow screen — keep the edge tight here */
+    padding-inline: 24px;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 20px,
+      #000 calc(100% - 20px),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 20px,
+      #000 calc(100% - 20px),
+      transparent
+    );
+  }
+}
+
+/* <picture> is inline by default; block keeps it from adding a baseline gap */
+.pc-shot picture {
+  display: block;
+}
+
+.pc-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pc-shots-hint {
+  margin: 0;
+  padding: 0 24px 26px;
+  text-align: center;
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: var(--pc-ink-30);
+  background: var(--pc-band);
+}
+
+/* ——— Section shell ——— */
+
+.pc-section {
+  padding: 106px 24px 0;
+}
+
+.pc-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.pc-container-wide {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.pc-kicker-rule {
+  width: 34px;
+  height: 1px;
+  background: var(--pc-hairline);
+  margin: 0 auto 18px;
+}
+
+.pc-kicker-label {
+  font-family: var(--pc-serif);
+  font-size: 12.5px;
+  letter-spacing: 0.34em;
+  margin-left: 0.34em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--pc-ink-45);
+}
+
+.pc-section h2,
+.pc-cta h2 {
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: clamp(26px, 4.4vw, 34px);
+  line-height: 1.45;
+  text-align: center;
+  max-width: 20em;
+  margin: 50px auto 0;
+}
+
+.pc-lead {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--pc-ink-72);
+  text-align: center;
+  max-width: 36em;
+  margin: 42px auto 0;
+}
+
+/* ——— Features ——— */
+
+.pc-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 44px 56px;
+  margin-top: 79px;
+}
+
+@media (min-width: 900px) {
+  .pc-features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 57px 48px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pc-features {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.pc-feature-emoji {
+  font-size: 22px;
+}
+
+.pc-feature h3 {
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  margin: 12px 0 8px;
+}
+
+.pc-feature p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--pc-ink-60);
+}
+
+.pc-finenote {
+  margin: 106px auto 0;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--pc-ink-45);
+  max-width: 46em;
+  text-align: center;
+}
+
+/* ——— Reviews ——— */
+
+.pc-rating {
+  margin: 35px 0 0;
+  text-align: center;
+  font-family: var(--pc-serif);
+  font-size: 15.5px;
+  color: var(--pc-ink-60);
+}
+
+.pc-stars {
+  color: var(--pc-teal);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+}
+
+.pc-reviews {
+  columns: 2;
+  column-gap: 24px;
+  margin-top: 65px;
+}
+
+@media (max-width: 760px) {
+  .pc-reviews {
+    columns: 1;
+  }
+}
+
+.pc-review {
+  break-inside: avoid;
+  border: 1px solid var(--pc-hairline);
+  border-radius: 16px;
+  padding: 26px 26px 22px;
+  margin: 0 0 24px;
+}
+
+.pc-review h3 {
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0;
+}
+
+.pc-review-date {
+  font-family: var(--pc-serif);
+  font-size: 12.5px;
+  color: var(--pc-ink-45);
+  margin-top: 6px;
+}
+
+.pc-review p {
+  font-family: var(--pc-serif);
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--pc-ink-72);
+  margin: 14px 0 0;
+}
+
+.pc-review-meta {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.pc-review-author {
+  font-size: 13px;
+  color: var(--pc-ink-60);
+}
+
+.pc-review .pc-stars {
+  font-size: 12px;
+  flex: none;
+}
+
+/* ——— CTA band ——— */
+
+.pc-cta {
+  margin-top: 134px;
+  padding: 66px 24px 106px;
+  text-align: center;
+  background: var(--pc-teal-wash);
+  border-top: 1px solid rgba(53, 182, 197, 0.2);
+  border-bottom: 1px solid rgba(53, 182, 197, 0.2);
+}
+
+.pc-cta-sub {
+  font-size: 15px;
+  color: var(--pc-ink-60);
+  margin: 14px 0 0;
+}
+
+/* ——— Learn more (table of contents) ——— */
+
+.pc-toc {
+  max-width: 560px;
+  margin: 53px auto 0;
+}
+
+.pc-toc a {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 15px 2px;
+  text-decoration: none;
+}
+
+.pc-toc-emoji {
+  flex: none;
+  font-size: 16px;
+}
+
+.pc-toc-label {
+  font-family: var(--pc-serif);
+  font-size: 17.5px;
+  transition: color 0.18s;
+}
+
+.pc-toc-leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--pc-ink-30);
+  transform: translateY(-4px);
+}
+
+.pc-toc-hint {
+  font-size: 13px;
+  color: var(--pc-ink-45);
+  white-space: nowrap;
+  transition:
+    color 0.18s,
+    transform 0.18s;
+}
+
+.pc-toc a:hover .pc-toc-label,
+.pc-toc a:hover .pc-toc-hint {
+  color: var(--pc-teal-ink);
+}
+
+.pc-toc a:hover .pc-toc-hint {
+  transform: translateX(2px);
+}
+
+/* ——— Footer ——— */
+
+.pc-footer {
+  margin-top: 115px;
+  padding: 44px 24px 64px;
+  border-top: 1px solid rgba(55, 53, 47, 0.08);
+  text-align: center;
+}
+
+.pc-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--pc-serif);
+  font-size: 13.5px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--pc-ink-60);
+}
+
+.pc-footer-brand img {
+  border-radius: 5px;
+}
+
+.pc-footer-langs {
+  margin: 18px auto 0;
+  max-width: 640px;
+  font-size: 13px;
+  line-height: 2;
+  color: var(--pc-ink-30);
+}
+
+.pc-footer-langs a {
+  color: var(--pc-ink-60);
+  text-decoration: none;
+}
+
+.pc-footer-langs a:hover {
+  color: var(--pc-teal-ink);
+}
+
+.pc-footer-langs .pc-current {
+  color: var(--pc-ink);
+}
+
+.pc-footer-copy {
+  margin: 14px 0 0;
+  font-size: 12.5px;
+  color: var(--pc-ink-30);
+}
+
+/* ——— Running head + page hero (redesigned subpages) ——— */
+
+.pc-topnav {
+  padding: 30px 24px 0;
+  text-align: center;
+}
+
+.pc-topnav .pc-wordmark {
+  display: inline-block;
+  font-size: 12.5px;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+
+.pc-topnav .pc-wordmark:hover {
+  color: var(--pc-ink);
+}
+
+.pc-page-hero {
+  padding: 64px 24px 0;
+  text-align: center;
+}
+
+.pc-page-hero h1 {
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: clamp(30px, 5.4vw, 40px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  max-width: 18em;
+  margin: 41px auto 0;
+}
+
+/* ——— Shared subpage primitives ———
+   Used by the redesigned subpages (guide, privacy, download, changelog).
+   The FAQ predates these and keeps its own scoped equivalents.          */
+
+/* Part divider: hairline + letterspaced small-caps title, optional numeral */
+.pc-part {
+  padding: 84px 24px 0;
+}
+
+.pc-part-head {
+  text-align: center;
+  scroll-margin-top: 28px;
+}
+
+.pc-part-head .pc-kicker-rule {
+  margin-bottom: 16px;
+}
+
+.pc-part-head h2 {
+  margin: 0 0 0 0.3em; /* optically re-center the tracked-out text */
+  font-family: var(--pc-serif);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--pc-ink-60);
+}
+
+.pc-part-num {
+  color: var(--pc-teal-ink);
+}
+
+/* Reading column for document-like pages */
+.pc-prose {
+  max-width: 640px;
+  margin: 26px auto 0;
+}
+
+.pc-prose p,
+.pc-prose li {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--pc-ink-72);
+}
+
+.pc-prose p {
+  margin: 0 0 14px;
+}
+
+.pc-prose ul,
+.pc-prose ol {
+  margin: 0 0 14px;
+  padding-left: 1.4em;
+}
+
+.pc-prose li {
+  margin: 5px 0;
+}
+
+.pc-prose li::marker {
+  color: var(--pc-ink-45);
+}
+
+.pc-prose h3 {
+  font-family: var(--pc-serif);
+  font-weight: 600;
+  font-size: 17.5px;
+  letter-spacing: 0.01em;
+  margin: 34px 0 10px;
+  color: var(--pc-ink);
+  scroll-margin-top: 28px;
+}
+
+.pc-prose a {
+  color: var(--pc-teal-ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(53, 182, 197, 0.45);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.18s;
+  word-break: break-word;
+}
+
+.pc-prose a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Note (callout) — cream card with a leading emoji or icon */
+.pc-note {
+  display: flex;
+  gap: 10px;
+  margin: 14px auto 0;
+  padding: 13px 16px;
+  background: var(--pc-cream);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.pc-note-emoji {
+  flex: none;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pc-note-emoji img {
+  display: block;
+  margin-top: 2px;
+  border-radius: 4px;
+}
+
+.pc-note p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--pc-ink-72);
+}
+
+.pc-note a {
+  color: var(--pc-teal-ink);
+}
+
+/* ——— Entrance ——— */
+
+@media (prefers-reduced-motion: no-preference) {
+  .pc-rise {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: pc-rise 0.8s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
+  }
+
+  .pc-rise-2 {
+    animation-delay: 0.1s;
+  }
+
+  .pc-rise-3 {
+    animation-delay: 0.2s;
+  }
+
+  .pc-rise-4 {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes pc-rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

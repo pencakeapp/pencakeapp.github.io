@@ -2,35 +2,29 @@
 
 import { useEffect } from "react";
 import { langPrefix } from "@/lib/langs";
+import { detectMobileStore, storeUrl } from "@/lib/stores";
 
 // Ported from the legacy inline script on the landing pages:
 // the "Download" button routes to the App Store / Play Store on mobile,
 // or to the mobile download page on desktop.
-const appStoreLink =
-  "https://apps.apple.com/app/id1382218014?utm_source=pencakewebsite&utm_medium=button";
-const playStoreLink =
-  "https://play.google.com/store/apps/details?id=com.diffathy.bbapp&referrer=utm_source%3Dpencakewebsite%26utm_medium%3Dbutton";
+// Delegated like DownloadHandlers, because the redesigned homes repeat the
+// button in the closing CTA — binding the id alone would leave that one
+// falling through to the desktop page on every device.
+const SELECTOR = "#downloadMobile, [data-download-mobile]";
 
 export default function MobileDownloadRedirect({ lang }) {
   useEffect(() => {
-    const button = document.getElementById("downloadMobile");
-    if (!button) return;
-
     const desktopLink = `${langPrefix(lang)}/download/mobile/`;
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     const onClick = (e) => {
+      const a = e.target.closest && e.target.closest(SELECTOR);
+      if (!a) return;
       e.preventDefault();
-      if (/android/i.test(userAgent)) {
-        window.location.href = playStoreLink;
-      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        window.location.href = appStoreLink;
-      } else {
-        window.location.href = desktopLink;
-      }
+      const store = detectMobileStore(navigator.userAgent, navigator.maxTouchPoints);
+      window.location.href = store ? storeUrl(store, "button") : desktopLink;
     };
-    button.addEventListener("click", onClick);
-    return () => button.removeEventListener("click", onClick);
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
   }, [lang]);
 
   return null;

@@ -3,11 +3,11 @@
     "htmlLang": "ko",
     "htmlClass": "notion-html",
     "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-    "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 디자인으로 230만 명에게 사랑받은 글쓰기 노트. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+    "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 디자인으로 230만 명에게 사랑받은 글쓰기 노트. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
       "image": "https://pencake.app/assets/images/pencake_marketing_ko.jpg",
       "url": "https://pencake.app/ko/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 디자인으로 230만 명에게 사랑받은 글쓰기 노트. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
       "image": "https://pencake.app/assets/images/pencake_marketing_ko.jpg",
       "url": "https://pencake.app/ko/"
     },
@@ -424,7 +424,7 @@
     },
     {
       "type": "comment",
-      "html": "<!-- Built for real writers -->"
+      "html": "<!-- For the love of writing -->"
     },
     {
       "type": "text",
@@ -432,7 +432,7 @@
     },
     {
       "type": "sub_sub_header",
-      "html": "<div class=\"notion-selectable notion-sub_sub_header-block\" style=\"width: 100%; max-width: 998px; margin-top: 1.25em; margin-bottom: 2px;\">\n  <div style=\"display: flex; width: 100%; color: inherit; fill: inherit;\"><h4 contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\"제목3\" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px 3px 6.5px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.25em; line-height: 1.3; margin: 0px;\"><span class=\"notion-enable-hover\" data-token-index=\"0\" style=\"font-weight:600\">📖 진짜 ‘글쟁이’를 위한</span></h4>\n    <div style=\"position: relative; left: 0px;\"></div>\n  </div>\n</div>"
+      "html": "<div class=\"notion-selectable notion-sub_sub_header-block\" style=\"width: 100%; max-width: 998px; margin-top: 1.25em; margin-bottom: 2px;\">\n  <div style=\"display: flex; width: 100%; color: inherit; fill: inherit;\"><h4 contenteditable=\"false\" data-content-editable-leaf=\"true\" placeholder=\"제목3\" spellcheck=\"true\" style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgba(255, 255, 255, 0.81); padding: 3px 2px 3px 6.5px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 600; font-size: 1.25em; line-height: 1.3; margin: 0px;\"><span class=\"notion-enable-hover\" data-token-index=\"0\" style=\"font-weight:600\">📖 글을 사랑하는 당신에게</span></h4>\n    <div style=\"position: relative; left: 0px;\"></div>\n  </div>\n</div>"
     },
     {
       "type": "text",
