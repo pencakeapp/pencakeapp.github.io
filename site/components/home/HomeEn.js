@@ -148,8 +148,8 @@ export default function HomeEn() {
           <h1 className="pc-rise pc-rise-2">A beautifully minimal space for your thoughts.</h1>
           <p className="pc-hero-sub pc-rise pc-rise-3">
             Journal entries, notes in passing, or the novel you’ve been meaning
-            to write — since 2018, people around the world have chosen PenCake
-            as their quiet place to write. 2.3 million times so far.
+            to write. They’re all welcome in PenCake — a simple writing app
+            downloaded 2.3 million times around the world since 2018.
           </p>
           <div className="pc-rise pc-rise-4">
             <DownloadButtons />
