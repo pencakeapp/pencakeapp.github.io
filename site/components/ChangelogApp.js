@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Kicker from "@/components/pc/Kicker";
+import TopNav from "@/components/pc/TopNav";
 import {
   logs,
   updateHistoryTitle,
@@ -9,12 +10,17 @@ import {
   othersTitle,
 } from "@/lib/changelog-data";
 import { KO_SERIF_FONT_CSS } from "@/lib/fonts";
+import { langPrefix } from "@/lib/langs";
 
 const DEFAULT_LANG = "en";
 
 // <html lang> value per ?lang= code. Defaults to the code itself;
 // only the zh variants need an explicit region/script tag.
 const HTML_LANG = { "zh-hans": "zh-CN", "zh-hant": "zh-TW" };
+
+// The site's language folders per ?lang= code — same as the code itself
+// except for the zh variants, which the changelog names by script.
+const SITE_LANG = { "zh-hans": "zh-cn", "zh-hant": "zh-tw" };
 
 // Language switcher entries. The changelog localizes via ?lang= on a
 // single URL (matching the page's hreflang alternates), not per-language
@@ -31,6 +37,20 @@ const LANGUAGES = [
   { label: "日本語", code: "ja" },
   { label: "한국어", code: "ko" },
 ];
+
+// ?lang= is user-supplied, so it is checked against this set once, on read,
+// and anything else becomes English. Without that, a junk code reaches
+// Intl.DateTimeFormat below, which throws RangeError on anything that isn't
+// a well-formed language tag (?lang=x) and takes the whole page down with it.
+// A Set also keeps inherited keys (?lang=constructor) out of the lookups.
+const KNOWN_LANGS = new Set(LANGUAGES.map((l) => l.code || DEFAULT_LANG));
+
+// Where the wordmark goes back to: that language's home, not always the
+// English one. Only ever called with a KNOWN_LANGS code, all of which have
+// a language folder on the site (en being the root).
+function homeHref(lang) {
+  return `${langPrefix(SITE_LANG[lang] || lang)}/`;
+}
 
 // Log entries are plain strings: "▪ " starts an item, "- " a sub-item.
 function parseItems(text) {
@@ -75,7 +95,8 @@ export default function ChangelogApp() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    setLang(params.get("lang") || DEFAULT_LANG);
+    const requested = params.get("lang");
+    setLang(KNOWN_LANGS.has(requested) ? requested : DEFAULT_LANG);
   }, []);
 
   useEffect(() => {
@@ -98,8 +119,10 @@ export default function ChangelogApp() {
     };
   }, [lang]);
 
-  // Same as the legacy page: nothing is shown until the script runs.
-  if (!lang) return null;
+  // Same as the legacy page: nothing is shown until the script runs —
+  // except the running head, which renders statically (pointing at the
+  // root) and re-points at the selected language's home once ?lang= is in.
+  if (!lang) return <TopNav />;
 
   const t = (map) => map[lang] || map[DEFAULT_LANG];
   // releasedAt is a bare calendar date ("2024-12-21", parsed as UTC midnight);
@@ -111,6 +134,7 @@ export default function ChangelogApp() {
 
   return (
     <>
+      <TopNav home={homeHref(lang)} />
       {/* This page is shared by every language (?lang=), so the Korean
           serif webfont is only pulled in when Korean is selected.
           `precedence` lets React hoist the client-rendered link to <head>. */}
