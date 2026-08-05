@@ -477,6 +477,10 @@ a {
   gap: 14px;
   padding: 15px 2px;
   text-decoration: none;
+  /* iOS Safari fills the whole tapped element with a gray box; across a row
+     this wide it reads as a flash rather than a press. The teal below
+     acknowledges the tap instead. */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .pc-toc-emoji {
@@ -506,7 +510,9 @@ a {
 }
 
 .pc-toc a:hover .pc-toc-label,
-.pc-toc a:hover .pc-toc-hint {
+.pc-toc a:hover .pc-toc-hint,
+.pc-toc a:active .pc-toc-label,
+.pc-toc a:active .pc-toc-hint {
   color: var(--pc-teal-ink);
 }
 

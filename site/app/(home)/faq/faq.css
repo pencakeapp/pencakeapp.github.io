@@ -76,6 +76,10 @@
   padding: 24px 2px;
   cursor: pointer;
   list-style: none;
+  /* iOS Safari fills the whole tapped element with a gray box. On a row this
+     wide and tall, with no shape of its own to follow, it reads as a flash
+     rather than a press — the teal below acknowledges the tap instead. */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .pc-faq-item summary::-webkit-details-marker {
@@ -121,7 +125,8 @@
   transition: color 0.18s;
 }
 
-.pc-faq-item summary:hover h3 {
+.pc-faq-item summary:hover h3,
+.pc-faq-item summary:active h3 {
   color: var(--pc-teal-ink);
 }
 
