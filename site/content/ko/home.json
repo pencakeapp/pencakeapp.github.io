@@ -3,11 +3,11 @@
     "htmlLang": "ko",
     "htmlClass": "notion-html",
     "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-    "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+    "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 280만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 280만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
       "image": "https://pencake.app/assets/images/pencake_marketing_ko.jpg",
       "url": "https://pencake.app/ko/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: 미니멀 글쓰기 앱 — 일기부터 소설까지",
-      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 230만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
+      "description": "일기, 메모, 소설, 팬픽까지. 군더더기 없는 미니멀한 글쓰기 앱 펜케이크. 아름답고 심플한 글쓰기 노트. 전 세계 280만 다운로드. 모든 기기 간 완벽한 동기화 지원. 당신의 이야기에 온전히 집중해 보세요.",
       "image": "https://pencake.app/assets/images/pencake_marketing_ko.jpg",
       "url": "https://pencake.app/ko/"
     },
@@ -240,7 +240,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">PenCake는 온전히 당신의 이야기에 집중할 수 있는 글쓰기 앱입니다. 일기를 쓰든, 소설을 쓰든, 마음 속 얘기를 풀어쓰든, 언제 어디서나 글쓰기에 집중할 수 있습니다.\n\n2018년부터 지금까지 전세계 <b>230만명이 넘는 사용자가</b> 글쓰기를 위해 PenCake를 선택했습니다.\n  \n군더더기 없이 깔끔한 인터페이스는 오직 글에만 집중할 수 있게 해주고, 미려한 서체와 자연스러운 줄 간격은 마치 실제 책을 쓰는 것처럼 즐거운 글쓰기 경험을 선사합니다.\n\n처음 글을 쓰는 사람도, 오랫동안 글을 써온 작가도. PenCake는 누구에게나 <b>심플하지만 영감이 차오르는</b> 글쓰기 공간이 되어줍니다.</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">PenCake는 온전히 당신의 이야기에 집중할 수 있는 글쓰기 앱입니다. 일기를 쓰든, 소설을 쓰든, 마음 속 얘기를 풀어쓰든, 언제 어디서나 글쓰기에 집중할 수 있습니다.\n\n2018년부터 지금까지 전세계 <b>280만명이 넘는 사용자가</b> 글쓰기를 위해 PenCake를 선택했습니다.\n  \n군더더기 없이 깔끔한 인터페이스는 오직 글에만 집중할 수 있게 해주고, 미려한 서체와 자연스러운 줄 간격은 마치 실제 책을 쓰는 것처럼 즐거운 글쓰기 경험을 선사합니다.\n\n처음 글을 쓰는 사람도, 오랫동안 글을 써온 작가도. PenCake는 누구에게나 <b>심플하지만 영감이 차오르는</b> 글쓰기 공간이 되어줍니다.</div></div></div></div>"
     },
     {
       "type": "text",

@@ -3,11 +3,11 @@
     "htmlLang": "es",
     "htmlClass": "notion-html",
     "title": "PenCake: App de escritura minimalista",
-    "description": "Una app minimalista y sin distracciones para escribir diarios, notas y fanfiction. Elegante, simple y amada por más de 2.3 millones de escritores. Sincronización en todas las plataformas.",
+    "description": "Una app minimalista y sin distracciones para escribir diarios, notas y fanfiction. Elegante, simple y amada por más de 2.8 millones de escritores. Sincronización en todas las plataformas.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: App de escritura minimalista",
-      "description": "Una app minimalista y sin distracciones para escribir diarios, notas y fanfiction. Elegante, simple y amada por más de 2.3 millones de escritores. Sincronización en todas las plataformas.",
+      "description": "Una app minimalista y sin distracciones para escribir diarios, notas y fanfiction. Elegante, simple y amada por más de 2.8 millones de escritores. Sincronización en todas las plataformas.",
       "image": "https://pencake.app/assets/images/pencake_marketing_es.png",
       "url": "https://pencake.app/es/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: App de escritura minimalista",
-      "description": "Escritura minimalista y sin distracciones para diarios, notas y fanfiction. Amada por más de 2,3 millones de escritores. Sincroniza en todas partes.",
+      "description": "Escritura minimalista y sin distracciones para diarios, notas y fanfiction. Amada por más de 2,8 millones de escritores. Sincroniza en todas partes.",
       "image": "https://pencake.app/assets/images/pencake_marketing_es.png",
       "url": "https://pencake.app/es/"
     },

@@ -3,11 +3,11 @@
     "htmlLang": "ja",
     "htmlClass": "notion-html",
     "title": "PenCake｜ミニマルな文章作成アプリ ― 日記から小説まで",
-    "description": "日記、メモ、小説執筆、二次創作まで。無駄のないミニマルな文章アプリ「PenCake（ペンケーキ）」。美しくシンプルなデザインで230万人以上に愛された文章ノート。すべてのデバイスでスムーズに同期。あなたの物語に心から集中してみませんか。",
+    "description": "日記、メモ、小説執筆、二次創作まで。無駄のないミニマルな文章アプリ「PenCake（ペンケーキ）」。美しくシンプルなデザインで280万人以上に愛された文章ノート。すべてのデバイスでスムーズに同期。あなたの物語に心から集中してみませんか。",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake｜ミニマルな文章作成アプリ ― 日記から小説まで",
-      "description": "日記、メモ、小説執筆、二次創作まで。無駄のないミニマルな文章アプリ「PenCake（ペンケーキ）」。美しくシンプルなデザインで230万人以上に愛された文章ノート。すべてのデバイスでスムーズに同期。あなたの物語に心から集中してみませんか。",
+      "description": "日記、メモ、小説執筆、二次創作まで。無駄のないミニマルな文章アプリ「PenCake（ペンケーキ）」。美しくシンプルなデザインで280万人以上に愛された文章ノート。すべてのデバイスでスムーズに同期。あなたの物語に心から集中してみませんか。",
       "image": "https://pencake.app/assets/images/pencake_marketing_ja.jpg",
       "url": "https://pencake.app/ja/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake｜ミニマルな文章作成アプリ ― 日記から小説まで",
-      "description": "日記、メモ、小説執筆、二次創作まで。無駄のないミニマルな文章アプリ「PenCake（ペンケーキ）」。美しくシンプルなデザインで230万人以上に愛された文章ノート。すべてのデバイスでスムーズに同期。あなたの物語に心から集中してみませんか。",
+      "description": "日記、メモ、小説執筆、二次創作まで。無駄のないミニマルな文章アプリ「PenCake（ペンケーキ）」。美しくシンプルなデザインで280万人以上に愛された文章ノート。すべてのデバイスでスムーズに同期。あなたの物語に心から集中してみませんか。",
       "image": "https://pencake.app/assets/images/pencake_marketing_ja.jpg",
       "url": "https://pencake.app/ja/"
     },
@@ -240,7 +240,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">PenCakeは、あなたの「書きたい気持ち」をそっと支えるミニマルな文章アプリです。日記、小説、心のつぶやき。どんな言葉も、どこでも、思うままに書き残せます。\n\n2018年のリリース以来、世界中で<b>230万人以上の方が</b>、書くためにPenCakeを選んでくれました。\n  \n無駄を削ぎ落とした美しいインターフェースと、本のように読みやすい書体・行間。まるで一冊の本を綴っているような、心地よい執筆体験があなたを待っています。\n\n初めて文章を書く方にも、長年筆を握ってきた作家さんにも。PenCakeは誰にとっても、<b>シンプルなのにインスピレーションが湧いてくる</b>場所です。</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">PenCakeは、あなたの「書きたい気持ち」をそっと支えるミニマルな文章アプリです。日記、小説、心のつぶやき。どんな言葉も、どこでも、思うままに書き残せます。\n\n2018年のリリース以来、世界中で<b>280万人以上の方が</b>、書くためにPenCakeを選んでくれました。\n  \n無駄を削ぎ落とした美しいインターフェースと、本のように読みやすい書体・行間。まるで一冊の本を綴っているような、心地よい執筆体験があなたを待っています。\n\n初めて文章を書く方にも、長年筆を握ってきた作家さんにも。PenCakeは誰にとっても、<b>シンプルなのにインスピレーションが湧いてくる</b>場所です。</div></div></div></div>"
     },
     {
       "type": "text",

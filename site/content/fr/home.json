@@ -3,11 +3,11 @@
     "htmlLang": "fr",
     "htmlClass": "notion-html",
     "title": "PenCake : appli d'écriture minimaliste — du journal au roman",
-    "description": "Une application d'écriture minimaliste et sans distraction pour le journal intime, les notes, l'écriture de romans et la fanfiction. Élégante, simple, et adoptée par plus de 2,3 M d'auteurs. Synchronisée sur toutes les plateformes.",
+    "description": "Une application d'écriture minimaliste et sans distraction pour le journal intime, les notes, l'écriture de romans et la fanfiction. Élégante, simple, et adoptée par plus de 2,8 M d'auteurs. Synchronisée sur toutes les plateformes.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake : appli d'écriture minimaliste — du journal au roman",
-      "description": "Une application d'écriture minimaliste et sans distraction pour le journal intime, les notes, l'écriture de romans et la fanfiction. Élégante, simple, et adoptée par plus de 2,3 M d'auteurs. Synchronisée sur toutes les plateformes.",
+      "description": "Une application d'écriture minimaliste et sans distraction pour le journal intime, les notes, l'écriture de romans et la fanfiction. Élégante, simple, et adoptée par plus de 2,8 M d'auteurs. Synchronisée sur toutes les plateformes.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/fr/",
       "type": "website",
@@ -27,7 +27,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake : appli d'écriture minimaliste — du journal au roman",
-      "description": "Une écriture minimaliste et sans distraction pour les journaux, les notes, les romans et la fanfiction. Adoptée par plus de 2,3 M d'auteurs. Synchronisée partout.",
+      "description": "Une écriture minimaliste et sans distraction pour les journaux, les notes, les romans et la fanfiction. Adoptée par plus de 2,8 M d'auteurs. Synchronisée partout.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/"
     },
@@ -250,7 +250,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake t'aide à te concentrer sur tes mots — que tu écrives un journal, une histoire, ou quelque chose juste pour toi.\n\nDepuis 2018, <b>plus de 2,3 millions d'auteurs</b> ont choisi Pencake comme leur espace pour écrire en paix.\n\nSon interface épurée et sans distraction t'aide à te concentrer entièrement sur tes mots. Pas d'encombrement, pas de bruit — juste toi et ton histoire. Avec une typographie élégante et un espacement fluide, écrire sur Pencake est aussi naturel et beau que d'écrire dans un vrai livre.\n\nQue tu sois un auteur en herbe ou simplement quelqu'un qui aime écrire en paix, Pencake t'offre <b>un endroit simple mais inspirant</b> pour mettre tes pensées en mots.</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake t'aide à te concentrer sur tes mots — que tu écrives un journal, une histoire, ou quelque chose juste pour toi.\n\nDepuis 2018, <b>plus de 2,8 millions d'auteurs</b> ont choisi Pencake comme leur espace pour écrire en paix.\n\nSon interface épurée et sans distraction t'aide à te concentrer entièrement sur tes mots. Pas d'encombrement, pas de bruit — juste toi et ton histoire. Avec une typographie élégante et un espacement fluide, écrire sur Pencake est aussi naturel et beau que d'écrire dans un vrai livre.\n\nQue tu sois un auteur en herbe ou simplement quelqu'un qui aime écrire en paix, Pencake t'offre <b>un endroit simple mais inspirant</b> pour mettre tes pensées en mots.</div></div></div></div>"
     },
     {
       "type": "text",

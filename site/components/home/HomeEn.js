@@ -149,7 +149,7 @@ export default function HomeEn() {
           <p className="pc-hero-sub pc-rise pc-rise-3">
             Journal entries, notes in passing, or the novel you’ve been meaning
             to write. They’re all welcome in PenCake — a simple writing app
-            downloaded 2.3 million times around the world since 2018.
+            downloaded 2.8 million times around the world since 2018.
           </p>
           <div className="pc-rise pc-rise-4">
             <DownloadButtons />

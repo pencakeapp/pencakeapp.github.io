@@ -3,11 +3,11 @@
     "htmlLang": "zh-CN",
     "htmlClass": "notion-html",
     "title": "PenCake：极简写作应用",
-    "description": "一款极简、无干扰的写作应用，适用于日记、笔记、小说写作和同人小说创作。优雅简洁，深受230万+作家喜爱。支持全平台同步。",
+    "description": "一款极简、无干扰的写作应用，适用于日记、笔记、小说写作和同人小说创作。优雅简洁，深受280万+作家喜爱。支持全平台同步。",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake：极简写作应用",
-      "description": "一款极简、无干扰的写作应用，适用于日记、笔记、小说写作和同人小说创作。优雅简洁，深受230万+作家喜爱。支持全平台同步。",
+      "description": "一款极简、无干扰的写作应用，适用于日记、笔记、小说写作和同人小说创作。优雅简洁，深受280万+作家喜爱。支持全平台同步。",
       "image": "https://pencake.app/assets/images/pencake_marketing_zhcn.png",
       "url": "https://pencake.app/zh-cn/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake：极简写作应用",
-      "description": "一款极简、无干扰的写作应用，适用于日记、笔记、小说写作和同人小说创作。优雅简洁，深受230万+作家喜爱。支持全平台同步。",
+      "description": "一款极简、无干扰的写作应用，适用于日记、笔记、小说写作和同人小说创作。优雅简洁，深受280万+作家喜爱。支持全平台同步。",
       "image": "https://pencake.app/assets/images/pencake_marketing_zhcn.png",
       "url": "https://pencake.app/zh-cn/"
     },

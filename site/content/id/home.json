@@ -3,11 +3,11 @@
     "htmlLang": "id",
     "htmlClass": "notion-html",
     "title": "PenCake: Aplikasi Menulis Minimalis — Dari Jurnal hingga Novel",
-    "description": "Aplikasi menulis minimalis dan bebas gangguan untuk jurnal, catatan, penulisan novel, dan fanfiksi. Elegan, sederhana, dan dicintai lebih dari 2,3 juta penulis. Tersinkronisasi di semua platform.",
+    "description": "Aplikasi menulis minimalis dan bebas gangguan untuk jurnal, catatan, penulisan novel, dan fanfiksi. Elegan, sederhana, dan dicintai lebih dari 2,8 juta penulis. Tersinkronisasi di semua platform.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: Aplikasi Menulis Minimalis — Dari Jurnal hingga Novel",
-      "description": "Aplikasi menulis minimalis dan bebas gangguan untuk jurnal, catatan, penulisan novel, dan fanfiksi. Elegan, sederhana, dan dicintai lebih dari 2,3 juta penulis. Tersinkronisasi di semua platform.",
+      "description": "Aplikasi menulis minimalis dan bebas gangguan untuk jurnal, catatan, penulisan novel, dan fanfiksi. Elegan, sederhana, dan dicintai lebih dari 2,8 juta penulis. Tersinkronisasi di semua platform.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/id/",
       "type": "website",
@@ -27,7 +27,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: Aplikasi Menulis Minimalis — Dari Jurnal hingga Novel",
-      "description": "Menulis minimalis dan bebas gangguan untuk jurnal, catatan, novel, dan fanfiksi. Dicintai lebih dari 2,3 juta penulis. Tersinkronisasi di mana saja.",
+      "description": "Menulis minimalis dan bebas gangguan untuk jurnal, catatan, novel, dan fanfiksi. Dicintai lebih dari 2,8 juta penulis. Tersinkronisasi di mana saja.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/"
     },
@@ -250,7 +250,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake membantumu fokus pada kata-katamu—entah kamu sedang menulis jurnal, cerita, atau sesuatu hanya untuk dirimu sendiri.\n\nSejak 2018, <b>lebih dari 2,3 juta penulis</b> telah memilih Pencake sebagai ruang mereka untuk menulis dengan tenang.\n\nAntarmukanya yang bersih dan bebas gangguan membantumu fokus sepenuhnya pada kata-katamu. Tanpa kekacauan, tanpa kebisingan—hanya kamu dan ceritamu. Dengan tipografi yang elegan dan spasi yang nyaman, menulis di Pencake terasa senatural dan seindah menulis di buku sungguhan.\n\nEntah kamu seorang calon penulis atau sekadar seseorang yang suka menulis dengan tenang, Pencake menawarkan <b>tempat yang sederhana namun menginspirasi</b> untuk menuangkan pikiranmu ke dalam kata-kata.</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake membantumu fokus pada kata-katamu—entah kamu sedang menulis jurnal, cerita, atau sesuatu hanya untuk dirimu sendiri.\n\nSejak 2018, <b>lebih dari 2,8 juta penulis</b> telah memilih Pencake sebagai ruang mereka untuk menulis dengan tenang.\n\nAntarmukanya yang bersih dan bebas gangguan membantumu fokus sepenuhnya pada kata-katamu. Tanpa kekacauan, tanpa kebisingan—hanya kamu dan ceritamu. Dengan tipografi yang elegan dan spasi yang nyaman, menulis di Pencake terasa senatural dan seindah menulis di buku sungguhan.\n\nEntah kamu seorang calon penulis atau sekadar seseorang yang suka menulis dengan tenang, Pencake menawarkan <b>tempat yang sederhana namun menginspirasi</b> untuk menuangkan pikiranmu ke dalam kata-kata.</div></div></div></div>"
     },
     {
       "type": "text",

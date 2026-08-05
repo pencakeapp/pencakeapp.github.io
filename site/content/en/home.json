@@ -3,11 +3,11 @@
     "htmlLang": "en",
     "htmlClass": "notion-html",
     "title": "PenCake: Minimal Writing App — From Journals to Novels",
-    "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple — 2.3M+ downloads worldwide. Syncs across all platforms.",
+    "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple — 2.8M+ downloads worldwide. Syncs across all platforms.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: Minimal Writing App — From Journals to Novels",
-      "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple — 2.3M+ downloads worldwide. Syncs across all platforms.",
+      "description": "A minimalist, distraction-free writing app for journaling, notes, novel writing, and fanfiction. Elegant, simple — 2.8M+ downloads worldwide. Syncs across all platforms.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/",
       "type": "website",
@@ -27,7 +27,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: Minimal Writing App — From Journals to Novels",
-      "description": "Minimalist, distraction-free writing for journals, notes, novels, and fanfiction. 2.3M+ downloads worldwide. Syncs everywhere.",
+      "description": "Minimalist, distraction-free writing for journals, notes, novels, and fanfiction. 2.8M+ downloads worldwide. Syncs everywhere.",
       "image": "https://pencake.app/assets/images/pencake_marketing.jpg",
       "url": "https://pencake.app/"
     },
@@ -250,7 +250,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake helps you focus on your words—whether you’re writing a journal, a story, or something just for yourself.\n\nSince 2018, <b>more than 2.3 million writers</b> have chosen Pencake as their space to write in peace.\n\nIts clean, distraction-free interface helps you focus entirely on your words. No clutter, no noise—just you and your story. With elegant typography and smooth spacing, writing on Pencake feels as natural and beautiful as writing in a real book.\n\nWhether you're an aspiring writer or just someone who loves writing in peace, Pencake offers <b>a simple yet inspiring place</b> to put your thoughts into words.</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake helps you focus on your words—whether you’re writing a journal, a story, or something just for yourself.\n\nSince 2018, <b>more than 2.8 million writers</b> have chosen Pencake as their space to write in peace.\n\nIts clean, distraction-free interface helps you focus entirely on your words. No clutter, no noise—just you and your story. With elegant typography and smooth spacing, writing on Pencake feels as natural and beautiful as writing in a real book.\n\nWhether you're an aspiring writer or just someone who loves writing in peace, Pencake offers <b>a simple yet inspiring place</b> to put your thoughts into words.</div></div></div></div>"
     },
     {
       "type": "text",

@@ -152,7 +152,7 @@ export default function HomeKo() {
           <h1 className="pc-rise pc-rise-2">글쓰기에 온전히 집중할 수 있는 미니멀 공간</h1>
           <p className="pc-hero-sub pc-rise pc-rise-3">
             일기도 좋고, 소설도 좋고, 마음속에 담아둔 이야기도 좋습니다 —
-            2018년부터 전 세계에서 230만 번 다운로드된 심플한 글쓰기 앱,
+            2018년부터 전 세계에서 280만 번 다운로드된 심플한 글쓰기 앱,
             PenCake.
           </p>
           <div className="pc-rise pc-rise-4">

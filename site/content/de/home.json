@@ -3,11 +3,11 @@
     "htmlLang": "de",
     "htmlClass": "notion-html",
     "title": "PenCake: Minimal Schreib‑App",
-    "description": "Eine minimalistische, ablenkungsfreie Schreib-App für Journaling, Notizen, Romane und Fanfiction. Elegant, einfach – und von über 2,3 Millionen Schreibenden geliebt. Synchronisiert sich über alle Plattformen hinweg.",
+    "description": "Eine minimalistische, ablenkungsfreie Schreib-App für Journaling, Notizen, Romane und Fanfiction. Elegant, einfach – und von über 2,8 Millionen Schreibenden geliebt. Synchronisiert sich über alle Plattformen hinweg.",
     "viewport": "width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
     "og": {
       "title": "PenCake: Minimal Schreib‑App",
-      "description": "Eine minimalistische, ablenkungsfreie Schreib-App für Journaling, Notizen, Romane und Fanfiction. Elegant, einfach – und von über 2,3 Millionen Schreibenden geliebt. Synchronisiert sich über alle Plattformen hinweg.",
+      "description": "Eine minimalistische, ablenkungsfreie Schreib-App für Journaling, Notizen, Romane und Fanfiction. Elegant, einfach – und von über 2,8 Millionen Schreibenden geliebt. Synchronisiert sich über alle Plattformen hinweg.",
       "image": "https://pencake.app/assets/images/pencake_marketing_de.jpg",
       "url": "https://pencake.app/de/",
       "type": "website",
@@ -17,7 +17,7 @@
     "twitter": {
       "card": "summary_large_image",
       "title": "PenCake: Minimal Schreib‑App",
-      "description": "Minimalistisches, ablenkungsfreies Schreiben für Journaling, Notizen, Romane und Fanfiction. Von über 2,3 Mio. Schreibenden geliebt. Synchronisiert sich überall.",
+      "description": "Minimalistisches, ablenkungsfreies Schreiben für Journaling, Notizen, Romane und Fanfiction. Von über 2,8 Mio. Schreibenden geliebt. Synchronisiert sich überall.",
       "image": "https://pencake.app/assets/images/pencake_marketing_de.jpg",
       "url": "https://pencake.app/de/"
     },
@@ -240,7 +240,7 @@
     },
     {
       "type": "text",
-      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake hilft dir, dich ganz auf deine Worte zu konzentrieren – ob du ein Tagebuch schreibst, eine Geschichte erzählst oder einfach nur deine Gedanken festhalten möchtest.\n\nSeit 2018 haben <b>mehr als 2,3 Millionen Schreibende</b> weltweit Pencake zu ihrem ruhigen Schreibort gemacht.\n  \nDie aufgeräumte, ablenkungsfreie Oberfläche lässt dich vollkommen in dein Schreiben eintauchen. Kein Lärm, keine Unordnung – nur du und deine Geschichte. Mit eleganter Typografie und harmonischem Zeilenabstand fühlt sich das Schreiben mit Pencake so natürlich und schön an wie in einem echten Buch.\n\nOb du vom Schreiben träumst oder einfach in Ruhe Gedanken festhalten willst –\nPencake bietet dir <b>einen ruhigen, inspirierenden Ort</b>, um deine Worte fließen zu lassen.</div></div></div></div>"
+      "html": "<div class=\"notion-selectable notion-text-block\" style=\"width: 100%; max-width: 1728px; margin-top: 1px; margin-bottom: 1px;\"><div style=\"color: inherit; fill: inherit;\"><div style=\"display: flex;\"><div style=\"max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: rgb(55, 53, 47); padding: 3px 2px;\">Pencake hilft dir, dich ganz auf deine Worte zu konzentrieren – ob du ein Tagebuch schreibst, eine Geschichte erzählst oder einfach nur deine Gedanken festhalten möchtest.\n\nSeit 2018 haben <b>mehr als 2,8 Millionen Schreibende</b> weltweit Pencake zu ihrem ruhigen Schreibort gemacht.\n  \nDie aufgeräumte, ablenkungsfreie Oberfläche lässt dich vollkommen in dein Schreiben eintauchen. Kein Lärm, keine Unordnung – nur du und deine Geschichte. Mit eleganter Typografie und harmonischem Zeilenabstand fühlt sich das Schreiben mit Pencake so natürlich und schön an wie in einem echten Buch.\n\nOb du vom Schreiben träumst oder einfach in Ruhe Gedanken festhalten willst –\nPencake bietet dir <b>einen ruhigen, inspirierenden Ort</b>, um deine Worte fließen zu lassen.</div></div></div></div>"
     },
     {
       "type": "text",
