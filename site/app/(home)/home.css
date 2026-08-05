@@ -58,6 +58,18 @@ a {
   word-break: keep-all;
 }
 
+/* Hangul fills its em box far more than the Latin serif does, so the big
+   display headings read cramped at the Latin line-heights. Give the two
+   serif display sizes one extra step on the Korean pages. */
+.pc-body:lang(ko) .pc-hero h1 {
+  line-height: 1.65;
+}
+
+.pc-body:lang(ko) .pc-section h2,
+.pc-body:lang(ko) .pc-cta h2 {
+  line-height: 1.7;
+}
+
 /* ——— Hero ——— */
 
 .pc-hero {
