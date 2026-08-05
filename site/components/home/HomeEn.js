@@ -48,7 +48,7 @@ const FEATURES = [
   },
   {
     emoji: "📖",
-    title: "For the love of writing",
+    title: "From journals to novels",
     body: "Markdown, word and character counts, images, and preview — for journals, blogs, novels, and fanfiction.",
   },
 ];
