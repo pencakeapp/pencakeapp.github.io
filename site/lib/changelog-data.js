@@ -46,6 +46,34 @@ const o = "▪ ";
 export const logs = [
   {
     features: {
+      ko: `${o}37가지 테마가 추가되었습니다.\n- [설정 > 테마 설정]에서 선택할 수 있습니다.\n${o}이야기와 폴더를 생성하고 관리하는 기능이 추가되었습니다.\n- 이제 PC 버전에서 이야기 추가가 가능해졌습니다.\n- 이야기 목록에서 폴더를 만들고, 이름을 바꾸거나 삭제할 수 있습니다.\n- 이야기와 폴더를 끌어서 순서를 바꿀 수 있습니다.`,
+      en: `${o}37 themes have been added.\n- You can choose one in [Settings > Themes].\n${o}Features to create and manage stories and folders have been added.\n- You can now add stories in the desktop version.\n- You can create, rename, and delete folders in the story list.\n- You can drag stories and folders to reorder them.`,
+      ja: `${o}37種類のテーマが追加されました。\n- [設定 > テーマ] から選択できます。\n${o}物語とフォルダの作成・管理機能が追加されました。\n- PC版でも物語を追加できるようになりました。\n- 物語の一覧でフォルダの作成、名前の変更、削除ができます。\n- 物語とフォルダをドラッグして並べ替えができます。`,
+      es: `${o}Se añadieron 37 temas.\n- Puedes elegir uno en [Configuración > Temas].\n${o}Se añadieron funciones para crear y gestionar historias y carpetas.\n- Ahora puedes añadir historias en la versión de escritorio.\n- Puedes crear, renombrar y eliminar carpetas en la lista de historias.\n- Puedes arrastrar historias y carpetas para reordenarlas.`,
+      pt: `${o}Foram adicionados 37 temas.\n- Você pode escolher um em [Configurações > Temas].\n${o}Foram adicionados recursos para criar e gerenciar histórias e pastas.\n- Agora você pode adicionar histórias na versão desktop.\n- Você pode criar, renomear e excluir pastas na lista de histórias.\n- Você pode arrastar histórias e pastas para reordená-las.`,
+      de: `${o}37 Themes wurden hinzugefügt.\n- Du kannst eines unter [Einstellungen > Themes] auswählen.\n${o}Funktionen zum Erstellen und Verwalten von Geschichten und Ordnern wurden hinzugefügt.\n- Du kannst jetzt auch in der Desktop-Version Geschichten hinzufügen.\n- Du kannst in der Geschichtenliste Ordner erstellen, umbenennen und löschen.\n- Du kannst Geschichten und Ordner per Drag-and-drop neu anordnen.`,
+      fr: `${o}37 thèmes ont été ajoutés.\n- Tu peux en choisir un dans [Réglages > Thèmes].\n${o}Des fonctions pour créer et gérer les histoires et les dossiers ont été ajoutées.\n- Tu peux désormais ajouter des histoires dans la version ordinateur.\n- Tu peux créer, renommer et supprimer des dossiers dans la liste des histoires.\n- Tu peux faire glisser les histoires et les dossiers pour les réorganiser.`,
+      id: `${o}37 tema telah ditambahkan.\n- Kamu bisa memilihnya di [Pengaturan > Tema].\n${o}Fitur untuk membuat dan mengelola cerita serta folder telah ditambahkan.\n- Kini kamu bisa menambahkan cerita di versi desktop.\n- Kamu bisa membuat, mengganti nama, dan menghapus folder di daftar cerita.\n- Kamu bisa menyeret cerita dan folder untuk mengubah urutannya.`,
+      "zh-hans": `${o}新增了37款主题。\n- 你可以在 [设置 > 主题] 中选择。\n${o}新增了故事和文件夹的创建与管理功能。\n- 现在可以在PC版本中添加故事了。\n- 可以在故事列表中创建、重命名和删除文件夹。\n- 可以拖动故事和文件夹来调整顺序。`,
+      "zh-hant": `${o}新增了37款主題。\n- 你可以在 [設定 > 主題] 中選擇。\n${o}新增了故事與資料夾的建立與管理功能。\n- 現在可以在PC版本中新增故事了。\n- 可以在故事列表中建立、重新命名和刪除資料夾。\n- 可以拖曳故事和資料夾來調整順序。`,
+    },
+    others: {
+      ko: `${o}동기화를 설정할 때 동기화 방식을 선택하는 단계가 추가되었습니다.`,
+      en: `${o}When setting up sync, a step to choose how you want to sync has been added.`,
+      ja: `${o}同期の設定時に、同期の方法を選択する手順が追加されました。`,
+      es: `${o}Se añadió un paso para elegir el método de sincronización al configurarla.`,
+      pt: `${o}Foi adicionada uma etapa para escolher o método de sincronização ao configurá-la.`,
+      de: `${o}Beim Einrichten der Synchronisierung gibt es jetzt einen Schritt, in dem du die Synchronisierungsmethode auswählst.`,
+      fr: `${o}Lors de la configuration de la synchronisation, une étape permettant de choisir la méthode de synchronisation a été ajoutée.`,
+      id: `${o}Saat mengatur sinkronisasi, kini ada langkah untuk memilih metode sinkronisasi.`,
+      "zh-hans": `${o}设置同步时新增了选择同步方式的步骤。`,
+      "zh-hant": `${o}設定同步時新增了選擇同步方式的步驟。`,
+    },
+    version: "0.6.0",
+    releasedAt: "2026-08-09",
+  },
+  {
+    features: {
       ko: `${o}PDF로 내보내기 기능이 추가되었습니다.\n${o}DOCX로 내보내기 기능이 추가되었습니다.\n${o}프록시 기능이 추가되었습니다.\n- [설정 > 프록시]에서 설정할 수 있습니다.\n${o}비밀번호 찾기 기능이 추가되었습니다.`,
       en: `${o}The feature to export to PDF has been added.\n${o}The feature to export to DOCX has been added.\n${o}A proxy feature has been added.\n- You can configure it in [Settings > Proxy].\n${o}A password recovery feature has been added.`,
       ja: `${o}PDFとしてエクスポートできる機能が追加されました。\n${o}DOCXとしてエクスポートできる機能が追加されました。\n${o}プロキシ機能が追加されました。\n- [設定 > プロキシ] から設定できます。\n${o}パスワード復旧機能が追加されました。`,

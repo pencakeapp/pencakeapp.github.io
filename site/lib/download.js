@@ -1,7 +1,7 @@
 // Desktop app download logic — ported from the legacy /assets/js/utils.js.
 // Bump these versions when releasing a new desktop build.
-export const MAC_VERSION = "0.5.0";
-export const WIN_VERSION = "0.5.0";
+export const MAC_VERSION = "0.6.0";
+export const WIN_VERSION = "0.6.0";
 
 const baseUrl = "https://github.com/pencakeapp-desktop/app/releases/download";
 
