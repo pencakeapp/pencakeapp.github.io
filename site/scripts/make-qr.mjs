@@ -9,7 +9,7 @@ import QRCode from "qrcode";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // ?qr=1 marks a scan, so the page hops the phone straight to its store
-// (lib/stores.js → qrRedirectScript, inlined by DownloadMobileEn/Ko).
+// (lib/stores.js → qrRedirectScript, inlined by DownloadMobileEn/Ko/Ja).
 // One target per redesigned language: each code carries that language's
 // own URL, so a scan that falls through still lands on the right page.
 const TARGETS = [
@@ -20,6 +20,10 @@ const TARGETS = [
   {
     url: "https://pencake.app/ko/download/mobile/?qr=1",
     file: "../public/assets/images/pencake_qr_download_mobile_ko.svg",
+  },
+  {
+    url: "https://pencake.app/ja/download/mobile/?qr=1",
+    file: "../public/assets/images/pencake_qr_download_mobile_ja.svg",
   },
 ];
 

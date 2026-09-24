@@ -1,9 +1,11 @@
 // Desktop changelog data — moved from the legacy /assets/js/changelog-desktop.js.
 // Add a new entry at the top of `logs` for each desktop release.
+// "|" marks a Japanese phrase break (lib/phrases.js): a <wbr> in the page
+// heading, dropped from document.title.
 export const updateHistoryTitle = {
   ko: "PC 버전 업데이트 기록",
   en: "Desktop Changelog",
-  ja: "PC版アップデート履歴",
+  ja: "PC版|アップデート履歴",
   es: "Registro de cambios de escritorio",
   pt: "Registro de alterações para desktop",
   de: "Desktop-Änderungsprotokoll",
