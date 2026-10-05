@@ -58,7 +58,8 @@ const FEATURES = [
 ];
 
 // Real App Store reviews — the same six-card master set as HomeEn/HomeKo
-// (identical excerpt boundaries). The Japanese one runs verbatim; the others
+// (identical excerpt boundaries). The Japanese one runs verbatim apart from
+// whitespace (the store text's stray spaces after 。 are dropped); the others
 // are translated into Japanese from the store originals. Reviewer nicknames
 // are deliberately left out: these are quoted without the writers' consent,
 // so cards carry the storefront country, date, and stars instead. Date lines
@@ -96,7 +97,7 @@ const REVIEWS = [
   {
     title: "Wunderbar!",
     date: "2022年10月15日(土)",
-    body: "飾り気のないデザインと、便利だけれど多すぎない機能。そんなアプリを探していて、ここでようやく見つけました。見事なまでに焦点が定まっていて、そのシンプルさがただただ美しいアプリです。最高です！",
+    body: "飾り気のないデザインと、便利だけれど多すぎない機能。そんなアプリを探していて、ここでようやく見つけました。見事なまでに焦点が絞られていて、そのシンプルさがただただ美しいアプリです。最高です！",
     source: "ドイツ",
     stars: 5,
   },

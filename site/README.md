@@ -70,6 +70,9 @@ lib/
   changelog-data.js ★ PC 버전 업데이트 기록 데이터
   blocks.js       새 콘텐츠 블록 빌더 (callout·heading·text·bullet·image…)
   metadata.js     추출된 메타 → Next Metadata 매핑
+  phrases.js      일본어 카피의 구(句) 경계 표시. 문자열 속 "|" 를 phrases() 가
+                  <wbr> 로 바꾸고(home.css :lang(ja) 의 keep-all 과 짝),
+                  plain() 은 aria-label·목차·document.title 용으로 지움
 scripts/          extract.mjs(이관), verify.mjs(충실도 검증 — 리디자인된
                   페이지는 REDESIGNED 목록으로 레거시 대조를 스킵하되 출력
                   존재 여부는 계속 검사), make-qr.mjs(QR SVG 생성)

@@ -32,7 +32,7 @@ const FEATURES = [
     title: "記事内検索",
     body: (
       <>
-        <p>記事の中から、<wbr />探している情報を<wbr />かんたんに見つけられます。</p>
+        <p>記事の中から、<wbr />探している情報を<wbr />簡単に見つけられます。</p>
         <p>編集モードでは、<wbr />検索と置換も使えます。</p>
       </>
     ),
@@ -225,7 +225,7 @@ export default function DownloadDesktopJa() {
               購入後、モバイル版 → PC版の順に同期を設定すると、PC版でもプレミアムが有効になります。
             </p>
             <p>
-              すでにモバイル版で同期を利用している場合は、PC版で同期を設定するだけで使えます。
+              すでにモバイル版で同期を利用している場合は、PC版で同期を設定するだけで大丈夫です。
             </p>
             <div className="pc-note">
               <span className="pc-note-emoji" aria-hidden="true">

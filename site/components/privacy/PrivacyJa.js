@@ -95,8 +95,7 @@ export default function PrivacyJa() {
               ユーザーが複数のデバイスを使用し、各デバイスで同じアカウントのクラウドストレージと同期する場合は、すべてのデバイスに同じユーザーコンテンツが保存されます。
             </p>
             <p>
-              PenCakeと同期できるクラウドストレージは、iCloud DriveとGoogle
-              Driveです。各クラウドストレージにおける個人情報の取り扱いは、各サービス提供者とユーザーとの間の契約に基づくプライバシーポリシーに従います。
+              PenCakeと同期できるクラウドストレージは、iCloud DriveとGoogle ドライブです。各クラウドストレージにおける個人情報の取り扱いは、各サービス提供者とユーザーとの間の契約に基づくプライバシーポリシーに従います。
             </p>
           </div>
         </section>
@@ -106,8 +105,7 @@ export default function PrivacyJa() {
           <PartHead section={SECTIONS[1]} />
           <div className="pc-prose">
             <p>
-              同期の設定のためにGoogle
-              Driveにログインする場合、OAuth認証の管理のために、Googleがユーザー識別子を収集します。これに関するGoogleの公式案内は、
+              同期を設定するためにGoogle ドライブにログインする場合、GoogleはOAuth認証を管理する目的で、ユーザー識別子を収集します。これに関するGoogleの公式案内は、
               <a href="https://developers.google.com/identity/sign-in/ios/app-privacy">
                 こちらの文書
               </a>
@@ -121,7 +119,7 @@ export default function PrivacyJa() {
           <PartHead section={SECTIONS[2]} />
           <div className="pc-prose">
             <p>
-              PenCakeは、ユーザー動向の分析と製品機能の利用分析を通じて製品を改善するため、Googleが提供する
+              PenCakeは、ユーザーの現状と製品機能の利用状況を分析して製品を改善するため、Googleが提供する
               <a href="https://firebase.google.com/docs/analytics">
                 Firebase Analytics
               </a>
@@ -129,7 +127,7 @@ export default function PrivacyJa() {
               <a href="https://firebase.google.com/docs/crashlytics">
                 Firebase Crashlytics
               </a>
-              を使用しています。そして、製品のリモート構成のために
+              を使用しています。さらに、製品のリモート構成のために
               <a href="https://firebase.google.com/docs/remote-config">
                 Firebase Remote Config
               </a>
