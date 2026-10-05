@@ -19,10 +19,11 @@
   --pc-band: #fcfdff;
   --pc-cream: #faf8f4;
   /* Serif stack. "Source Serif Pro" (Latin) is a webfont loaded by the
-     (home)/(ko) layouts; the Latin system serifs after it are fallbacks
+     (home)/(ko)/(ja) layouts; the Latin system serifs after it are fallbacks
      while it loads or where it isn't loaded. Hangul never resolves in the
      Latin faces, so it falls through to "Noto Serif KR" (webfont on the
-     Korean pages) and then the local Korean fallbacks.
+     Korean pages) and then the local Korean fallbacks. The Japanese pages
+     swap in their own stack (see .pc-body:lang(ja) below).
 
      To revert to the original system-font serif (no webfont), remove
      "Source Serif Pro" here and stop loading EN_SERIF_FONT_CSS in the
@@ -58,16 +59,64 @@ a {
   word-break: keep-all;
 }
 
-/* Hangul fills its em box far more than the Latin serif does, so the big
-   display headings read cramped at the Latin line-heights. Give the two
-   serif display sizes one extra step on the Korean pages. */
-.pc-body:lang(ko) .pc-hero h1 {
+/* Hangul and kana/kanji fill their em box far more than the Latin serif
+   does, so the big display headings read cramped at the Latin line-heights.
+   Give the two serif display sizes one extra step on the CJK pages. */
+.pc-body:lang(ko) .pc-hero h1,
+.pc-body:lang(ja) .pc-hero h1 {
   line-height: 1.65;
 }
 
 .pc-body:lang(ko) .pc-section h2,
-.pc-body:lang(ko) .pc-cta h2 {
+.pc-body:lang(ko) .pc-cta h2,
+.pc-body:lang(ja) .pc-section h2,
+.pc-body:lang(ja) .pc-cta h2 {
   line-height: 1.7;
+}
+
+/* Japanese: the serif falls through to Noto Serif JP (webfont on the
+   Japanese pages) and the Japanese Mincho faces — never to the Korean
+   serif, whose Han glyphs take Korean forms. The sans stack names the
+   Japanese system Gothics so Windows doesn't pick a Chinese fallback. */
+.pc-body:lang(ja) {
+  --pc-serif:
+    "Source Serif Pro", "Iowan Old Style", "Palatino Linotype", Palatino,
+    Georgia, "Times New Roman", "Noto Serif JP", "Hiragino Mincho ProN",
+    "Yu Mincho", YuMincho, "Noto Serif CJK JP", serif;
+  --pc-sans:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo,
+    Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  line-break: strict;
+}
+
+/* Japanese runs have no spaces, so headings and the short centered lines
+   would otherwise wrap mid-word. They break only at punctuation and at the
+   <wbr> phrase boundaries written into the copy — keep every phrase
+   shorter than the narrowest line. overflow-wrap is only the safety net
+   (it would break anywhere, even before "。"), so a run still wraps
+   instead of overflowing. Running text — answers, reviews, and the long
+   FAQ questions — keeps ordinary Japanese wrapping, where kinsoku holds. */
+.pc-body:lang(ja)
+  :is(h1, h2, h3, .pc-hero-sub, .pc-lead, .pc-rating, .pc-cta-sub, .pc-feature p, .pc-finenote) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* summary adds one type selector, so this outranks the keep-all rule
+   above — (0,3,2) vs (0,3,1) — whatever order the two end up in. */
+.pc-body:lang(ja) .pc-faq-item summary h3 {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* The Latin serif comes first in the stack and carries U+2026 "…", which it
+   sets on the baseline; Japanese centers the leader. Wrap such punctuation
+   in this class to hand it to the Japanese serif instead. */
+.pc-ja-punct {
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", YuMincho,
+    "Noto Serif CJK JP", serif;
 }
 
 /* ——— Hero ——— */

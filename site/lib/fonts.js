@@ -14,3 +14,9 @@ export const EN_SERIF_FONT_CSS =
 // Korean serif — Noto Serif KR (used for Hangul on the Korean pages).
 export const KO_SERIF_FONT_CSS =
   "https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap";
+
+// Japanese serif — Noto Serif JP (used for kana and kanji on the Japanese
+// pages). Loaded only there: Korean pages keep Noto Serif KR, whose Han
+// glyphs follow Korean forms.
+export const JA_SERIF_FONT_CSS =
+  "https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap";

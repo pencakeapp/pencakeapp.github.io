@@ -8,8 +8,9 @@ export const ALL_LANGS = [DEFAULT_LANG, ...OTHER_LANGS];
 
 // Languages still rendered from the legacy Notion export by the (i18n)
 // group. A language leaves this list when its pages are redesigned
-// (en lives at the root; ko has its own redesigned route group).
-export const NOTION_LANGS = OTHER_LANGS.filter((lang) => lang !== "ko");
+// (en lives at the root; ko and ja have their own redesigned route groups).
+const REDESIGNED_LANGS = new Set(["ko", "ja"]);
+export const NOTION_LANGS = OTHER_LANGS.filter((lang) => !REDESIGNED_LANGS.has(lang));
 
 // <html lang> attribute value per language, as on the legacy pages.
 // (Defaults to the language key; only the zh variants need explicit casing.)

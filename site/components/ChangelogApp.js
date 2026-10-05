@@ -9,8 +9,9 @@ import {
   newFeaturesTitle,
   othersTitle,
 } from "@/lib/changelog-data";
-import { KO_SERIF_FONT_CSS } from "@/lib/fonts";
+import { JA_SERIF_FONT_CSS, KO_SERIF_FONT_CSS } from "@/lib/fonts";
 import { langPrefix } from "@/lib/langs";
+import { phrases, plain } from "@/lib/phrases";
 
 const DEFAULT_LANG = "en";
 
@@ -104,7 +105,7 @@ export default function ChangelogApp() {
     // Reflect the query-selected language on <html lang> (layout renders "en"
     // by default since the language is only known client-side).
     document.documentElement.lang = HTML_LANG[lang] || lang;
-    const desired = updateHistoryTitle[lang] || updateHistoryTitle[DEFAULT_LANG];
+    const desired = plain(updateHistoryTitle[lang] || updateHistoryTitle[DEFAULT_LANG]);
     document.title = desired;
     // Next.js re-applies the static metadata title after hydration,
     // so re-assert the localized title for a moment.
@@ -135,11 +136,15 @@ export default function ChangelogApp() {
   return (
     <>
       <TopNav home={homeHref(lang)} />
-      {/* This page is shared by every language (?lang=), so the Korean
-          serif webfont is only pulled in when Korean is selected.
-          `precedence` lets React hoist the client-rendered link to <head>. */}
+      {/* This page is shared by every language (?lang=), so the Korean and
+          Japanese serif webfonts are only pulled in when that language is
+          selected. `precedence` lets React hoist the client-rendered link
+          to <head>. */}
       {lang === "ko" && (
         <link rel="stylesheet" precedence="pc-fonts" href={KO_SERIF_FONT_CSS} />
+      )}
+      {lang === "ja" && (
+        <link rel="stylesheet" precedence="pc-fonts" href={JA_SERIF_FONT_CSS} />
       )}
       <main>
         {/* ——— Title ——— */}
@@ -148,7 +153,7 @@ export default function ChangelogApp() {
             🚀
           </div>
           <Kicker>PenCake Desktop</Kicker>
-          <h1>{t(updateHistoryTitle)}</h1>
+          <h1>{phrases(t(updateHistoryTitle))}</h1>
         </header>
 
         {/* ——— Timeline ——— */}
