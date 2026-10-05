@@ -13,9 +13,6 @@ import { phrases } from "@/lib/phrases";
 // 항목마다 .webp 와 .jpg 가 짝으로 존재한다 — 둘 다 `npm run screenshots`
 // (scripts/make-screenshots.sh) 가 만든다. 짝이 어긋나지 않도록 확장자는
 // 여기에 적지 않는다.
-// TODO: 일본어 스크린샷이 준비될 때까지 한국어판을 그대로 복사한 임시
-// 이미지(screenshot_<N>_ja.*)를 쓰고 있다. 받으면
-// `npm run screenshots -- -l ja --install` 로 교체할 것.
 const SCREENSHOTS = [
   { base: "/assets/images/appstore/screenshot_1_ja", alt: "PenCakeアプリ ― ミニマルな日記の一覧" },
   { base: "/assets/images/appstore/screenshot_2_ja", alt: "PenCakeアプリ ― 美しい明朝体で綴った日記" },
@@ -24,7 +21,7 @@ const SCREENSHOTS = [
   { base: "/assets/images/appstore/screenshot_5_ja", alt: "PenCakeアプリ ― 考えを整理できる物語の一覧" },
   { base: "/assets/images/appstore/screenshot_6_ja", alt: "PenCakeアプリ ― デバイス間の同期" },
   { base: "/assets/images/appstore/screenshot_7_ja", alt: "PenCakeアプリ ― 気分で選べるテーマ" },
-  { base: "/assets/images/appstore/screenshot_8_ja", alt: "PenCakeアプリ ― 手書き風のフォント" },
+  { base: "/assets/images/appstore/screenshot_8_ja", alt: "PenCakeアプリ ― 丸ゴシックや手書き風など、多彩なフォント" },
 ];
 
 const FEATURES = [
