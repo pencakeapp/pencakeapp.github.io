@@ -160,7 +160,7 @@ export default function HomeJa() {
             PenCake<span className="pc-cursor">|</span>
           </div>
           <h1 className="pc-rise pc-rise-2">
-            書くことだけに<wbr />向き合える、<wbr />ミニマルな空間
+            書くことだけに<wbr />向き合える<br />ミニマルな空間
           </h1>
           <p className="pc-hero-sub pc-rise pc-rise-3">
             今日の日記も、書きかけの小説も、胸にしまってきた言葉も。
